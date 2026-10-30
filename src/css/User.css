@@ -1,0 +1,623 @@
+/* ============================= ROOT ============================= */
+:root {
+    --color-blue: #006ce4;
+    --color-blue-bluer: #1a4fa0;
+    --color-blue-dark: #003b95;
+
+    --color-white: white;
+    --color-grayish: #f5f5f5;
+    --color-dark: #1a1a1a;
+
+    --font-size-extra-s: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 20px;
+    --font-size-xl: 24px;
+
+    --font: Helvetica, Arial, sans-serif;
+}
+
+/* ============================= BODY ============================= */
+body {
+    margin: 0;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+    color: var(--color-dark);
+}
+
+/* ============================= USER LAYOUT ============================= */
+#selection_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#selection_2 .menu {
+    height: auto;
+    margin: 0 50px;
+    width: 250px;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+}
+
+/* ============================= AVATAR ============================= */
+#selection_2 .menu .avata {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    color: var(--color-dark);
+    border-bottom: var(--color-blue) solid 1px;
+}
+
+#selection_2 .menu .avata img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-blue);
+}
+
+#selection_2 .menu .avata .username {
+    margin: 15px 0;
+    font-size: var(--font-size-l);
+}
+
+#selection_2 .bt_xac_nhan,
+#selection_2 .menu .avata .change-btn {
+    background: var(--color-blue);
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+#selection_2 .menu .avata .change-btn:hover,
+#selection_2 .bt_xac_nhan:hover {
+    background: var(--color-blue-bluer);
+    cursor: pointer;
+}
+
+#selection_2 .bt_xac_nhan {
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* ============================= MENU ITEMS ============================= */
+#selection_2 .menu .menu_item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#selection_2 .menu .menu_item .item {
+    padding: 15px 50px;
+    width: 150px;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+#selection_2 .menu .menu_item .item:hover,
+#selection_2 .menu .menu_item .item:focus {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+/* ============================= INFORMATION ============================= */
+#selection_2 .infomation {
+    background: var(--color-white);
+    margin: 70px 250px 70px 20px;
+    height: auto;
+    width: calc(100% - 250px);
+    border: var(--color-blue) solid 1px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color-dark);
+    box-sizing: border-box;
+}
+
+#selection_2 .infomation h2 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+#selection_2 .infomation .in4_row,
+#selection_2 .password-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#selection_2 .infomation .in4_label {
+    width: 200px;
+    padding: 10px;
+    color: var(--color-dark);
+    font-weight: bold;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+#selection_2 .infomation .in4_input,
+#selection_2 .password-wrapper {
+    flex: 1;
+    min-width: 0;
+    background: var(--color-grayish);
+    border-radius: 5px;
+    border: none;
+    color: var(--color-dark);
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+#selection_2 .infomation #gt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: none;
+    border: none;
+    text-indent: 0;
+}
+
+#selection_2 #old_password,
+#selection_2 #password,
+#selection_2 #confirm_password {
+    padding: 10px 0;
+}
+
+/* ============================= PASSWORD ============================= */
+#selection_2 .password-wrapper {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#selection_2 .password-wrapper button {
+    position: absolute;
+    right: 10px;
+    margin-top: 3px;
+    background: none;
+    border: none;
+    color: var(--color-dark);
+    cursor: pointer;
+    font-size: var(--font-size-l);
+}
+
+/* ============================= NOTIFICATION ============================= */
+.notification_item {
+    display: flex;
+    background: var(--color-grayish);
+    padding: 15px;
+    gap: 15px;
+    text-decoration: none;
+    border: lightgrey solid 1px;
+    color: var(--color-dark);
+}
+
+.notification_item.unread {
+    background: #e0eaf8;
+}
+
+.notification_item:hover {
+    border: 2px solid var(--color-blue);
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--color-blue);
+}
+
+.info h4 {
+    margin: 0;
+    color: var(--color-blue-dark);
+    font-size: var(--font-size-m);
+}
+
+.info p {
+    margin: 0 10px;
+    font-size: var(--font-size-s);
+}
+
+.info span {
+    font-size: var(--font-size-extra-s);
+    color: #797979;
+}
+
+/* ============================= TAB MENU ============================= */
+.container .tab-nav-menu {
+    display: flex;
+    margin: 30px 0;
+    border: lightgrey solid 2px;
+}
+
+.container .tab-menu {
+    flex: 1;
+    text-align: center;
+    color: var(--color-dark);
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container .tab-menu.active,
+.container .tab-menu:hover {
+    border-bottom: var(--color-blue) 2px solid;
+    color: var(--color-blue);
+}
+
+/* ============================= PRODUCT HEADER ============================= */
+.container .product-header,
+.container .voucher-header {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container .product-header-price,
+.container .product-header-status,
+.container .product-header-date,
+.container .voucher-header-price,
+.container .voucher-header-status,
+.container .voucher-header-date {
+    flex: 1;
+    text-align: center;
+}
+
+.container .product-header-title,
+.container .voucher-header-title {
+    flex: 2;
+    text-align: left;
+}
+
+/* ============================= PRODUCT CONTENT ============================= */
+.container .product-content {
+    display: none;
+}
+
+.container .product-content.active {
+    display: block;
+}
+
+.container .products {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.container #cancelled.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================= PRODUCT ITEM ============================= */
+.container .container-contents .product {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: var(--font-size-s);
+}
+
+.container .container-contents .product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.container .container-contents .product .product-title {
+    display: flex;
+    flex: 2;
+    gap: 10px;
+    align-items: center;
+}
+
+.container .container-contents .product .product-price,
+.container .container-contents .product .product-status-delivered,
+.container .container-contents .product .product-status-delivering,
+.container .container-contents .product .product-status,
+.container .container-contents .product .product-date {
+    text-align: center;
+    padding: 5px;
+    flex: 1;
+}
+
+.container .product .product-status-delivered {
+    font-weight: bold;
+    color: green;
+}
+
+.container .product .product-status-delivering {
+    font-weight: bold;
+    color: var(--color-blue);
+}
+
+/* ============================= POPUP ============================= */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: var(--color-white);
+    color: var(--color-dark);
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--color-blue);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: popupShow 0.25s ease;
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+@keyframes popupShow {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--color-blue);
+    font-size: var(--font-size-xl);
+    text-align: center;
+}
+
+.popup_item {
+    margin-bottom: 15px;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.popup-content input,
+.popup-content select,
+.popup-content textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-grayish);
+    color: var(--color-dark);
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.popup-content input:focus,
+.popup-content select:focus,
+.popup-content textarea:focus {
+    border-color: var(--color-blue-dark);
+    box-shadow: 0 0 0 2px rgba(0, 108, 228, 0.15);
+}
+
+/* ============================= POPUP BUTTONS ============================= */
+.popup-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.popup-actions .btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.popup-actions .confirm {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.popup-actions .confirm:hover {
+    background: var(--color-blue-bluer);
+}
+
+.popup-actions .cancel {
+    background: var(--color-blue-dark);
+    color: var(--color-white);
+}
+
+.popup-actions .cancel:hover {
+    background: var(--color-blue-bluer);
+}
+
+/* ============================= IMAGE UPLOAD ============================= */
+.popup_item .img-upload-box:hover {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+}
+
+.popup_item .img-upload-box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* ============================= AVATAR PREVIEW ============================= */
+.popup_avata {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.preview-item {
+    margin: auto;
+}
+
+.preview-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-blue);
+}
+
+/* ============================= PASSWORD INFO ============================= */
+#password-info-button {
+    text-align: center;
+    flex-direction: column;
+}
+
+.password-error {
+    color: red;
+}
+
+.password-success {
+    color: green;
+}
+
+/* ============================= BUTTON GROUP ============================= */
+.btn-group {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.save-btn,
+.cancel-btn {
+    display: none;
+}
+
+.change-btn,
+.save-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.save-btn {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.save-btn:hover {
+    background: var(--color-blue-bluer);
+}
+
+.cancel-btn {
+    background: var(--color-grayish);
+    color: var(--color-dark);
+    margin-left: 6px;
+}
+
+.cancel-btn:hover {
+    background: #e0e0e0;
+}
+
+/* ============================= RESPONSIVE ============================= */
+@media (max-width: 1000px) {
+    #selection_2 .menu {
+        margin: 0 20px;
+    }
+
+    #selection_2 .infomation {
+        margin: 40px 20px;
+        width: auto;
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    #selection_2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #selection_2 .menu {
+        width: auto;
+        margin: 0 15px;
+        padding-bottom: 20px;
+    }
+
+    #selection_2 .menu .avata {
+        margin-top: 20px;
+    }
+
+    #selection_2 .menu .menu_item {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #selection_2 .menu .menu_item .item {
+        width: auto;
+        padding: 12px 15px;
+    }
+
+    #selection_2 .infomation {
+        width: calc(100% - 30px);
+        margin: 20px 15px;
+        padding: 15px;
+    }
+
+    #selection_2 .infomation .in4_row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #selection_2 .infomation .in4_label {
+        width: auto;
+        padding: 5px 0;
+        text-align: left;
+    }
+
+    .container .product-header,
+    .container .voucher-header {
+        padding: 12px 5px;
+        font-size: var(--font-size-extra-s);
+    }
+
+    .container .container-contents .product {
+        padding: 8px 5px;
+        font-size: var(--font-size-extra-s);
+    }
+
+    .container .container-contents .product img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .popup-content {
+        padding: 20px;
+    }
+}
