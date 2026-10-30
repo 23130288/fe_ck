@@ -1,0 +1,10 @@
+.main-page {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-page section h1 {
+    font-size: var(--font-size-xl);
+}

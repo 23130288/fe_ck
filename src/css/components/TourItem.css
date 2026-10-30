@@ -1,0 +1,71 @@
+.tour-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.tour-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tour-item .item-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+}
+
+.tour-item .item-info-box .item-name {
+    font-size: var(--font-size-m);
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
+.tour-item .item-info-box .place {
+    font-size: var(--font-size-extra-s);
+    color: gray;
+}
+
+.tour-item .item-info-box .review-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tour-item .item-info-box .review-box .review-points {
+    background: var(--color-blue-dark);
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: var(--font-size-extra-s);
+}
+
+.tour-item .review-box .review-numbers {
+    color: var(--color-dark);
+    font-size: var(--font-size-extra-s);
+}
+
+.tour-item .item-deal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 10px;
+}
+
+.tour-item .item-deal-box .duration {
+    font-size: var(--font-size-extra-s);
+    color: gray;
+}
+
+.tour-item .item-deal-box .money {
+    font-size: var(--font-size-m);
+    font-weight: bold;
+    color: var(--color-dark);
+}
