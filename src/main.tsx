@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import MainPage from './pages/MainPage.tsx'
 import SearchPage from './pages/SearchPage.tsx'
+import Ct_OrderPage from './pages/Ct_Order.tsx'
 import Login from './pages/login.tsx'
 import Register from './pages/register.tsx'
 
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "search",
-                element: <SearchPage />
+                element: <SearchPage/>
+            },
+            {
+                path: "ct_orderPage",
+                element: <Ct_OrderPage/>
             },
             {
                 path: 'login',
