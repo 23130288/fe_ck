@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import '../../css/shareStuffs/header.css'
 import logo from '../../assets/logo.png'
 
 export default function Header() {
+        const navigate = useNavigate()
     return (<>
         <header className="header">
             <div className="container">
@@ -17,8 +18,9 @@ export default function Header() {
                     </div>
                     <div className="right-buttons">
                         <Link to="/ct_orderPage">Tour</Link>
-                        <button id="registerButton">Đăng ký</button>
-                        <button id="loginButton">Đăng nhập</button>
+                        <button id="registerButton" onClick={() => navigate('/register')}>Đăng ký</button>
+                        <button id="loginButton"
+                        onClick={() => navigate('/login')}>Đăng nhập</button>
                     </div>
                 </div>
                 <div className="list-filters">

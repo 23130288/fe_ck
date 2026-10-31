@@ -1,0 +1,28 @@
+#login-container {
+    display: grid;
+    min-height: 500px;
+    align-self: center;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#login-box {
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+#login-box .title{
+    font-size: 30px;
+}
+#login-box input{
+    width: 80%;
+    min-height: 30px;
+}
