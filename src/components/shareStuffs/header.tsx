@@ -17,7 +17,7 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="right-buttons">
-                        <button id="registerButton">Đăng ký</button>
+                        <button id="registerButton" onClick={() => navigate('/register')}>Đăng ký</button>
                         <button id="loginButton"
                         onClick={() => navigate('/login')}>Đăng nhập</button>
                     </div>
