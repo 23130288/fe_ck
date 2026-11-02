@@ -1,11 +1,9 @@
 .header {
-    height: 120px;
     background: var(--color-blue-dark);
     width: 100%;
 }
 
 .header .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 12px;
 }
@@ -54,6 +52,8 @@
     padding: 5px 10px;
     border: none;
     font-size: 14px;
+    outline: none;
+    width: 100%;
 }
 
 .header .upper-header .search-bar button {
@@ -70,6 +70,7 @@
 }
 
 .header .list-filters {
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     gap: 16px;

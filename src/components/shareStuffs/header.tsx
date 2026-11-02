@@ -1,15 +1,17 @@
-import { Link, useNavigate } from 'react-router-dom'
+import {Link, useNavigate, useSearchParams} from 'react-router-dom'
 
 import '../../css/shareStuffs/header.css'
 import logo from '../../assets/logo.png'
 
 export default function Header() {
-        const navigate = useNavigate()
+    const navigate = useNavigate()
+    const [searchParams] = useSearchParams()
+    const type = searchParams.get("type")
     return (<>
         <header className="header">
             <div className="container">
                 <div className="upper-header">
-                    <Link to="/"><img src={logo} alt="Logo" /></Link>
+                    <Link to="/"><img src={logo} alt="Logo"/></Link>
                     <div className="search-bar">
                         <input type="text" placeholder="Tìm kiếm tour du lịch..."/>
                         <button type="button">
@@ -20,17 +22,20 @@ export default function Header() {
                         <Link to="/ct_orderPage">Tour</Link>
                         <button id="registerButton" onClick={() => navigate('/register')}>Đăng ký</button>
                         <button id="loginButton"
-                        onClick={() => navigate('/login')}>Đăng nhập</button>
+                                onClick={() => navigate('/login')}>Đăng nhập
+                        </button>
                     </div>
                 </div>
                 <div className="list-filters">
-                    <Link to="/search">Tour</Link>
-                    <Link to="/search">Vé máy bay</Link>
-                    <Link to="/search">Khách sạn</Link>
-                    <Link to="/search">Tour khách đoàn</Link>
-                    <Link to="/search">Tour trong ngày</Link>
+                    <Link to="/search?type=tour" className={type === "tour" ? "selected" : ""}>Tour</Link>
+                    <Link to="/search?type=flight" className={type === "flight" ? "selected" : ""}>Vé máy bay</Link>
+                    <Link to="/search?type=hotel" className={type === "hotel" ? "selected" : ""}>Khách sạn</Link>
+                    <Link to="/search?type=group-tour" className={type === "group-tour" ? "selected" : ""}>Tour khách
+                        đoàn</Link>
+                    <Link to="/search?type=a-day-tour" className={type === "a-day-tour" ? "selected" : ""}>Tour trong
+                        ngày</Link>
                 </div>
             </div>
         </header>
-        </>);
+    </>);
 }
