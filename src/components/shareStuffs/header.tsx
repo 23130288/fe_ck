@@ -19,7 +19,7 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="right-buttons">
-                        <Link to="/ct_orderPage">Tour</Link>
+                        <Link to="/user">User</Link>
                         <button id="registerButton" onClick={() => navigate('/register')}>Đăng ký</button>
                         <button id="loginButton"
                                 onClick={() => navigate('/login')}>Đăng nhập

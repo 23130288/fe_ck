@@ -1,7 +1,10 @@
 import {createBrowserRouter} from "react-router-dom";
 import MainPage from "../pages/MainPage.tsx";
 import SearchPage from "../pages/SearchPage.tsx";
+
 import Ct_OrderPage from "../pages/Ct_Order.tsx";
+import User from '../pages/User.tsx'
+
 import Login from "../pages/login.tsx";
 import Register from "../pages/register.tsx";
 import Layout from "./Layout.tsx";
@@ -23,7 +26,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "ct_orderPage",
-                element: <Ct_OrderPage/>
+                element: <Ct_OrderPage orders={null}/>
+            },
+            {
+                path: "user",
+                element: <User/>
             },
             {
                 path: 'login',
