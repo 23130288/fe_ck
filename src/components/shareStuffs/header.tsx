@@ -1,10 +1,10 @@
-import {Link, useNavigate, useSearchParams} from 'react-router-dom'
+import {Link, useSearchParams} from 'react-router-dom'
 
 import '../../css/shareStuffs/header.css'
 import logo from '../../assets/logo.png'
+import UserMenu from './UserMenu'
 
 export default function Header() {
-    const navigate = useNavigate()
     const [searchParams] = useSearchParams()
     const type = searchParams.get("type")
     return (<>
@@ -19,11 +19,12 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="right-buttons">
-                        <Link to="/user">User</Link>
+                        {/* <Link to="/user">User</Link>
                         <button id="registerButton" onClick={() => navigate('/register')}>Đăng ký</button>
                         <button id="loginButton"
                                 onClick={() => navigate('/login')}>Đăng nhập
-                        </button>
+                        </button> */}
+                        < UserMenu />
                     </div>
                 </div>
                 <div className="list-filters">

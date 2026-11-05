@@ -1,0 +1,22 @@
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 160px;
+}
+
+.dropdown-menu {
+    align-self: right;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.dropdown-content {
+    text-align: right;
+    padding: 2px 10px;
+    padding-right:10px
+}
