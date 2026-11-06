@@ -3,7 +3,7 @@ import MainPage from "../pages/MainPage.tsx";
 import SearchPage from "../pages/SearchPage.tsx";
 
 import Ct_OrderPage from "../pages/Ct_Order.tsx";
-import User from '../pages/User.tsx'
+import {User} from '../pages/User.tsx'
 
 import Login from "../pages/login.tsx";
 import Register from "../pages/register.tsx";

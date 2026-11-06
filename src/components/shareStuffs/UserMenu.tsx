@@ -13,7 +13,7 @@ export default function UserMenu() {
             </button>
             {isOpen && (
                 <div className="dropdown-menu">
-                    <Link to="/user" className='dropdown-content'>Thông tin cá nhân</Link>
+                    <Link to="/user?type=info" className='dropdown-content'>Thông tin cá nhân</Link>
                     <Link to="register" className='dropdown-content'>Đăng ký</Link>
                     <Link to="login" className='dropdown-content'>Đăng nhập</Link>
                 </div>
