@@ -3,7 +3,7 @@ import {useSearchParams} from "react-router-dom";
 import SearchBarTour from "../components/search/SearchBarTour.tsx";
 import SearchBarFlight from "../components/search/SearchBarFlight.tsx";
 import SearchBarHotel from "../components/search/SearchBarHotel.tsx";
-import SearchBarGroupTour from "../components/search/SearchBarGroupTour.tsx";
+import SearchBarAttractions from "../components/search/SearchBarAttractions.tsx";
 import SearchBarADay from "../components/search/SearchBarADay.tsx";
 
 export default function SearchPage() {
@@ -16,11 +16,11 @@ export default function SearchPage() {
                 {type === "tour" && <SearchBarTour/>}
                 {type === "flight" && <SearchBarFlight />}
                 {type === "hotel" && <SearchBarHotel />}
-                {type === "group-tour" && <SearchBarGroupTour />}
+                {type === "attraction" && <SearchBarAttractions />}
                 {type === "a-day-tour" && <SearchBarADay />}
             </div>
             <div className="list-products">
-
+                
             </div>
         </div>
     </>);
