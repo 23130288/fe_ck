@@ -1,40 +1,63 @@
+import {useState, useEffect, useRef} from "react";
+import flatpickr from "flatpickr";
+
 import "../../css/components/search/SearchBar.css"
+import "flatpickr/dist/flatpickr.min.css";
+
+import PassangerNumber from "./PassangerNumber.tsx";
 
 export default function SearchBarFlight() {
-    const date = new Date();
-    const today = [
-        date.getFullYear(),
-        String(date.getMonth() + 1).padStart(2, "0"),
-        String(date.getDate()).padStart(2, "0")
-    ].join("-");
+    const [tripType, setTripType] = useState("roundTrip");
+    const dateRef = useRef<HTMLInputElement>(null);
+    useEffect(() => {
+        if (!dateRef.current) return;
+        const fp = flatpickr(dateRef.current, {
+            mode: tripType === "roundTrip" ? "range" : "single",
+            dateFormat: "d/m/Y",
+            minDate: "today",
+            locale: {rangeSeparator: " – "}
+        });
+        return () => fp.destroy();
+    }, [tripType]);
 
     return (<>
         <div className="search-box">
-            <div className="">
-
+            <div className="mode-box">
+                <label>
+                    <input type="radio" name="option" value="roundTrip" checked={tripType === "roundTrip"}
+                           onChange={() => setTripType("roundTrip")}/>
+                    <span>Khứ hồi</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="oneWay" checked={tripType === "oneWay"}
+                           onChange={() => setTripType("oneWay")}/>
+                    <span>Một chiều</span>
+                </label>
             </div>
             <div className="search-filters-box">
                 <div className="search-field">
-                    <i className="fa-solid fa-map"></i>
+                    <i className="fa-solid fa-plane-departure"></i>
                     <div className="input-field">
-                        <label>Điểm đến</label>
-                        <input type="text" placeholder="Bạn sẽ đi đâu?"/>
+                        <label>Đi từ</label>
+                        <input type="text" placeholder="Điểm bắt đầu"/>
                     </div>
                 </div>
                 <div className="search-field">
-                    <i className="fa-solid fa-location-arrow"></i>
+                    <i className="fa-solid fa-plane-arrival"></i>
                     <div className="input-field">
-                        <label>Nơi bắt đầu</label>
-                        <input type="text" placeholder="Bạn sẽ bắt đầu ở đâu?"/>
+                        <label>Đi tới</label>
+                        <input type="text" placeholder="Điểm đến"/>
                     </div>
                 </div>
                 <div className="search-field">
                     <i className="fa-solid fa-calendar"></i>
                     <div className="input-field">
-                        <label>Thời gian</label>
-                        <input type="date" defaultValue={today}/>
+                        <label>{tripType === "roundTrip" ? "Thời gian chuyến đi" : "Thời gian"}</label>
+                        <input ref={dateRef} type="text" readOnly
+                               placeholder={tripType === "roundTrip" ? "Chọn ngày đi - ngày về" : "Chọn ngày đi"}/>
                     </div>
                 </div>
+                <PassangerNumber/>
                 <button className="search-button">Tìm kiếm</button>
             </div>
         </div>
