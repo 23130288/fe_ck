@@ -5,11 +5,14 @@ import { useState } from "react";
 
 export default function UserMenu() {
     const [isOpen, setIsOpen] = useState(false);
-
+    const user = JSON.parse(
+  sessionStorage.getItem("userInfo") || "null"
+);
     return (<>
         <div className="user-menu">
             <button className="dropdown" onClick={() => setIsOpen(!isOpen)}>
-                <div>guest</div>
+                <div>{user?user.username:'guest'}</div>
+                <img src = {user?.avatar} className="avatar"/>
             </button>
             {isOpen && (
                 <div className="dropdown-menu">

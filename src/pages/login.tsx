@@ -18,14 +18,11 @@ export default function Login() {
 
         try {
             const response = await login(email, password);
-
             sessionStorage.setItem("token", response.token);
-            sessionStorage.setItem("user", JSON.stringify(response.user));
-
+            sessionStorage.setItem("userInfo", JSON.stringify(response.UserInfo));
             window.location.href = "/";
-
         } catch (err) {
-            setError(err instanceof Error ? err.message : "Lỗi dăng nhập");
+            setError(err instanceof Error ? err.message : "Xảy ra lỗi trong quá trình đăng nhập");
         } finally {
             setLoading(false);
         }
