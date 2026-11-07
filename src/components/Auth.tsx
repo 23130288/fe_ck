@@ -2,29 +2,30 @@ import users from "../json/users.json";
 
 interface User {
   id: number;
-  username: string;
   email: string;
   password: string;
-  role: string;
 }
 export async function login(email: string, password: string) {
-  // Simulate API response delay
-  await new Promise(resolve => setTimeout(resolve, 500));
+  if (email == '') {
+    throw new Error("Vui lòng nhập email");
+  }
+  if (password == '') {
+    throw new Error("Vui lòng nhập mật khẩu");
+  }
 
   const user = (users as User[]).find(
     u => u.email === email && u.password === password
   );
 
   if (!user) {
-    throw new Error("Invalid email or password");
+    throw new Error("Tài khoản hoặc mật khẩu không đúng");
   }
 
-  // Don't return the password
-  const { password: _, ...userInfo } = user;
+  const { password: _, ...accountInfo } = user;
 
   return {
     success: true,
-    user: userInfo,
+    user: accountInfo,
     token: "fake-jwt-token"
   };
 }
