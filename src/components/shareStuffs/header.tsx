@@ -24,15 +24,15 @@ export default function Header() {
                         <button id="loginButton"
                                 onClick={() => navigate('/login')}>Đăng nhập
                         </button> */}
-                        < UserMenu />
+                        < UserMenu/>
                     </div>
                 </div>
                 <div className="list-filters">
                     <Link to="/search?type=tour" className={type === "tour" ? "selected" : ""}>Tour</Link>
                     <Link to="/search?type=flight" className={type === "flight" ? "selected" : ""}>Vé máy bay</Link>
                     <Link to="/search?type=hotel" className={type === "hotel" ? "selected" : ""}>Khách sạn</Link>
-                    <Link to="/search?type=group-tour" className={type === "group-tour" ? "selected" : ""}>Tour khách
-                        đoàn</Link>
+                    <Link to="/search?type=attraction" className={type === "attraction" ? "selected" : ""}>Khu vui
+                        chơi</Link>
                     <Link to="/search?type=a-day-tour" className={type === "a-day-tour" ? "selected" : ""}>Tour trong
                         ngày</Link>
                 </div>

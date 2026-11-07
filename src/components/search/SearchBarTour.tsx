@@ -1,12 +1,20 @@
+import { useEffect, useRef } from "react";
+import flatpickr from "flatpickr";
+
 import "../../css/components/search/SearchBar.css"
+import "flatpickr/dist/flatpickr.min.css";
 
 export default function SearchBarTour() {
-    const date = new Date();
-    const today = [
-        date.getFullYear(),
-        String(date.getMonth() + 1).padStart(2, "0"),
-        String(date.getDate()).padStart(2, "0")
-    ].join("-");
+    const dateRef = useRef<HTMLInputElement>(null);
+    useEffect(() => {
+        if (!dateRef.current) return;
+        const fp = flatpickr(dateRef.current, {
+            mode: "single",
+            dateFormat: "d/m/Y",
+            minDate: "today",
+        });
+        return () => fp.destroy();
+    }, []);
 
     return (<>
         <div className="search-box">
@@ -29,7 +37,7 @@ export default function SearchBarTour() {
                     <i className="fa-solid fa-calendar"></i>
                     <div className="input-field">
                         <label>Thời gian</label>
-                        <input type="date" defaultValue={today}/>
+                        <input ref={dateRef} type="text" placeholder="Chọn ngày đi" readOnly/>
                     </div>
                 </div>
                 <button className="search-button">Tìm kiếm</button>

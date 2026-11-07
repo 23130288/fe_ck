@@ -1,0 +1,82 @@
+.passenger-wrapper {
+    position: relative;
+    flex: 0.8;
+}
+
+.passenger-wrapper .search-field {
+    cursor: pointer;
+}
+
+.passenger-wrapper .search-field .input-field span {
+    padding: 5px 0 5px;
+    font-size: var(--font-size-s);
+    color: var(--color-dark);
+}
+
+.passenger-wrapper .passenger-popup {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 250px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+.passenger-wrapper .passenger-popup .passenger-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.passenger-wrapper .passenger-popup .passenger-item label {
+    margin: 0;
+    font-size: var(--font-size-s);
+    color: var(--color-dark);
+}
+
+.passenger-wrapper .passenger-popup .passenger-item p {
+    margin: 5px 0 10px;
+    font-size: var(--font-size-extra-s);
+    color: gray;
+}
+
+.passenger-wrapper .passenger-popup .passenger-item .counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.passenger-wrapper .passenger-popup .passenger-item .counter button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: white;
+    color: var(--color-dark);
+    font-size: var(--font-size-l);
+    cursor: pointer;
+}
+
+.passenger-wrapper .passenger-popup .passenger-item .counter button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.passenger-wrapper .passenger-popup .passenger-item .counter span {
+    color: var(--color-dark);
+    text-align: center;
+    font-size: var(--font-size-s);
+}
+
+.passenger-wrapper .passenger-popup .passenger-done {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: var(--color-blue);
+    color: white;
+    cursor: pointer;
+}
