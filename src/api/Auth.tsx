@@ -1,4 +1,5 @@
-import users from "../json/users.json";
+import users from "../json/usersAccount.json";
+import usersInfo from "../json/usersInfo.json";
 
 interface User {
   id: number;
@@ -21,11 +22,12 @@ export async function login(email: string, password: string) {
     throw new Error("Tài khoản hoặc mật khẩu không đúng");
   }
 
-  const { password: _, ...accountInfo } = user;
+  const info = usersInfo.find(u => u.id === user.id);
+
 
   return {
     success: true,
-    user: accountInfo,
+    user: info,
     token: "fake-jwt-token"
   };
 }

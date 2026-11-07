@@ -1,7 +1,7 @@
 import "../css/login.css"
 import { Link } from 'react-router-dom'
 import { useState } from "react";
-import { login } from "../components/Auth.tsx";
+import { login } from "../api/Auth.tsx";
 
 
 
@@ -19,15 +19,13 @@ export default function Login() {
         try {
             const response = await login(email, password);
 
-            // Save login information
-            localStorage.setItem("token", response.token);
-            localStorage.setItem("user", JSON.stringify(response.user));
+            sessionStorage.setItem("token", response.token);
+            sessionStorage.setItem("user", JSON.stringify(response.user));
 
-            // Navigate to another page
             window.location.href = "/";
 
         } catch (err) {
-            setError(err instanceof Error ? err.message : "Login failed");
+            setError(err instanceof Error ? err.message : "Lỗi dăng nhập");
         } finally {
             setLoading(false);
         }
