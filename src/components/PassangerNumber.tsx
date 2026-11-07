@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-import "../../css/components/search/PassangerNumber.css"
+import "../css/components/search/PassangerNumber.css"
 
 export default function PassangerNumber() {
     const [isOpen, setIsOpen] = useState(false);

@@ -6,6 +6,7 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    cursor: pointer;
 }
 
 .tour-item img {

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router";
+
 import "../css/components/TourItem.css";
 
 export default function TourItem(props: {
@@ -11,8 +13,9 @@ export default function TourItem(props: {
     duration: String,
     money: any
 }}) {
+    const navigate = useNavigate();
     return (<>
-        <div className="tour-item">
+        <div className="tour-item" onClick={() => navigate(`/product-detail/tour/${props.tour.id}`)}>
             <img src={props.tour.image} alt=""/>
             <div className="item-info-box">
                 <span className="item-name">{props.tour.name}</span>

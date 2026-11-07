@@ -1,24 +1,12 @@
-import {useState, useEffect, useRef} from "react";
-import flatpickr from "flatpickr";
+import {useState} from "react";
 
 import "../../css/components/search/SearchBar.css"
-import "flatpickr/dist/flatpickr.min.css";
 
-import PassangerNumber from "./PassangerNumber.tsx";
+import PassangerNumber from "../PassangerNumber.tsx";
+import DatePicker from "../DatePicker.tsx";
 
 export default function SearchBarFlight() {
     const [tripType, setTripType] = useState("roundTrip");
-    const dateRef = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-        if (!dateRef.current) return;
-        const fp = flatpickr(dateRef.current, {
-            mode: tripType === "roundTrip" ? "range" : "single",
-            dateFormat: "d/m/Y",
-            minDate: "today",
-            locale: {rangeSeparator: " – "}
-        });
-        return () => fp.destroy();
-    }, [tripType]);
 
     return (<>
         <div className="search-box">
@@ -49,14 +37,9 @@ export default function SearchBarFlight() {
                         <input type="text" placeholder="Điểm đến"/>
                     </div>
                 </div>
-                <div className="search-field">
-                    <i className="fa-solid fa-calendar"></i>
-                    <div className="input-field">
-                        <label>{tripType === "roundTrip" ? "Thời gian chuyến đi" : "Thời gian"}</label>
-                        <input ref={dateRef} type="text" readOnly
-                               placeholder={tripType === "roundTrip" ? "Chọn ngày đi - ngày về" : "Chọn ngày đi"}/>
-                    </div>
-                </div>
+                <DatePicker type={tripType === "roundTrip" ? "range" : "single"}
+                            label={tripType === "roundTrip" ? "Thời gian chuyến đi" : "Thời gian"}
+                            placeholder={tripType === "roundTrip" ? "Chọn ngày đi - ngày về" : "Chọn ngày đi"}/>
                 <PassangerNumber/>
                 <button className="search-button">Tìm kiếm</button>
             </div>
