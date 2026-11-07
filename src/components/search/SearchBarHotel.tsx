@@ -1,23 +1,9 @@
-import {useEffect, useRef} from "react";
-import flatpickr from "flatpickr";
-
 import "../../css/components/search/SearchBar.css"
-import "flatpickr/dist/flatpickr.min.css";
 
-import PassangerNumber from "./PassangerNumber.tsx";
+import PassangerNumber from "../PassangerNumber.tsx";
+import DatePicker from "../DatePicker.tsx";
 
 export default function SearchBarHotel() {
-    const dateRef = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-        if (!dateRef.current) return;
-        const fp = flatpickr(dateRef.current, {
-            mode: "range",
-            dateFormat: "d/m/Y",
-            minDate: "today",
-            locale: {rangeSeparator: " – "}
-        });
-        return () => fp.destroy();
-    }, []);
 
     return (<>
         <div className="search-box">
@@ -29,13 +15,7 @@ export default function SearchBarHotel() {
                         <input type="text" placeholder="Thành phố, ..."/>
                     </div>
                 </div>
-                <div className="search-field">
-                    <i className="fa-solid fa-calendar"></i>
-                    <div className="input-field">
-                        <label>Nhận - Trả phòng</label>
-                        <input ref={dateRef} type="text" readOnly placeholder="Chọn ngày nhận - trả phòng"/>
-                    </div>
-                </div>
+                <DatePicker type="range" label="Nhận - Trả phòng" placeholder="Chọn ngày nhận - trả phòng"/>
                 <PassangerNumber/>
                 <button className="search-button">Tìm kiếm</button>
             </div>
