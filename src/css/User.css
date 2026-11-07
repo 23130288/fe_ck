@@ -147,6 +147,14 @@ body {
     color: black;
 }
 
+#selection_2 .menu .menu_item .selected {
+    padding: 15px 50px;
+    width: 150px;
+    text-decoration: none;
+    background: #EDB310;
+    color: white;
+}
+
 #selection_2 .menu .menu_item .item:hover,
 #selection_2 .menu .menu_item .item:focus {
     background: #EDB310;
@@ -236,6 +244,7 @@ body {
     text-decoration: none;
     border: lightgrey solid 1px;
 }
+
 .notification_item.unread {
     background: #e0e5ee;
 }
@@ -529,26 +538,32 @@ body {
     text-align: center;
     flex-direction: column;
 }
+
 .password-error {
     color: red;
 }
+
 .password-success {
     color: green;
 }
+
 .btn-group {
     margin-top: 12px;
     display: flex;
     justify-content: center;
 }
+
 .save-btn, .cancel-btn {
     display: none;
 }
+
 .change-btn, .save-btn, .cancel-btn {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
+
 .save-btn {
     background: #EDB310;
 }

@@ -19,10 +19,17 @@
     border-radius: 20px;
     border: 1px solid gray;
 }
-#login-box .title{
+
+#login-box .title {
     font-size: 30px;
 }
-#login-box input{
+
+#login-box input {
     width: 80%;
     min-height: 30px;
+}
+
+p,
+div {
+    color: var(--color-blue);
 }

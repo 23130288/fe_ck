@@ -1,17 +1,44 @@
 import "../css/login.css"
-import {Link, useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { useState } from "react";
+import { login } from "../api/Auth.tsx";
+
 
 
 export default function Login() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const handleLogin = async (e: React.SubmitEvent) => {
+        e.preventDefault();
+        setError("");
+        setLoading(true);
+
+        try {
+            const response = await login(email, password);
+            sessionStorage.setItem("token", response.token);
+            sessionStorage.setItem("userInfo", JSON.stringify(response.UserInfo));
+            window.location.href = "/";
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Xảy ra lỗi trong quá trình đăng nhập");
+        } finally {
+            setLoading(false);
+        }
+    };
     return (<>
         <div id="login-container">
-            <div id="login-box">
+            <form onSubmit={handleLogin} id="login-box">
                 <div className="title">Đăng nhập</div>
-                <input type="text" placeholder="Tài khoản Email"/>
-                <input type="password" placeholder="Mật khẩu"/>
-                <button>Đăng nhập</button>
+                <input type="email" placeholder="Tài khoản Email" value={email}
+                    onChange={e => setEmail(e.target.value)} />
+                <input type="password" placeholder="Mật khẩu" value={password}
+                    onChange={e => setPassword(e.target.value)} />
+                <button type="submit" disabled={loading}>{loading ? "Đang đăng nhập..." : "Đăng nhập"}</button>
                 <Link to="/register">Chưa có tài khoản? Đăng kí ngay.</Link>
-            </div>
+                {error && <p>{error}</p>}
+            </form>
         </div>
     </>)
 }
