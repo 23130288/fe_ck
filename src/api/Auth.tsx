@@ -6,7 +6,7 @@ interface UserAccount {
   email: string;
   password: string;
 }
-export async function login(email: string, password: string) {
+export function login(email: string, password: string) {
   if (email == '') {
     throw new Error("Vui lòng nhập email");
   }

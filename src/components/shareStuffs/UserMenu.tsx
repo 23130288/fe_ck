@@ -9,27 +9,28 @@ const logout = () => {
     window.location.href = "/";
 }
 export default function UserMenu() {
-    const [isOpen, setIsOpen] = useState(false);
     const user = JSON.parse(sessionStorage.getItem("userInfo") || "null");
 
     return (<>
         <div className="user-menu">
-            <button className="dropdown" onClick={() => setIsOpen(!isOpen)}>
+            <button id="dropdown-button" popoverTarget="dropdown-menu" popoverTargetAction="toggle"
+>
                 <div>{(user != null) ? user.username : 'guest'}</div>
                 <img src={(user != null) ? user.avatar : placeholder} className="avatar" />
             </button>
-            {isOpen && (
-                <div className="dropdown-menu">
-                    <Link to="/user?type=info" className='dropdown-content'>Thông tin cá nhân</Link>
-                    {user == null && <>
-                        <Link to="login" className='dropdown-content'>Đăng nhập</Link>
-                        <Link to="register" className='dropdown-content'>Đăng kí</Link>
-                    </>}
-                    {user != null &&
-                        <Link to="" className='dropdown-content' onClick={logout}>Đăng xuất</Link>
-                    }
-                </div>
-            )}
+      
+            <div id="dropdown-menu" popover="auto">
+                <Link to="/user?type=info" className='dropdown-content'>Thông tin cá nhân</Link>
+                {user == null && <>
+                    <Link to="login" className='dropdown-content'>Đăng nhập</Link>
+                    <Link to="register" className='dropdown-content'>Đăng kí</Link>
+                </>}
+                {user != null &&
+                    <Link to="" className='dropdown-content' onClick={logout}>Đăng xuất</Link>
+                }
+            </div>
+            
+
         </div>
     </>);
 }
