@@ -1,5 +1,3 @@
-import "../../css/User.css"
-
 export default function Support() {
     return (<>
             {/* =============================== SUPPORT =============================== */}

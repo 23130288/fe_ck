@@ -1,5 +1,3 @@
-import "../../css/User.css"
-
 export default function Logout() {
     return (<>
             {/* =============================== LOG OUT =============================== */}
