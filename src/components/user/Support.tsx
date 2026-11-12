@@ -1,64 +1,75 @@
-import "../../css/User.css"
+import {Link, useSearchParams} from "react-router-dom";
 
 export default function Support() {
-    return (<>
-            {/* =============================== SUPPORT =============================== */}
-            <div className="information-container" id="support">
-                <div className="container" id="Order">
-                    <h2>Hỗ trợ</h2>
+    const [searchParams] = useSearchParams();
+    const type = searchParams.get("subtype") || "all_support";
 
-                    <div className="tab-nav-menu">
-                        <a href="#all-support" className="tab-menu active">Tất cả</a>
-                        <a href="#processing-support" className="tab-menu">Đang chờ xử lý</a>
-                        <a href="#done-support" className="tab-menu">Xử lý xong</a>
-                    </div>
+    // Dữ liệu mẫu
+    const supports = [
+        {
+            id: 1,
+            title: "Yêu cầu hoàn tiền",
+            order: "Đơn hàng #1003",
+            date: "02/11/2026",
+            status: "processing",
+            statusText: "Đang xử lý"
+        },
+        {
+            id: 2,
+            title: "Yêu cầu đổi thông tin",
+            order: "Đơn hàng #1004",
+            date: "03/11/2026",
+            status: "done",
+            statusText: "Đã xử lý"
+        },
+        {
+            id: 3,
+            title: "Yêu cầu hoàn tiền",
+            order: "Đơn hàng #1005",
+            date: "04/11/2026",
+            status: "processing",
+            statusText: "Đang xử lý"
+        }
+    ];
 
-                    <div className="container-contents">
-                        <div className="product-content all active" id="all-support">
-                            <div className="products">
-                                <a href="show-support?spid=1" className="notification_item">
-                                    <div className="info">
-                                        <h4>Yêu cầu hoàn tiền</h4>
-                                        <p>Đơn hàng #1003</p>
-                                        <span>02/11/2026 - Đang xử lý</span>
-                                    </div>
-                                </a>
+    const filteredSupports = supports.filter(item => {
+        if (type === "processing_support") {
+            return item.status === "processing";
+        }
 
-                                <a href="show-support?spid=2" className="notification_item">
-                                    <div className="info">
-                                        <h4>Thắc mắc về sản phẩm</h4>
-                                        <p>Thông tin sản phẩm</p>
-                                        <span>01/11/2026 - Đã xử lý</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+        if (type === "done_support") {
+            return item.status === "done";
+        }
 
-                        <div className="product-content processing" id="processing-support">
-                            <div className="products">
-                                <a href="show-support?spid=1" className="notification_item">
-                                    <div className="info">
-                                        <h4>Yêu cầu hoàn tiền</h4>
-                                        <p>Đơn hàng #1003</p>
-                                        <span>02/11/2026 - Đang xử lý</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+        return true;
+    });
 
-                        <div className="product-content done" id="done-support">
-                            <div className="products">
-                                <a href="show-support?spid=2" className="notification_item">
-                                    <div className="info">
-                                        <h4>Thắc mắc về sản phẩm</h4>
-                                        <p>Thông tin sản phẩm</p>
-                                        <span>01/11/2026 - Đã xử lý</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+    return (
+        <>
+            <div className="sub_header">
+                <h2>Hỗ trợ</h2>
+                <div className="sub_menu">
+                    <div className="sub_menu_item">
+                        <Link to="/user?type=support&subtype=all_support"
+                              className={type === "all_support" ? "selected" : "item"}>Tất cả</Link>
+                        <Link to="/user?type=support&subtype=processing_support"
+                              className={type === "processing_support" ? "selected" : "item"}>Đang chờ xử lý</Link>
+                        <Link to="/user?type=support&subtype=done_support"
+                              className={type === "done_support" ? "selected" : "item"}>Đã xử lý</Link>
                     </div>
                 </div>
+            </div>
+
+            <div className="info_list">
+                {filteredSupports.map(item => (
+                    <div className="info_row" data-nid={item.id} key={item.id}>
+                        <div className={`info ${item.status === "processing" ? "unread" : ""}`}>
+                            <h3>{item.title}</h3>
+                            <div className="info_value">{item.order}</div>
+                            <span>{item.date} - {item.statusText}</span>
+                        </div>
+                    </div>
+                ))}
             </div>
         </>
     );

@@ -1,18 +1,22 @@
-.dropdown {
+#dropdown-button {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 160px;
+    min-width: 160px;
 }
 
-.dropdown-menu {
-    align-self: right;
+#dropdown-menu {
+    z-index: -1000;
     position: absolute;
+    inset: unset;
+    position-area: bottom span-right;
     background-color: #fff;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     min-width: 160px;
+    border: none;
+    padding: 0;
 }
 
 .dropdown-content {
