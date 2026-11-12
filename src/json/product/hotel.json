@@ -1,0 +1,501 @@
+[
+  {
+    "id": 1,
+    "product_type": "hotel",
+    "name": "Ana Mandara Villas Dalat Resort & Spa",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+    "images": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+    ],
+    "place": "Đường Lê Lai, Phường 5, Đà Lạt",
+    "city": "Đà Lạt",
+    "country": "Việt Nam",
+    "hotel_type": "resort",
+    "star_rating": 5,
+    "price": 2800000,
+    "reviewPoints": 9.3,
+    "reviewNumbers": 320,
+    "description": "Khu nghỉ dưỡng mang phong cách kiến trúc Pháp cổ điển, nằm giữa không gian xanh và yên tĩnh của Đà Lạt.",
+    "amenities": [
+      "Hồ bơi",
+      "Spa",
+      "Nhà hàng",
+      "Wi-Fi miễn phí",
+      "Bãi đỗ xe",
+      "Dịch vụ phòng"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Villa Room",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 2800000,
+        "capacity": 2,
+        "quantity": 8,
+        "description": "Phòng nghỉ phong cách cổ điển dành cho 2 khách."
+      },
+      {
+        "id": 2,
+        "name": "Family Villa",
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+        "price": 4200000,
+        "capacity": 4,
+        "quantity": 4,
+        "description": "Biệt thự rộng rãi phù hợp cho gia đình."
+      }
+    ],
+    "check_in": "14:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "product_type": "hotel",
+    "name": "Vinpearl Resort & Spa Phú Quốc",
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+    "images": [
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd"
+    ],
+    "place": "Bãi Dài, Gành Dầu, Phú Quốc",
+    "city": "Phú Quốc",
+    "country": "Việt Nam",
+    "hotel_type": "resort",
+    "star_rating": 5,
+    "price": 3500000,
+    "reviewPoints": 9.4,
+    "reviewNumbers": 510,
+    "description": "Khu nghỉ dưỡng cao cấp bên bờ biển với nhiều tiện ích giải trí, nhà hàng và hồ bơi.",
+    "amenities": [
+      "Bãi biển riêng",
+      "Hồ bơi",
+      "Spa",
+      "Nhà hàng",
+      "Phòng gym",
+      "Wi-Fi miễn phí"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Deluxe Ocean View",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 3500000,
+        "capacity": 2,
+        "quantity": 15,
+        "description": "Phòng hướng biển dành cho 2 khách."
+      },
+      {
+        "id": 2,
+        "name": "Family Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 5200000,
+        "capacity": 4,
+        "quantity": 8,
+        "description": "Phòng suite rộng rãi dành cho gia đình."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "product_type": "hotel",
+    "name": "InterContinental Danang Sun Peninsula Resort",
+    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd",
+    "images": [
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd",
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd"
+    ],
+    "place": "Bãi Bắc, Bán đảo Sơn Trà",
+    "city": "Đà Nẵng",
+    "country": "Việt Nam",
+    "hotel_type": "resort",
+    "star_rating": 5,
+    "price": 8500000,
+    "reviewPoints": 9.7,
+    "reviewNumbers": 420,
+    "description": "Khu nghỉ dưỡng sang trọng trên bán đảo Sơn Trà với tầm nhìn hướng biển và kiến trúc độc đáo.",
+    "amenities": [
+      "Bãi biển riêng",
+      "Hồ bơi",
+      "Spa",
+      "Nhà hàng",
+      "Phòng gym",
+      "Dịch vụ đưa đón"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Classic Ocean View",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 8500000,
+        "capacity": 2,
+        "quantity": 6,
+        "description": "Phòng cao cấp hướng biển."
+      },
+      {
+        "id": 2,
+        "name": "Penthouse Suite",
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+        "price": 15000000,
+        "capacity": 4,
+        "quantity": 3,
+        "description": "Suite cao cấp với không gian rộng."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "product_type": "hotel",
+    "name": "Hanoi La Siesta Hotel & Spa",
+    "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
+    "images": [
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427"
+    ],
+    "place": "94 Mã Mây, Hoàn Kiếm",
+    "city": "Hà Nội",
+    "country": "Việt Nam",
+    "hotel_type": "hotel",
+    "star_rating": 4,
+    "price": 1800000,
+    "reviewPoints": 9.2,
+    "reviewNumbers": 275,
+    "description": "Khách sạn boutique nằm gần khu phố cổ Hà Nội, thuận tiện cho việc tham quan và khám phá ẩm thực.",
+    "amenities": [
+      "Wi-Fi miễn phí",
+      "Nhà hàng",
+      "Spa",
+      "Lễ tân 24 giờ",
+      "Dịch vụ phòng"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Superior Room",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 1800000,
+        "capacity": 2,
+        "quantity": 10,
+        "description": "Phòng tiêu chuẩn dành cho 2 khách."
+      },
+      {
+        "id": 2,
+        "name": "Junior Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 2600000,
+        "capacity": 2,
+        "quantity": 5,
+        "description": "Phòng suite có khu vực tiếp khách."
+      }
+    ],
+    "check_in": "14:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "product_type": "hotel",
+    "name": "Sheraton Nha Trang Hotel & Spa",
+    "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+    "images": [
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd"
+    ],
+    "place": "26-28 Trần Phú",
+    "city": "Nha Trang",
+    "country": "Việt Nam",
+    "hotel_type": "hotel",
+    "star_rating": 5,
+    "price": 3200000,
+    "reviewPoints": 9.1,
+    "reviewNumbers": 360,
+    "description": "Khách sạn cao cấp nằm trên đường Trần Phú với tầm nhìn hướng ra vịnh Nha Trang.",
+    "amenities": [
+      "Hồ bơi",
+      "Spa",
+      "Nhà hàng",
+      "Phòng gym",
+      "Wi-Fi miễn phí",
+      "Bãi đỗ xe"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Deluxe Room",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 3200000,
+        "capacity": 2,
+        "quantity": 12,
+        "description": "Phòng nghỉ hướng thành phố hoặc biển."
+      },
+      {
+        "id": 2,
+        "name": "Executive Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 4800000,
+        "capacity": 3,
+        "quantity": 5,
+        "description": "Phòng suite cao cấp dành cho gia đình nhỏ."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "product_type": "hotel",
+    "name": "Marina Bay Sands",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739",
+    "images": [
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+    ],
+    "place": "10 Bayfront Avenue",
+    "city": "Singapore",
+    "country": "Singapore",
+    "hotel_type": "hotel",
+    "star_rating": 5,
+    "price": 12500000,
+    "reviewPoints": 9.5,
+    "reviewNumbers": 680,
+    "description": "Khách sạn biểu tượng tại Singapore với kiến trúc nổi bật, khu mua sắm và hồ bơi trên cao.",
+    "amenities": [
+      "Hồ bơi vô cực",
+      "Nhà hàng",
+      "Trung tâm mua sắm",
+      "Spa",
+      "Phòng gym",
+      "Wi-Fi miễn phí"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Deluxe Room",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 12500000,
+        "capacity": 2,
+        "quantity": 10,
+        "description": "Phòng nghỉ hiện đại dành cho 2 khách."
+      },
+      {
+        "id": 2,
+        "name": "Premier Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 22000000,
+        "capacity": 3,
+        "quantity": 4,
+        "description": "Suite cao cấp với tầm nhìn thành phố."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "product_type": "hotel",
+    "name": "The Tokyo Station Hotel",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+    "images": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    ],
+    "place": "1-9-1 Marunouchi, Chiyoda",
+    "city": "Tokyo",
+    "country": "Japan",
+    "hotel_type": "hotel",
+    "star_rating": 5,
+    "price": 9500000,
+    "reviewPoints": 9.4,
+    "reviewNumbers": 410,
+    "description": "Khách sạn cao cấp nằm ngay ga Tokyo, thuận tiện di chuyển và khám phá thành phố.",
+    "amenities": [
+      "Nhà hàng",
+      "Spa",
+      "Phòng gym",
+      "Wi-Fi miễn phí",
+      "Dịch vụ phòng",
+      "Lễ tân 24 giờ"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Classic Room",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 9500000,
+        "capacity": 2,
+        "quantity": 8,
+        "description": "Phòng nghỉ phong cách cổ điển."
+      },
+      {
+        "id": 2,
+        "name": "Palace View Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 16000000,
+        "capacity": 3,
+        "quantity": 3,
+        "description": "Suite có tầm nhìn hướng khu vực hoàng cung."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "product_type": "hotel",
+    "name": "The Ritz-Carlton, Bali",
+    "image": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd",
+    "images": [
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd"
+    ],
+    "place": "Jalan Raya Nusa Dua Selatan",
+    "city": "Bali",
+    "country": "Indonesia",
+    "hotel_type": "resort",
+    "star_rating": 5,
+    "price": 11000000,
+    "reviewPoints": 9.6,
+    "reviewNumbers": 520,
+    "description": "Khu nghỉ dưỡng ven biển tại Bali với không gian nhiệt đới, hồ bơi và dịch vụ cao cấp.",
+    "amenities": [
+      "Bãi biển riêng",
+      "Hồ bơi",
+      "Spa",
+      "Nhà hàng",
+      "Phòng gym",
+      "Câu lạc bộ trẻ em"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Sawangan Junior Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 11000000,
+        "capacity": 2,
+        "quantity": 10,
+        "description": "Suite hướng vườn hoặc biển."
+      },
+      {
+        "id": 2,
+        "name": "Ocean View Villa",
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+        "price": 18500000,
+        "capacity": 4,
+        "quantity": 4,
+        "description": "Biệt thự riêng hướng biển."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "product_type": "hotel",
+    "name": "Hilton Paris Opera",
+    "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+    "images": [
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a"
+    ],
+    "place": "108 Rue Saint-Lazare",
+    "city": "Paris",
+    "country": "France",
+    "hotel_type": "hotel",
+    "star_rating": 4,
+    "price": 10500000,
+    "reviewPoints": 9.0,
+    "reviewNumbers": 290,
+    "description": "Khách sạn phong cách cổ điển tại trung tâm Paris, thuận tiện tham quan và mua sắm.",
+    "amenities": [
+      "Nhà hàng",
+      "Bar",
+      "Phòng gym",
+      "Wi-Fi miễn phí",
+      "Dịch vụ phòng",
+      "Lễ tân 24 giờ"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Classic Room",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 10500000,
+        "capacity": 2,
+        "quantity": 8,
+        "description": "Phòng nghỉ cổ điển dành cho 2 khách."
+      },
+      {
+        "id": 2,
+        "name": "Deluxe Room",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 13500000,
+        "capacity": 2,
+        "quantity": 5,
+        "description": "Phòng cao cấp với không gian rộng hơn."
+      }
+    ],
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "product_type": "hotel",
+    "name": "Swissotel The Bosphorus Istanbul",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+    "images": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+    ],
+    "place": "Vişnezade, Acısu Sokak No.19",
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "hotel_type": "hotel",
+    "star_rating": 5,
+    "price": 7800000,
+    "reviewPoints": 9.3,
+    "reviewNumbers": 350,
+    "description": "Khách sạn cao cấp với tầm nhìn ra eo biển Bosphorus và khu vườn xanh rộng lớn.",
+    "amenities": [
+      "Hồ bơi",
+      "Spa",
+      "Nhà hàng",
+      "Phòng gym",
+      "Wi-Fi miễn phí",
+      "Sân tennis"
+    ],
+    "room_types": [
+      {
+        "id": 1,
+        "name": "Swiss Advantage Room",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "price": 7800000,
+        "capacity": 2,
+        "quantity": 10,
+        "description": "Phòng hiện đại dành cho 2 khách."
+      },
+      {
+        "id": 2,
+        "name": "Bosphorus Suite",
+        "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        "price": 12500000,
+        "capacity": 3,
+        "quantity": 4,
+        "description": "Suite hướng eo biển Bosphorus."
+      }
+    ],
+    "check_in": "14:00",
+    "check_out": "12:00",
+    "status": "active"
+  }
+]

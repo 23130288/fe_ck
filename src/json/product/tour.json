@@ -1,0 +1,668 @@
+[
+  {
+    "id": 1,
+    "product_type": "tour",
+    "name": "Tour Đà Lạt - Thành phố ngàn hoa",
+    "image": "https://images.unsplash.com/photo-1741524604351-3fdc230d324a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1675348351049-3af664982b45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+      "https://images.unsplash.com/photo-1556161650-63016edd63a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+    ],
+    "place": "Đà Lạt, Lâm Đồng",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "domestic",
+    "duration": "3 ngày 2 đêm",
+    "departure_date": [
+      "2026-11-20",
+      "2026-11-25",
+      "2026-12-01"
+    ],
+    "price": 2500000,
+    "reviewPoints": 9.2,
+    "reviewNumbers": 120,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình."
+      }
+    ],
+    "description": "Khám phá thành phố Đà Lạt với khí hậu mát mẻ, cảnh quan thơ mộng, vườn hoa và những địa điểm nổi tiếng.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Khởi hành và tham quan Đà Lạt",
+        "activities": [
+          "Khởi hành từ TP. Hồ Chí Minh",
+          "Tham quan quảng trường Lâm Viên",
+          "Tham quan hồ Xuân Hương"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá thiên nhiên",
+        "activities": [
+          "Tham quan đồi chè",
+          "Tham quan thác Datanla",
+          "Khám phá chợ đêm Đà Lạt"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Mua sắm và trở về",
+        "activities": [
+          "Tham quan vườn hoa",
+          "Mua đặc sản",
+          "Trở về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Xe du lịch",
+      "Khách sạn 3 sao",
+      "Ăn uống theo chương trình",
+      "Vé tham quan"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Đồ uống ngoài chương trình"
+    ],
+    "max_guests": 30,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "product_type": "tour",
+    "name": "Tour Phú Quốc - Thiên đường biển đảo",
+    "image": "https://plus.unsplash.com/premium_photo-1719955781545-c60219441bfc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "images": [
+      "https://images.unsplash.com/photo-1526139334526-f591a54b477c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+      "https://images.unsplash.com/photo-1732243395944-cb3ff9311091?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+    ],
+    "place": "Phú Quốc, Kiên Giang",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "domestic",
+    "duration": "4 ngày 3 đêm",
+    "departure_date": [
+      "2026-11-22",
+      "2026-11-28",
+      "2026-12-05"
+    ],
+    "price": 4200000,
+    "reviewPoints": 9.5,
+    "reviewNumbers": 245,
+    "reviews": [],
+    "description": "Hành trình khám phá đảo ngọc Phú Quốc với biển xanh, bãi cát trắng và các hoạt động vui chơi trên biển.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Đến Phú Quốc",
+        "activities": [
+          "Di chuyển đến Phú Quốc",
+          "Nhận phòng khách sạn",
+          "Tham quan chợ đêm"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá các đảo",
+        "activities": [
+          "Tham quan các đảo",
+          "Trải nghiệm biển",
+          "Ngắm hoàng hôn"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Vui chơi và khám phá",
+        "activities": [
+          "Tham quan các điểm du lịch",
+          "Vui chơi giải trí"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Trở về",
+        "activities": [
+          "Mua đặc sản",
+          "Trở về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Vé di chuyển theo chương trình",
+      "Khách sạn",
+      "Ăn sáng",
+      "Vé tham quan"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Các dịch vụ ngoài chương trình"
+    ],
+    "max_guests": 25,
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "product_type": "tour",
+    "name": "Tour Đà Nẵng - Hội An - Bà Nà Hills",
+    "image": "https://images.unsplash.com/photo-1555921015-5532091f6026",
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1690960644375-6f2399a08ebc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+      "https://images.unsplash.com/photo-1445272885371-027f17af0130?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+    ],
+    "place": "Đà Nẵng, Quảng Nam",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "domestic",
+    "duration": "4 ngày 3 đêm",
+    "departure_date": [
+      "2026-11-21",
+      "2026-11-27",
+      "2026-12-03"
+    ],
+    "price": 3800000,
+    "reviewPoints": 9.0,
+    "reviewNumbers": 186,
+    "reviews": [],
+    "description": "Khám phá thành phố Đà Nẵng, phố cổ Hội An và khu du lịch Bà Nà Hills nổi tiếng.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Khám phá Đà Nẵng",
+        "activities": [
+          "Đến Đà Nẵng",
+          "Tham quan bán đảo Sơn Trà",
+          "Tham quan biển Mỹ Khê"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Bà Nà Hills",
+        "activities": [
+          "Tham quan Bà Nà Hills",
+          "Trải nghiệm cáp treo",
+          "Tham quan Cầu Vàng"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Phố cổ Hội An",
+        "activities": [
+          "Tham quan phố cổ",
+          "Khám phá ẩm thực Hội An"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Trở về",
+        "activities": [
+          "Mua sắm đặc sản",
+          "Trở về"
+        ]
+      }
+    ],
+    "included": [
+      "Khách sạn",
+      "Xe du lịch",
+      "Ăn uống",
+      "Vé tham quan theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Một số dịch vụ vui chơi tự chọn"
+    ],
+    "max_guests": 30,
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "product_type": "tour",
+    "name": "Tour Vịnh Hạ Long khám phá kỳ quan",
+    "image": "https://images.unsplash.com/photo-1528127269322-539801943592",
+    "images": [
+      "https://images.unsplash.com/photo-1528127269322-539801943592",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+    ],
+    "place": "Quảng Ninh",
+    "departure_place": "Hà Nội",
+    "tour_type": "domestic",
+    "duration": "2 ngày 1 đêm",
+    "departure_date": [
+      "2026-11-19",
+      "2026-11-26",
+      "2026-12-02"
+    ],
+    "price": 2900000,
+    "reviewPoints": 9.4,
+    "reviewNumbers": 312,
+    "reviews": [],
+    "description": "Du ngoạn vịnh Hạ Long, chiêm ngưỡng cảnh quan núi đá vôi và khám phá các hang động nổi tiếng.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Du ngoạn vịnh",
+        "activities": [
+          "Khởi hành từ Hà Nội",
+          "Lên tàu tham quan vịnh",
+          "Nghỉ đêm trên tàu"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá hang động",
+        "activities": [
+          "Tham quan hang động",
+          "Trở về Hà Nội"
+        ]
+      }
+    ],
+    "included": [
+      "Xe đưa đón",
+      "Vé tham quan",
+      "Tàu du lịch",
+      "Các bữa ăn theo chương trình"
+    ],
+    "excluded": [
+      "Đồ uống",
+      "Chi phí cá nhân"
+    ],
+    "max_guests": 25,
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "product_type": "tour",
+    "name": "Tour Sapa - Chinh phục Fansipan",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "images": [
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba"
+    ],
+    "place": "Sapa, Lào Cai",
+    "departure_place": "Hà Nội",
+    "tour_type": "domestic",
+    "duration": "3 ngày 2 đêm",
+    "departure_date": [
+      "2026-11-23",
+      "2026-11-29",
+      "2026-12-06"
+    ],
+    "price": 3100000,
+    "reviewPoints": 8.9,
+    "reviewNumbers": 156,
+    "reviews": [],
+    "description": "Trải nghiệm không khí vùng núi Tây Bắc, khám phá bản làng và chinh phục đỉnh Fansipan.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Đến Sapa",
+        "activities": [
+          "Di chuyển từ Hà Nội",
+          "Tham quan thị trấn Sapa"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Chinh phục Fansipan",
+        "activities": [
+          "Trải nghiệm cáp treo Fansipan",
+          "Tham quan bản làng"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Khám phá Sapa",
+        "activities": [
+          "Tham quan chợ địa phương",
+          "Trở về Hà Nội"
+        ]
+      }
+    ],
+    "included": [
+      "Xe di chuyển",
+      "Khách sạn",
+      "Ăn sáng",
+      "Vé tham quan theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Một số vé vui chơi tự chọn"
+    ],
+    "max_guests": 25,
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "product_type": "tour",
+    "name": "Tour Nha Trang - Khám phá đảo",
+    "image": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86",
+    "images": [
+      "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+    ],
+    "place": "Nha Trang, Khánh Hòa",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "domestic",
+    "duration": "3 ngày 2 đêm",
+    "departure_date": [
+      "2026-11-24",
+      "2026-11-30",
+      "2026-12-07"
+    ],
+    "price": 3000000,
+    "reviewPoints": 9.1,
+    "reviewNumbers": 198,
+    "reviews": [],
+    "description": "Khám phá thành phố biển Nha Trang, trải nghiệm các hoạt động tham quan đảo và thưởng thức hải sản.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Tham quan thành phố",
+        "activities": [
+          "Đến Nha Trang",
+          "Tham quan thành phố",
+          "Nghỉ tại khách sạn"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá đảo",
+        "activities": [
+          "Tham quan đảo",
+          "Trải nghiệm biển",
+          "Thưởng thức hải sản"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Trở về",
+        "activities": [
+          "Mua đặc sản",
+          "Trở về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Xe di chuyển",
+      "Khách sạn",
+      "Ăn sáng",
+      "Vé tham quan"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Dịch vụ ngoài chương trình"
+    ],
+    "max_guests": 30,
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "product_type": "tour",
+    "name": "Tour Quy Nhơn - Biển xanh cát trắng",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "images": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+      "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86"
+    ],
+    "place": "Quy Nhơn, Bình Định",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "domestic",
+    "duration": "3 ngày 2 đêm",
+    "departure_date": [
+      "2026-11-22",
+      "2026-11-28",
+      "2026-12-04"
+    ],
+    "price": 2700000,
+    "reviewPoints": 8.8,
+    "reviewNumbers": 94,
+    "reviews": [],
+    "description": "Hành trình khám phá những bãi biển đẹp, làng chài và các địa điểm nổi tiếng tại Quy Nhơn.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Đến Quy Nhơn",
+        "activities": [
+          "Đến Quy Nhơn",
+          "Tham quan thành phố",
+          "Nghỉ ngơi"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá biển",
+        "activities": [
+          "Tham quan Kỳ Co",
+          "Khám phá Eo Gió"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Trở về",
+        "activities": [
+          "Thưởng thức đặc sản",
+          "Trở về"
+        ]
+      }
+    ],
+    "included": [
+      "Khách sạn",
+      "Xe du lịch",
+      "Ăn uống",
+      "Vé tham quan"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Đồ uống"
+    ],
+    "max_guests": 25,
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "product_type": "tour",
+    "name": "Tour Hà Giang - Khám phá cao nguyên đá",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+    "images": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+    ],
+    "place": "Hà Giang",
+    "departure_place": "Hà Nội",
+    "tour_type": "domestic",
+    "duration": "4 ngày 3 đêm",
+    "departure_date": [
+      "2026-11-21",
+      "2026-11-27",
+      "2026-12-05"
+    ],
+    "price": 3500000,
+    "reviewPoints": 9.3,
+    "reviewNumbers": 178,
+    "reviews": [],
+    "description": "Khám phá cao nguyên đá Đồng Văn, đèo Mã Pí Lèng và những bản làng vùng cao.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Hà Nội - Hà Giang",
+        "activities": [
+          "Khởi hành từ Hà Nội",
+          "Đến thành phố Hà Giang"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Cao nguyên đá",
+        "activities": [
+          "Tham quan Đồng Văn",
+          "Khám phá phố cổ"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Đèo Mã Pí Lèng",
+        "activities": [
+          "Ngắm cảnh đèo Mã Pí Lèng",
+          "Tham quan sông Nho Quế"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Trở về",
+        "activities": [
+          "Tham quan địa phương",
+          "Trở về Hà Nội"
+        ]
+      }
+    ],
+    "included": [
+      "Xe du lịch",
+      "Homestay",
+      "Ăn uống",
+      "Hướng dẫn viên"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Một số hoạt động tự chọn"
+    ],
+    "max_guests": 20,
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "product_type": "tour",
+    "name": "Tour Mộc Châu - Mùa hoa Tây Bắc",
+    "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+    "images": [
+      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+    ],
+    "place": "Mộc Châu, Sơn La",
+    "departure_place": "Hà Nội",
+    "tour_type": "domestic",
+    "duration": "2 ngày 1 đêm",
+    "departure_date": [
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04"
+    ],
+    "price": 1800000,
+    "reviewPoints": 8.7,
+    "reviewNumbers": 76,
+    "reviews": [],
+    "description": "Tận hưởng không khí trong lành, khám phá đồi chè và cảnh sắc thiên nhiên Mộc Châu.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Khám phá Mộc Châu",
+        "activities": [
+          "Khởi hành từ Hà Nội",
+          "Tham quan đồi chè",
+          "Nghỉ tại homestay"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá thiên nhiên",
+        "activities": [
+          "Tham quan thác Dải Yếm",
+          "Mua đặc sản",
+          "Trở về Hà Nội"
+        ]
+      }
+    ],
+    "included": [
+      "Xe di chuyển",
+      "Homestay",
+      "Ăn uống theo chương trình",
+      "Vé tham quan"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Đồ uống"
+    ],
+    "max_guests": 30,
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "product_type": "tour",
+    "name": "Tour Singapore - Malaysia khám phá Đông Nam Á",
+    "image": "https://images.unsplash.com/photo-1530789253388-582c481c54b0",
+    "images": [
+      "https://images.unsplash.com/photo-1530789253388-582c481c54b0",
+      "https://images.unsplash.com/photo-1500530850847-b586d89ba3ee"
+    ],
+    "place": "Singapore, Malaysia",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "international",
+    "duration": "5 ngày 4 đêm",
+    "departure_date": [
+      "2026-11-25",
+      "2026-12-02",
+      "2026-12-09"
+    ],
+    "price": 12500000,
+    "reviewPoints": 9.6,
+    "reviewNumbers": 220,
+    "reviews": [],
+    "description": "Hành trình khám phá hai quốc gia Singapore và Malaysia với các công trình kiến trúc, trung tâm mua sắm và địa điểm du lịch nổi tiếng.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Đến Singapore",
+        "activities": [
+          "Bay từ TP. Hồ Chí Minh",
+          "Tham quan thành phố Singapore"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá Singapore",
+        "activities": [
+          "Tham quan Gardens by the Bay",
+          "Khám phá Marina Bay"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Di chuyển đến Malaysia",
+        "activities": [
+          "Di chuyển đến Malaysia",
+          "Tham quan Kuala Lumpur"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Khám phá Malaysia",
+        "activities": [
+          "Tham quan tháp đôi Petronas",
+          "Mua sắm"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Trở về Việt Nam",
+        "activities": [
+          "Tự do tham quan",
+          "Bay về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Vé máy bay theo chương trình",
+      "Khách sạn",
+      "Xe du lịch",
+      "Hướng dẫn viên",
+      "Các bữa ăn theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Hộ chiếu và chi phí làm giấy tờ nếu có"
+    ],
+    "max_guests": 20,
+    "status": "active"
+  }
+]

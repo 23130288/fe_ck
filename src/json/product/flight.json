@@ -1,0 +1,373 @@
+[
+  {
+    "id": 1,
+    "product_type": "flight",
+    "flight_type": "domestic",
+    "airline": "Vietnam Airlines",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "VN210",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-20",
+      "time": "08:00"
+    },
+    "arrival": {
+      "airport": "Nội Bài",
+      "airport_code": "HAN",
+      "city": "Hà Nội",
+      "country": "Việt Nam",
+      "date": "2026-11-20",
+      "time": "10:10"
+    },
+    "duration": "2 giờ 10 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "business"
+    ],
+    "price": 1850000,
+    "seats_available": 25,
+    "baggage": {
+      "carry_on": "10kg",
+      "checked": "23kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "product_type": "flight",
+    "flight_type": "domestic",
+    "airline": "VietJet Air",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "VJ602",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-21",
+      "time": "07:30"
+    },
+    "arrival": {
+      "airport": "Đà Nẵng",
+      "airport_code": "DAD",
+      "city": "Đà Nẵng",
+      "country": "Việt Nam",
+      "date": "2026-11-21",
+      "time": "08:50"
+    },
+    "duration": "1 giờ 20 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy"
+    ],
+    "price": 950000,
+    "seats_available": 18,
+    "baggage": {
+      "carry_on": "7kg",
+      "checked": "Không bao gồm"
+    },
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "product_type": "flight",
+    "flight_type": "domestic",
+    "airline": "Bamboo Airways",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "QH202",
+    "departure": {
+      "airport": "Nội Bài",
+      "airport_code": "HAN",
+      "city": "Hà Nội",
+      "country": "Việt Nam",
+      "date": "2026-11-22",
+      "time": "09:15"
+    },
+    "arrival": {
+      "airport": "Cam Ranh",
+      "airport_code": "CXR",
+      "city": "Nha Trang",
+      "country": "Việt Nam",
+      "date": "2026-11-22",
+      "time": "11:10"
+    },
+    "duration": "1 giờ 55 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "business"
+    ],
+    "price": 1650000,
+    "seats_available": 20,
+    "baggage": {
+      "carry_on": "7kg",
+      "checked": "20kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "product_type": "flight",
+    "flight_type": "domestic",
+    "airline": "Vietnam Airlines",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "VN1344",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-23",
+      "time": "14:00"
+    },
+    "arrival": {
+      "airport": "Phú Quốc",
+      "airport_code": "PQC",
+      "city": "Phú Quốc",
+      "country": "Việt Nam",
+      "date": "2026-11-23",
+      "time": "15:05"
+    },
+    "duration": "1 giờ 05 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "business"
+    ],
+    "price": 1350000,
+    "seats_available": 30,
+    "baggage": {
+      "carry_on": "10kg",
+      "checked": "23kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "product_type": "flight",
+    "flight_type": "domestic",
+    "airline": "VietJet Air",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "VJ158",
+    "departure": {
+      "airport": "Nội Bài",
+      "airport_code": "HAN",
+      "city": "Hà Nội",
+      "country": "Việt Nam",
+      "date": "2026-11-24",
+      "time": "06:45"
+    },
+    "arrival": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-24",
+      "time": "08:55"
+    },
+    "duration": "2 giờ 10 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy"
+    ],
+    "price": 1100000,
+    "seats_available": 15,
+    "baggage": {
+      "carry_on": "7kg",
+      "checked": "Không bao gồm"
+    },
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "product_type": "flight",
+    "flight_type": "international",
+    "airline": "Vietnam Airlines",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "VN600",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-25",
+      "time": "12:30"
+    },
+    "arrival": {
+      "airport": "Changi",
+      "airport_code": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "date": "2026-11-25",
+      "time": "15:30"
+    },
+    "duration": "2 giờ",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "business"
+    ],
+    "price": 3200000,
+    "seats_available": 22,
+    "baggage": {
+      "carry_on": "10kg",
+      "checked": "23kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "product_type": "flight",
+    "flight_type": "international",
+    "airline": "Singapore Airlines",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "SQ185",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-26",
+      "time": "19:40"
+    },
+    "arrival": {
+      "airport": "Changi",
+      "airport_code": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "date": "2026-11-26",
+      "time": "22:40"
+    },
+    "duration": "2 giờ",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "premium_economy",
+      "business"
+    ],
+    "price": 4500000,
+    "seats_available": 12,
+    "baggage": {
+      "carry_on": "7kg",
+      "checked": "25kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "product_type": "flight",
+    "flight_type": "international",
+    "airline": "Thai Airways",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "TG551",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-27",
+      "time": "10:15"
+    },
+    "arrival": {
+      "airport": "Suvarnabhumi",
+      "airport_code": "BKK",
+      "city": "Bangkok",
+      "country": "Thailand",
+      "date": "2026-11-27",
+      "time": "11:45"
+    },
+    "duration": "1 giờ 30 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "business"
+    ],
+    "price": 2900000,
+    "seats_available": 16,
+    "baggage": {
+      "carry_on": "7kg",
+      "checked": "20kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "product_type": "flight",
+    "flight_type": "international",
+    "airline": "Japan Airlines",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "JL070",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-28",
+      "time": "23:20"
+    },
+    "arrival": {
+      "airport": "Haneda",
+      "airport_code": "HND",
+      "city": "Tokyo",
+      "country": "Japan",
+      "date": "2026-11-29",
+      "time": "06:30"
+    },
+    "duration": "5 giờ 10 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "premium_economy",
+      "business"
+    ],
+    "price": 9200000,
+    "seats_available": 10,
+    "baggage": {
+      "carry_on": "10kg",
+      "checked": "23kg"
+    },
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "product_type": "flight",
+    "flight_type": "international",
+    "airline": "Qatar Airways",
+    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "flight_number": "QR971",
+    "departure": {
+      "airport": "Tân Sơn Nhất",
+      "airport_code": "SGN",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "date": "2026-11-29",
+      "time": "19:55"
+    },
+    "arrival": {
+      "airport": "Hamad International",
+      "airport_code": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "date": "2026-11-30",
+      "time": "00:10"
+    },
+    "duration": "7 giờ 15 phút",
+    "stops": 0,
+    "cabin_class": [
+      "economy",
+      "business",
+      "first"
+    ],
+    "price": 14500000,
+    "seats_available": 8,
+    "baggage": {
+      "carry_on": "7kg",
+      "checked": "25kg"
+    },
+    "status": "active"
+  }
+]
