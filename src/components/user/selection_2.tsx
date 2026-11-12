@@ -8,8 +8,6 @@ import Notification from "./Notification.tsx";
 import Order from "./Order.tsx";
 import Voucher from "./Voucher.tsx";
 import Support from "./Support.tsx";
-import ChangePassword from "./ChangePassword.tsx";
-import Logout from "./Logout.tsx";
 
 export default function selection_2() {
     const [searchParams] = useSearchParams()
@@ -31,16 +29,12 @@ export default function selection_2() {
                     <div className="menu_item">
                         <Link to="/user?type=info" className={type === "info" ? "selected" : "item"}>Thông tin tài
                             khoản</Link>
+                        <Link to="/user?type=order" className={type === "order" ? "selected" : "item"}>Đơn hàng</Link>
                         <Link to="/user?type=notification" className={type === "notification" ? "selected" : "item"}>Thông
                             báo</Link>
-                        <Link to="/user?type=order" className={type === "order" ? "selected" : "item"}>Đơn hàng</Link>
                         <Link to="/user?type=voucher"
                               className={type === "voucher" ? "selected" : "item"}>Voucher</Link>
                         <Link to="/user?type=support" className={type === "support" ? "selected" : "item"}>Hỗ trợ</Link>
-                        <Link to="/user?type=change-password"
-                              className={type === "change-password" ? "selected" : "item"}>Đổi mật khẩu</Link>
-                        <Link to="/user?type=log-out" className={type === "log-out" ? "selected" : "item"}>Đăng
-                            xuất</Link>
                     </div>
                 </div>
 
@@ -51,8 +45,6 @@ export default function selection_2() {
                         {type === "order" && <Order/>}
                         {type === "voucher" && <Voucher/>}
                         {type === "support" && <Support/>}
-                        {type === "change-password" && <ChangePassword/>}
-                        {type === "log-out" && <Logout/>}
                     </div>
                 </div>
             </div>
