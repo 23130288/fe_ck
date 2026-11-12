@@ -1,9 +1,13 @@
 :root {
+    --color-extra-light-blue: rgba(160, 196, 252, 0.3);
+    --color-light-blue: #2a8cf8;
     --color-blue: #006ce4;
     --color-blue-bluer: #1a4fa0;
     --color-blue-dark: #003b95;
 
     --color-yellow: #ffb700;
+
+    --color-red: #e74c3c;
 
     --color-white: white;
     --color-grayish: #f5f5f5;

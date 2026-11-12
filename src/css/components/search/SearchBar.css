@@ -50,12 +50,13 @@
 }
 
 .search-box .search-filters-box button {
-    padding: 13px 24px;
+    padding: 12px 24px;
     border: none;
     border-radius: 8px;
     background: var(--color-blue);
     color: white;
     cursor: pointer;
+    font-size: var(--font-size-s);
 }
 
 .search-box .mode-box {

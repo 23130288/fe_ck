@@ -1,39 +1,74 @@
-import "../../css/User.css"
-
 export default function UserInfo() {
-    return (<>
-            {/* =============================== USER INFO =============================== */}
-            <h2>Thông tin tài khoản</h2>
 
-            <div className="in4">
-                <div className="in4_row">
-                    <label className="in4_label" htmlFor="email">Thông tin đăng nhập</label>
-                    <input className="in4_input" type="email" id="email" name="email"
-                           value="nguyenvana@gmail.com" readOnly/>
+    const user = JSON.parse(sessionStorage.getItem("userInfo") || "{}");
+
+    return (
+        <div className="user_info">
+            <div className="sub_header userInfor">
+                <div>
+                    <h2>Thông tin cá nhân</h2>
+                    <p> Cập nhật thông tin của bạn và tìm hiểu các thông tin này được sử dụng ra sao.</p>
                 </div>
-
-                <div className="in4_row">
-                    <label className="in4_label" htmlFor="name">Tên tài khoản</label>
-                    <input className="in4_input info2" type="text" id="name" name="name"
-                           value="Nguyễn Văn A" readOnly/>
-                </div>
-
-                <div className="in4_row">
-                    <label className="in4_label" htmlFor="sdt">Số điện thoại *</label>
-                    <input className="in4_input info2" type="text" id="sdt" name="sdt"
-                           value="096329472" readOnly/>
-                </div>
-
-                <div className="in4_row">
-                    <label className="in4_label" htmlFor="address">Địa chỉ *</label>
-                    <input className="in4_input info2" type="text" id="address" name="address"
-                           value="Quận 1, TP. Hồ Chí Minh" readOnly/>
+                <div className="avatar">
+                    <img src={user.avatar} alt="Avatar"/>
                 </div>
             </div>
 
-            <div className="btn-group">
-                <button type="button" className="change-btn">Đổi thông tin</button>
+            <div className="info_list">
+                <div className="info_row">
+                    <label>Tên</label>
+                    <div className="info_value">{user.fullName || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Tên hiển thị</label>
+                    <div className="info_value">{user.displayName || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row email_row">
+                    <label>Địa chỉ email</label>
+                    <div className="info_value">{user.email || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Số điện thoại</label>
+                    <div className="info_value">{user.phone || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Ngày sinh</label>
+                    <div className="info_value">{user.birthDate || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Quốc tịch</label>
+                    <div className="info_value">{user.nationality || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Giới tính</label>
+                    <div className="info_value">{user.gender || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Địa chỉ</label>
+                    <div className="info_value">{user.address || "Chưa cập nhật"}</div>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <div className="info_row">
+                    <label>Thông tin hộ chiếu</label>
+                    <div className="info_value">{user.passport ? user.passport.passportNumber : "Chưa cung cấp"}</div>
+                    <button>Thêm hộ chiếu</button>
+                </div>
             </div>
-        </>
+        </div>
     );
 }
