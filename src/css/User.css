@@ -65,33 +65,70 @@
     border: 1px solid white;
 }
 
-.user-info {
+.sub_menu {
+    display: flex;
+    height: 75px;
+}
+
+.sub_menu_item {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.sub_menu_item a {
+    padding: 12px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.sub_menu_item .selected {
+    background: var(--color-blue-bluer);
+    color: var(--color-white);
+    border: 1px solid var(--color-blue-dark);
+}
+
+.user_info {
     width: 100%;
     color: var(--color-dark);
     font-family: var(--font);
 }
 
-.user-info-header {
+.sub_header {
     display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 20px;
     justify-content: space-between;
     align-items: flex-start;
     padding: 12px 15px 18px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.user-info-header h2 {
+.userInfor {
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.sub_header h2 {
     margin: 0 0 12px;
     font-size: 28px;
     font-weight: bold;
 }
 
-.user-info-header p {
+.sub_header p {
     margin: 0;
     font-size: var(--font-size-s);
     color: #555;
 }
 
-.personal-avatar {
+.sub_title {
+    display: flex;
+}
+
+.avatar img {
     width: 58px;
     height: 58px;
     border: 2px solid #FF8A65;
@@ -102,7 +139,7 @@
     justify-content: center;
 }
 
-.personal-info-row {
+.info_row {
     display: grid;
     grid-template-columns: 20% 1fr 100px;
     gap: 10px;
@@ -112,24 +149,36 @@
     font-size: var(--font-size-s);
 }
 
-.personal-info-row label {
+.info_row label {
     padding-top: 2px;
-    color: var(--color-dark);
-
+    color: var(--color-blue);
+    font-size: var(--font-size-s);
+    font-weight: bold;
 }
 
-.personal-info-value {
-    min-width: 0;
+.info_value {
     line-height: 1.6;
-}
-
-.personal-info-value p {
-    margin: 10px 0;
-    line-height: 1.6;
+    gap: 10px;
     color: #555;
 }
 
-.personal-info-row button {
+.info {
+    border-radius: 10px;
+    width: 1160px;
+    padding: 10px 10px 20px 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.info:hover {
+    border: 1px solid var(--color-blue);
+    background: var(--color-grayish);
+}
+
+.info span {
+    color: var(--color-light-blue);
+}
+
+.info_row button {
     background: none;
     border: none;
     color: var(--color-blue);
@@ -140,36 +189,10 @@
     white-space: nowrap;
 }
 
-.personal-info-row button:hover {
+.info_row button:hover {
     text-decoration: underline;
 }
 
-.email-value {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.email-notice {
-    border: 1px solid #ddd;
-    border-radius: 9px;
-    padding: 12px 15px;
-    max-width: 400px;
-    margin-top: 6px;
-}
-
-.email-notice p {
-    margin: 0 0 12px;
-    color: var(--color-dark);
-}
-
-.email-notice a {
-    color: var(--color-blue);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.email-notice a:hover {
-    text-decoration: underline;
+.unread {
+    border: 1px solid var(--color-light-blue);
 }

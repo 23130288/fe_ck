@@ -8,5 +8,10 @@
     "id": 2,
     "email": "user@example.com",
     "password": "123456"
+  },
+  {
+    "id": 3,
+    "email": "userInfor@example.com",
+    "password": "123456"
   }
 ]
