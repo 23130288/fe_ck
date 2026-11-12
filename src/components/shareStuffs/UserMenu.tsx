@@ -15,13 +15,15 @@ export default function UserMenu() {
             </button>
 
             <div id="dropdown-menu" popover="auto">
-                <Link to="/user?type=info" className='dropdown-content'>Thông tin cá nhân</Link>
                 {user == null && <>
                     <Link to="login" className='dropdown-content'>Đăng nhập</Link>
                     <Link to="register" className='dropdown-content'>Đăng kí</Link>
                 </>}
-                {user != null &&
+                {user != null && <>
+                    <Link to="/user?type=info" className='dropdown-content'>Thông tin cá nhân</Link>
+                    <Link to="ct_orderPage" className='dropdown-content'>Hóa đơn</Link>
                     <Link to="" className='dropdown-content' onClick={logout}>Đăng xuất</Link>
+                </>
                 }
             </div>
         </div>
