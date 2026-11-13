@@ -5,6 +5,11 @@
     "flight_type": "domestic",
     "airline": "Vietnam Airlines",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1508615070457-7baeba4003ab?w=500&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "VN210",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -34,6 +39,48 @@
       "carry_on": "10kg",
       "checked": "23kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -42,6 +89,11 @@
     "flight_type": "domestic",
     "airline": "VietJet Air",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://images.unsplash.com/photo-1542296332-2e4473faf563?w=500&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "VJ602",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -70,6 +122,48 @@
       "carry_on": "7kg",
       "checked": "Không bao gồm"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -78,6 +172,11 @@
     "flight_type": "domestic",
     "airline": "Bamboo Airways",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5LFvG_GDBklygwFhxKXx2sS0uYFEkbUeTWnXeE36bQ&s=10",
+    "images": [
+      "https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=500&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "QH202",
     "departure": {
       "airport": "Nội Bài",
@@ -107,6 +206,48 @@
       "carry_on": "7kg",
       "checked": "20kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -115,6 +256,11 @@
     "flight_type": "domestic",
     "airline": "Vietnam Airlines",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "data:image/jpeg;base64,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",
+    "images": [
+      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=500&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "VN1344",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -144,6 +290,48 @@
       "carry_on": "10kg",
       "checked": "23kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -151,7 +339,12 @@
     "product_type": "flight",
     "flight_type": "domestic",
     "airline": "VietJet Air",
-    "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "airline_logo": "data:image/jpeg;base64,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",
+    "image": "https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=500&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1521727857535-28d204f7c7e4?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1506947411487-a56738267384?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "VJ158",
     "departure": {
       "airport": "Nội Bài",
@@ -180,6 +373,48 @@
       "carry_on": "7kg",
       "checked": "Không bao gồm"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -188,6 +423,11 @@
     "flight_type": "international",
     "airline": "Vietnam Airlines",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?w=800&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1542296332-2e4473faf563?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "VN600",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -217,6 +457,48 @@
       "carry_on": "10kg",
       "checked": "23kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -225,6 +507,11 @@
     "flight_type": "international",
     "airline": "Singapore Airlines",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=500&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1508615070457-7baeba4003ab?w=800&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "SQ185",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -255,6 +542,48 @@
       "carry_on": "7kg",
       "checked": "25kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -263,6 +592,11 @@
     "flight_type": "international",
     "airline": "Thai Airways",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=500&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1506947411487-a56738267384?w=900&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "TG551",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -292,6 +626,48 @@
       "carry_on": "7kg",
       "checked": "20kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -300,6 +676,11 @@
     "flight_type": "international",
     "airline": "Japan Airlines",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "https://images.unsplash.com/photo-1508615070457-7baeba4003ab?w=900&auto=format&fit=crop&q=60",
+    "images": [
+      "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?w=900&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "JL070",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -330,6 +711,48 @@
       "carry_on": "10kg",
       "checked": "23kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   },
   {
@@ -338,6 +761,11 @@
     "flight_type": "international",
     "airline": "Qatar Airways",
     "airline_logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "image": "data:image/jpeg;base64,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",
+    "images": [
+      "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=800&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=800&auto=format&fit=crop&q=60"
+    ],
     "flight_number": "QR971",
     "departure": {
       "airport": "Tân Sơn Nhất",
@@ -368,6 +796,48 @@
       "carry_on": "7kg",
       "checked": "25kg"
     },
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 21,
+        "user_name": "Nguyễn Hoàng Long",
+        "user_avatar": "https://i.pravatar.cc/150?img=15",
+        "rating": 9.5,
+        "comment": "Chuyến bay khởi hành đúng giờ, tiếp viên thân thiện và phục vụ chu đáo. Trải nghiệm rất tốt."
+      },
+      {
+        "id": 2,
+        "user_id": 22,
+        "user_name": "Trần Minh Thư",
+        "user_avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 9.0,
+        "comment": "Quy trình check-in nhanh chóng, ghế ngồi thoải mái và cabin sạch sẽ."
+      },
+      {
+        "id": 3,
+        "user_id": 23,
+        "user_name": "Lê Đức Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=14",
+        "rating": 8.5,
+        "comment": "Chuyến bay khá thoải mái, hành lý được xử lý tốt. Tuy nhiên đồ ăn trên máy bay chưa đa dạng."
+      },
+      {
+        "id": 4,
+        "user_id": 24,
+        "user_name": "Phạm Khánh Linh",
+        "user_avatar": "https://i.pravatar.cc/150?img=48",
+        "rating": 9.8,
+        "comment": "Máy bay sạch sẽ, nhân viên nhiệt tình và hướng dẫn rất rõ ràng. Mình có trải nghiệm hài lòng."
+      },
+      {
+        "id": 5,
+        "user_id": 25,
+        "user_name": "Đỗ Tuấn Kiệt",
+        "user_avatar": "https://i.pravatar.cc/150?img=11",
+        "rating": 9.2,
+        "comment": "Giá vé hợp lý, đặt vé thuận tiện và thông tin chuyến bay được cập nhật đầy đủ."
+      }
+    ],
     "status": "active"
   }
 ]

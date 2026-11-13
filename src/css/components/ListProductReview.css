@@ -1,0 +1,12 @@
+.list-reviews-box .product-review {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+
+.list-reviews-box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 16px;
+}
