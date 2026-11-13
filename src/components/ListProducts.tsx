@@ -6,15 +6,13 @@ import type {RootState} from "../store/store.ts";
 
 interface ListProductsProps {
     type: string;
-    start: number;
-    end: number;
-    tourType: string;
+    start?: number;
+    end?: number;
+    tourType?: string;
 }
 
 export default function ListProducts({type, start, end, tourType}: ListProductsProps) {
-    const tours = useSelector(
-        (state: RootState) => state.products.tours
-    );
+    const tours = useSelector((state: RootState) => state.products.tours);
     let products = useSelector((state: RootState) => {
         switch (type) {
             case "tour":
@@ -31,10 +29,9 @@ export default function ListProducts({type, start, end, tourType}: ListProductsP
                 return [];
         }
     });
-    if (type === "tour") {
+    if (type === "tour" && tourType) {
         products = tours.filter(product => product.tour_type === tourType);
     }
-
     return (<>
         <div className="list-products">
             {products.slice(start, end).map((product: any) => (

@@ -3,11 +3,13 @@ import {useSelector} from "react-redux";
 
 import "../css/ProductDetail.css";
 
-import image from '../images/adminb.jpg';
-
 import PassangerNumber from "../components/PassangerNumber.tsx";
 import DatePicker from "../components/DatePicker.tsx";
+import ProductReview from "../components/ProductReview.tsx";
+import ListProductReviews from "../components/ListProductReviews.tsx";
 import type {RootState} from "../store/store.ts";
+
+import type Review from "../type/Review.tsx";
 
 interface ProductDetailData {
     id: number;
@@ -19,10 +21,17 @@ interface ProductDetailData {
     price: number;
     reviewPoints: number;
     reviewNumbers: number;
+    reviews: Review[];
     duration: string;
     description: string;
     departure_date: string[];
     status: string;
+
+    // Hotel
+    amenities?: string[];
+    // Tour
+    included?: string[];
+    excluded?: string[];
 }
 
 export default function ProductDetail() {
@@ -54,6 +63,13 @@ export default function ProductDetail() {
         return price.toLocaleString("vi-VN") + "đ";
     };
 
+    let features: string[] = [];
+    if (type === "hotel") {
+        features = product.amenities ?? [];
+    } else if (type === "tour") {
+        features = product.included ?? [];
+    }
+
     return (<div className="container">
         <div className="product-detail-main">
             <section className="section-header flex space-between">
@@ -79,30 +95,37 @@ export default function ProductDetail() {
                         <span className="review-points">{product.reviewPoints}</span>
                     </div>
                     <div className="review-comments-box">
-                        <span className="comment">comment</span>
-                        <div className="user-box flex horizontal">
-                            <img src={image} alt=""/>
-                            <span className="username">username</span>
-                        </div>
+                        {product.reviews && product.reviews.length > 0 ? (
+                            <ProductReview review={product.reviews[0]}/>
+                        ) : (
+                            <p>Chưa có đánh giá nào.</p>
+                        )}
                     </div>
                 </div>
             </section>
             <section className="section-information flex vertical">
                 <h1>Tổng quan hành trình</h1>
                 <div className="features-box">
-                    <div className="feature">
-                        <i className="fa-solid fa-wifi"></i>
-                        <span>Wifi miễn phí và mạnh</span>
-                    </div>
-                    <div className="feature">
-                        <i className="fa-solid fa-mountain"></i>
-                        <span>Cảnh đẹp</span>
-                    </div>
-                    <div className="feature">
-                        <i className="fa-solid fa-utensils"></i>
-                        <span>Đồ ăn chuẩn bị đầy đủ</span>
-                    </div>
+                    {features.map((feature, index) => (
+                        <div className="feature" key={index}>
+                            <i className="fa-solid fa-check"></i>
+                            <span>{feature}</span>
+                        </div>
+                    ))}
                 </div>
+                {type === "tour" && product.excluded && (
+                    <div className="excluded-box flex vertical">
+                        <span>Không bao gồm</span>
+                        <div className="features-box">
+                            {product.excluded.map((item, index) => (
+                                <div className="feature" key={index}>
+                                    <i className="fa-solid fa-xmark"></i>
+                                    <span>{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
                 <div className="description-box flex vertical">
                     <span className="description">{product.description}</span>
                 </div>
@@ -134,30 +157,13 @@ export default function ProductDetail() {
                 </section>
             )}
             <section className="section-review flex vertical">
-                <div className="review-comments-box flex horizontal space-between">
-                    <div className="review flex vertical">
-                        <div className="user-box flex horizontal">
-                            <img src={image} alt=""/>
-                            <span className="username">username</span>
-                        </div>
-                        <span className="comment">comment</span>
-                    </div>
-                    <div className="review">
-                        <div className="user-box flex horizontal">
-                            <img src={image} alt=""/>
-                            <span className="username">username</span>
-                        </div>
-                        <span className="comment">comment</span>
-                    </div>
-                    <div className="review">
-                        <div className="user-box flex horizontal">
-                            <img src={image} alt=""/>
-                            <span className="username">username</span>
-                        </div>
-                        <span className="comment">comment</span>
-                    </div>
-                </div>
-                <button className="read-all-reviews">Tất cả đánh giá</button>
+                <h1>Đánh giá</h1>
+                {product.reviews && product.reviews.length > 0 && (<>
+                    <ListProductReviews reviews={product.reviews}/>
+                    <button className="read-all-reviews">Tất cả đánh giá</button>
+                </>)} : {(
+                <p>Chưa có đánh giá nào.</p>
+            )}
             </section>
         </div>
     </div>);

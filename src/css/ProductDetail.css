@@ -10,22 +10,6 @@ section {
     padding: 30px 0;
 }
 
-.flex {
-    display: flex;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.vertical {
-    flex-direction: column;
-}
-
-.horizontal {
-    flex-direction: row;
-}
-
 /* ==================================================================================== */
 /* ================================== section-header ================================== */
 /* ==================================================================================== */
@@ -165,35 +149,23 @@ section {
     border-top: 1px solid lightgrey;
 }
 
-.product-detail-main .section-overview .review-box .review-comments-box .comment {
-    font-size: var(--font-size-s);
-    color: var(--color-dark);
-}
-
-.product-detail-main .section-overview .review-box .review-comments-box .user-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.product-detail-main .section-overview .review-box .review-comments-box .user-box img {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.product-detail-main .section-overview .review-box .review-comments-box .username {
-    font-size: var(--font-size-s);
-    font-weight: 600;
-    color: var(--color-dark);
-}
-
 /* ===================================================================================== */
 /* ================================ section-information ================================ */
 /* ===================================================================================== */
 .product-detail-main .section-information {
     color: var(--color-dark);
+}
+
+.product-detail-main .section-information .excluded-box {
+    gap: 10px;
+}
+
+.product-detail-main .section-information .excluded-box > span {
+    color: var(--color-dark);
+}
+
+.product-detail-main .section-information .excluded-box .feature {
+    border: 1px solid red;
 }
 
 .product-detail-main .section-information .features-box {
@@ -215,6 +187,7 @@ section {
 .product-detail-main .section-information .description-box {
     gap: 5px;
     font-size: var(--font-size-s);
+    color: var(--color-dark);
 }
 
 /* ==================================================================================== */
@@ -301,44 +274,6 @@ section {
     color: var(--color-dark);
     gap: 20px;
     border: none;
-}
-
-.product-detail-main .section-review .review-comments-box {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 100%;
-    gap: 16px;
-}
-
-.product-detail-main .section-review .review {
-    gap: 14px;
-    padding: 18px;
-    background: white;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-}
-
-.product-detail-main .section-review .user-box {
-    align-items: center;
-    gap: 10px;
-}
-
-.product-detail-main .section-review .user-box img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.product-detail-main .section-review .username {
-    font-size: var(--font-size-s);
-    font-weight: bold;
-    color: var(--color-dark);
-}
-
-.product-detail-main .section-review .comment {
-    font-size: var(--font-size-s);
-    color: var(--color-dark);
 }
 
 .product-detail-main .section-review .read-all-reviews {

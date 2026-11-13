@@ -34,3 +34,19 @@ body {
     margin: 0 auto;
     padding: 12px;
 }
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+}

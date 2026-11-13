@@ -11,7 +11,7 @@ export default function MainPage() {
                 </section>
                 <section className="section-tours-this-week">
                     <h1>Tour trong tuần</h1>
-                    <ListProducts type="tour" start={5} end={8} tourType="domestic"/>
+                    <ListProducts type="tour" start={5} end={9} tourType="domestic"/>
                 </section>
                 <section className="section-tours-inland">
                     <h1>Tour trong nước</h1>

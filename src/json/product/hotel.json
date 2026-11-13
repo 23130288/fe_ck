@@ -16,6 +16,48 @@
     "price": 2800000,
     "reviewPoints": 9.3,
     "reviewNumbers": 320,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khu nghỉ dưỡng mang phong cách kiến trúc Pháp cổ điển, nằm giữa không gian xanh và yên tĩnh của Đà Lạt.",
     "amenities": [
       "Hồ bơi",
@@ -66,6 +108,48 @@
     "price": 3500000,
     "reviewPoints": 9.4,
     "reviewNumbers": 510,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khu nghỉ dưỡng cao cấp bên bờ biển với nhiều tiện ích giải trí, nhà hàng và hồ bơi.",
     "amenities": [
       "Bãi biển riêng",
@@ -116,6 +200,48 @@
     "price": 8500000,
     "reviewPoints": 9.7,
     "reviewNumbers": 420,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khu nghỉ dưỡng sang trọng trên bán đảo Sơn Trà với tầm nhìn hướng biển và kiến trúc độc đáo.",
     "amenities": [
       "Bãi biển riêng",
@@ -166,6 +292,48 @@
     "price": 1800000,
     "reviewPoints": 9.2,
     "reviewNumbers": 275,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khách sạn boutique nằm gần khu phố cổ Hà Nội, thuận tiện cho việc tham quan và khám phá ẩm thực.",
     "amenities": [
       "Wi-Fi miễn phí",
@@ -215,6 +383,48 @@
     "price": 3200000,
     "reviewPoints": 9.1,
     "reviewNumbers": 360,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khách sạn cao cấp nằm trên đường Trần Phú với tầm nhìn hướng ra vịnh Nha Trang.",
     "amenities": [
       "Hồ bơi",
@@ -265,6 +475,48 @@
     "price": 12500000,
     "reviewPoints": 9.5,
     "reviewNumbers": 680,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khách sạn biểu tượng tại Singapore với kiến trúc nổi bật, khu mua sắm và hồ bơi trên cao.",
     "amenities": [
       "Hồ bơi vô cực",
@@ -315,6 +567,48 @@
     "price": 9500000,
     "reviewPoints": 9.4,
     "reviewNumbers": 410,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khách sạn cao cấp nằm ngay ga Tokyo, thuận tiện di chuyển và khám phá thành phố.",
     "amenities": [
       "Nhà hàng",
@@ -365,6 +659,48 @@
     "price": 11000000,
     "reviewPoints": 9.6,
     "reviewNumbers": 520,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khu nghỉ dưỡng ven biển tại Bali với không gian nhiệt đới, hồ bơi và dịch vụ cao cấp.",
     "amenities": [
       "Bãi biển riêng",
@@ -415,6 +751,48 @@
     "price": 10500000,
     "reviewPoints": 9.0,
     "reviewNumbers": 290,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khách sạn phong cách cổ điển tại trung tâm Paris, thuận tiện tham quan và mua sắm.",
     "amenities": [
       "Nhà hàng",
@@ -465,6 +843,48 @@
     "price": 7800000,
     "reviewPoints": 9.3,
     "reviewNumbers": 350,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 11,
+        "user_name": "Nguyễn Minh Anh",
+        "user_avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 9.5,
+        "comment": "Khách sạn rất sạch sẽ, phòng rộng rãi và có view đẹp. Nhân viên thân thiện, hỗ trợ nhiệt tình."
+      },
+      {
+        "id": 2,
+        "user_id": 12,
+        "user_name": "Trần Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.0,
+        "comment": "Vị trí khách sạn thuận tiện, gần các địa điểm tham quan. Bữa sáng đa dạng và ngon."
+      },
+      {
+        "id": 3,
+        "user_id": 13,
+        "user_name": "Lê Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 8.8,
+        "comment": "Phòng đẹp, đầy đủ tiện nghi. Tuy nhiên cách âm chưa thực sự tốt."
+      },
+      {
+        "id": 4,
+        "user_id": 14,
+        "user_name": "Phạm Quốc Bảo",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.7,
+        "comment": "Trải nghiệm tuyệt vời, hồ bơi sạch và nhân viên phục vụ rất chuyên nghiệp. Sẽ quay lại lần sau."
+      },
+      {
+        "id": 5,
+        "user_id": 15,
+        "user_name": "Đỗ Ngọc Mai",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.2,
+        "comment": "Không gian yên tĩnh, giường ngủ thoải mái và phòng luôn được dọn dẹp sạch sẽ."
+      }
+    ],
     "description": "Khách sạn cao cấp với tầm nhìn ra eo biển Bosphorus và khu vườn xanh rộng lớn.",
     "amenities": [
       "Hồ bơi",

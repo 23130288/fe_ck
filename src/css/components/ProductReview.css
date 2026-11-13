@@ -1,0 +1,44 @@
+.product-review {
+    gap: 10px;
+}
+
+.product-review .user-box {
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-review .user-box .inner-box {
+    align-items: center;
+    gap: 10px;
+}
+
+.product-review .user-box .inner-box img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.product-review .user-box .inner-box .username {
+    font-size: var(--font-size-s);
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.product-review .user-box .rating {
+    display: flex;
+    border-radius: 6px;
+    padding: 6px;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue);
+    color: white;
+}
+
+.product-review .comment {
+    font-size: var(--font-size-s);
+    color: var(--color-dark);
+}

@@ -25,8 +25,41 @@
         "id": 1,
         "user_id": 2,
         "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
         "rating": 9.5,
-        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình."
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
       }
     ],
     "description": "Khám phá thành phố Đà Lạt với khí hậu mát mẻ, cảnh quan thơ mộng, vườn hoa và những địa điểm nổi tiếng.",
@@ -93,7 +126,48 @@
     "price": 4200000,
     "reviewPoints": 9.5,
     "reviewNumbers": 245,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Hành trình khám phá đảo ngọc Phú Quốc với biển xanh, bãi cát trắng và các hoạt động vui chơi trên biển.",
     "schedule": [
       {
@@ -165,7 +239,48 @@
     "price": 3800000,
     "reviewPoints": 9.0,
     "reviewNumbers": 186,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Khám phá thành phố Đà Nẵng, phố cổ Hội An và khu du lịch Bà Nà Hills nổi tiếng.",
     "schedule": [
       {
@@ -220,7 +335,7 @@
     "id": 4,
     "product_type": "tour",
     "name": "Tour Vịnh Hạ Long khám phá kỳ quan",
-    "image": "https://images.unsplash.com/photo-1528127269322-539801943592",
+    "image": "https://plus.unsplash.com/premium_photo-1692731797626-fa37b7fbfd91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "images": [
       "https://images.unsplash.com/photo-1528127269322-539801943592",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
@@ -237,7 +352,49 @@
     "price": 2900000,
     "reviewPoints": 9.4,
     "reviewNumbers": 312,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
+
     "description": "Du ngoạn vịnh Hạ Long, chiêm ngưỡng cảnh quan núi đá vôi và khám phá các hang động nổi tiếng.",
     "schedule": [
       {
@@ -275,7 +432,7 @@
     "id": 5,
     "product_type": "tour",
     "name": "Tour Sapa - Chinh phục Fansipan",
-    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "image": "https://images.unsplash.com/photo-1731946923169-e4658097de34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "images": [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba"
@@ -292,7 +449,48 @@
     "price": 3100000,
     "reviewPoints": 8.9,
     "reviewNumbers": 156,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Trải nghiệm không khí vùng núi Tây Bắc, khám phá bản làng và chinh phục đỉnh Fansipan.",
     "schedule": [
       {
@@ -337,7 +535,7 @@
     "id": 6,
     "product_type": "tour",
     "name": "Tour Nha Trang - Khám phá đảo",
-    "image": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86",
+    "image": "https://plus.unsplash.com/premium_photo-1673288455625-fa00f5ff831f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "images": [
       "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
@@ -354,7 +552,48 @@
     "price": 3000000,
     "reviewPoints": 9.1,
     "reviewNumbers": 198,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Khám phá thành phố biển Nha Trang, trải nghiệm các hoạt động tham quan đảo và thưởng thức hải sản.",
     "schedule": [
       {
@@ -401,7 +640,7 @@
     "id": 7,
     "product_type": "tour",
     "name": "Tour Quy Nhơn - Biển xanh cát trắng",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "image": "https://images.unsplash.com/photo-1722944175475-6bbc2d6812c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "images": [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
       "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86"
@@ -418,7 +657,48 @@
     "price": 2700000,
     "reviewPoints": 8.8,
     "reviewNumbers": 94,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Hành trình khám phá những bãi biển đẹp, làng chài và các địa điểm nổi tiếng tại Quy Nhơn.",
     "schedule": [
       {
@@ -466,7 +746,7 @@
     "name": "Tour Hà Giang - Khám phá cao nguyên đá",
     "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba",
     "images": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+      "https://images.unsplash.com/photo-1585970661791-9cec67470281?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
     ],
     "place": "Hà Giang",
@@ -481,7 +761,48 @@
     "price": 3500000,
     "reviewPoints": 9.3,
     "reviewNumbers": 178,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Khám phá cao nguyên đá Đồng Văn, đèo Mã Pí Lèng và những bản làng vùng cao.",
     "schedule": [
       {
@@ -534,9 +855,9 @@
     "id": 9,
     "product_type": "tour",
     "name": "Tour Mộc Châu - Mùa hoa Tây Bắc",
-    "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+    "image": "https://images.unsplash.com/photo-1781709335120-5dc2499a80ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "images": [
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+      "https://images.unsplash.com/photo-1585335740523-85d0d6dfbf27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
     ],
     "place": "Mộc Châu, Sơn La",
@@ -551,7 +872,48 @@
     "price": 1800000,
     "reviewPoints": 8.7,
     "reviewNumbers": 76,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Tận hưởng không khí trong lành, khám phá đồi chè và cảnh sắc thiên nhiên Mộc Châu.",
     "schedule": [
       {
@@ -590,7 +952,7 @@
     "id": 10,
     "product_type": "tour",
     "name": "Tour Singapore - Malaysia khám phá Đông Nam Á",
-    "image": "https://images.unsplash.com/photo-1530789253388-582c481c54b0",
+    "image": "https://images.unsplash.com/photo-1542114740389-9b46fb1e5be7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "images": [
       "https://images.unsplash.com/photo-1530789253388-582c481c54b0",
       "https://images.unsplash.com/photo-1500530850847-b586d89ba3ee"
@@ -607,7 +969,48 @@
     "price": 12500000,
     "reviewPoints": 9.6,
     "reviewNumbers": 220,
-    "reviews": [],
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
     "description": "Hành trình khám phá hai quốc gia Singapore và Malaysia với các công trình kiến trúc, trung tâm mua sắm và địa điểm du lịch nổi tiếng.",
     "schedule": [
       {
@@ -661,6 +1064,564 @@
     "excluded": [
       "Chi phí cá nhân",
       "Hộ chiếu và chi phí làm giấy tờ nếu có"
+    ],
+    "max_guests": 20,
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "product_type": "tour",
+    "name": "Tour Thái Lan - Bangkok và Pattaya",
+    "image": "https://plus.unsplash.com/premium_photo-1693149386423-2e4e264712e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "images": [
+      "https://images.unsplash.com/photo-1508009603885-50cf7c579365",
+      "https://images.unsplash.com/photo-1528181304800-259b08848526"
+    ],
+    "place": "Bangkok, Pattaya, Thái Lan",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "international",
+    "duration": "5 ngày 4 đêm",
+    "departure_date": [
+      "2026-12-05",
+      "2026-12-12",
+      "2026-12-19"
+    ],
+    "price": 8900000,
+    "reviewPoints": 9.3,
+    "reviewNumbers": 185,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
+    "description": "Khám phá xứ sở chùa vàng với những ngôi chùa nổi tiếng, khu mua sắm sầm uất và thành phố biển Pattaya sôi động.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Đến Bangkok",
+        "activities": [
+          "Bay từ TP. Hồ Chí Minh đến Bangkok",
+          "Nhận phòng khách sạn",
+          "Tự do khám phá thành phố"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá Bangkok",
+        "activities": [
+          "Tham quan chùa Wat Arun",
+          "Tham quan Cung điện Hoàng gia",
+          "Khám phá chợ địa phương"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Di chuyển đến Pattaya",
+        "activities": [
+          "Di chuyển đến thành phố Pattaya",
+          "Tham quan bãi biển",
+          "Khám phá phố đi bộ"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Trải nghiệm Pattaya",
+        "activities": [
+          "Tham quan đảo Coral",
+          "Tự do vui chơi và mua sắm"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Trở về Việt Nam",
+        "activities": [
+          "Ăn sáng tại khách sạn",
+          "Di chuyển ra sân bay",
+          "Bay về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Vé máy bay khứ hồi",
+      "Khách sạn",
+      "Xe du lịch",
+      "Hướng dẫn viên",
+      "Các bữa ăn theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Các hoạt động ngoài chương trình",
+      "Chi phí mua sắm"
+    ],
+    "max_guests": 25,
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "product_type": "tour",
+    "name": "Tour Hàn Quốc - Seoul và đảo Nami",
+    "image": "https://images.unsplash.com/photo-1546874177-9e664107314e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "images": [
+      "https://images.unsplash.com/photo-1538485399081-7191377e8241",
+      "https://images.unsplash.com/photo-1517154421773-0529f29ea451"
+    ],
+    "place": "Seoul, đảo Nami, Hàn Quốc",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "international",
+    "duration": "6 ngày 5 đêm",
+    "departure_date": [
+      "2026-12-10",
+      "2026-12-17",
+      "2026-12-24"
+    ],
+    "price": 18900000,
+    "reviewPoints": 9.7,
+    "reviewNumbers": 320,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
+    "description": "Hành trình khám phá Hàn Quốc với thủ đô Seoul hiện đại, đảo Nami thơ mộng, cung điện cổ kính và nền văn hóa đặc sắc.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Khởi hành đến Hàn Quốc",
+        "activities": [
+          "Bay từ TP. Hồ Chí Minh đến Seoul",
+          "Nhận phòng khách sạn",
+          "Nghỉ ngơi"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá thủ đô Seoul",
+        "activities": [
+          "Tham quan cung điện Gyeongbokgung",
+          "Khám phá làng cổ Bukchon Hanok",
+          "Tham quan quảng trường Gwanghwamun"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Tham quan đảo Nami",
+        "activities": [
+          "Di chuyển đến đảo Nami",
+          "Dạo quanh những con đường cây nổi tiếng",
+          "Chụp ảnh và khám phá cảnh quan"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Trải nghiệm văn hóa Hàn Quốc",
+        "activities": [
+          "Tham quan tháp N Seoul",
+          "Trải nghiệm mặc Hanbok",
+          "Khám phá phố mua sắm Myeongdong"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Khám phá Seoul tự do",
+        "activities": [
+          "Tự do mua sắm",
+          "Thưởng thức ẩm thực địa phương",
+          "Tham quan các khu phố nổi tiếng"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Trở về Việt Nam",
+        "activities": [
+          "Ăn sáng tại khách sạn",
+          "Di chuyển ra sân bay",
+          "Bay về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Vé máy bay khứ hồi",
+      "Khách sạn",
+      "Xe du lịch",
+      "Hướng dẫn viên",
+      "Vé tham quan theo chương trình",
+      "Các bữa ăn theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Chi phí làm visa nếu có",
+      "Hành lý ký gửi ngoài tiêu chuẩn"
+    ],
+    "max_guests": 20,
+    "status": "active"
+  },
+  {
+    "id": 13,
+    "product_type": "tour",
+    "name": "Tour Nhật Bản - Tokyo và núi Phú Sĩ",
+    "image": "https://plus.unsplash.com/premium_photo-1666700698920-d2d2bba589f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "images": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+    ],
+    "place": "Tokyo, núi Phú Sĩ, Nhật Bản",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "international",
+    "duration": "6 ngày 5 đêm",
+    "departure_date": [
+      "2027-01-08",
+      "2027-01-15",
+      "2027-01-22"
+    ],
+    "price": 26900000,
+    "reviewPoints": 9.8,
+    "reviewNumbers": 275,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
+    "description": "Khám phá Nhật Bản với thủ đô Tokyo hiện đại, những ngôi đền truyền thống, cảnh sắc núi Phú Sĩ và văn hóa đặc trưng xứ sở hoa anh đào.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Khởi hành đến Tokyo",
+        "activities": [
+          "Bay từ TP. Hồ Chí Minh đến Tokyo",
+          "Nhận phòng khách sạn",
+          "Nghỉ ngơi"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá Tokyo",
+        "activities": [
+          "Tham quan chùa Sensoji",
+          "Khám phá khu phố Asakusa",
+          "Tham quan tháp Tokyo Skytree"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Khám phá núi Phú Sĩ",
+        "activities": [
+          "Di chuyển đến khu vực núi Phú Sĩ",
+          "Tham quan hồ Kawaguchi",
+          "Ngắm cảnh núi Phú Sĩ"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Trải nghiệm văn hóa Nhật Bản",
+        "activities": [
+          "Tham quan làng cổ Oshino Hakkai",
+          "Khám phá văn hóa và kiến trúc truyền thống",
+          "Thưởng thức ẩm thực Nhật Bản"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Mua sắm tại Tokyo",
+        "activities": [
+          "Tham quan khu phố Shibuya",
+          "Khám phá khu mua sắm Shinjuku",
+          "Tự do trải nghiệm thành phố"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Trở về Việt Nam",
+        "activities": [
+          "Ăn sáng tại khách sạn",
+          "Di chuyển ra sân bay",
+          "Bay về TP. Hồ Chí Minh"
+        ]
+      }
+    ],
+    "included": [
+      "Vé máy bay khứ hồi",
+      "Khách sạn",
+      "Xe du lịch",
+      "Hướng dẫn viên",
+      "Vé tham quan theo chương trình",
+      "Các bữa ăn theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Chi phí làm visa",
+      "Các dịch vụ không được đề cập trong chương trình"
+    ],
+    "max_guests": 20,
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "product_type": "tour",
+    "name": "Tour Pháp - Thụy Sĩ - Ý khám phá châu Âu",
+    "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "images": [
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+    ],
+    "place": "Paris, Lucerne, Milan, châu Âu",
+    "departure_place": "TP. Hồ Chí Minh",
+    "tour_type": "international",
+    "duration": "9 ngày 8 đêm",
+    "departure_date": [
+      "2027-02-05",
+      "2027-02-14",
+      "2027-02-23"
+    ],
+    "price": 58900000,
+    "reviewPoints": 9.5,
+    "reviewNumbers": 198,
+    "reviews": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "user_name": "Nguyễn Văn A",
+        "user_avatar": "https://i.pravatar.cc/150?img=12",
+        "rating": 9.5,
+        "comment": "Chuyến đi rất thú vị, hướng dẫn viên nhiệt tình. Các địa điểm tham quan đều rất đẹp."
+      },
+      {
+        "id": 2,
+        "user_id": 3,
+        "user_name": "Trần Thị Minh",
+        "user_avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 9.0,
+        "comment": "Lịch trình hợp lý, khách sạn sạch sẽ và đồ ăn ngon. Mình rất hài lòng với chuyến đi."
+      },
+      {
+        "id": 3,
+        "user_id": 4,
+        "user_name": "Lê Hoàng Nam",
+        "user_avatar": "https://i.pravatar.cc/150?img=男",
+        "rating": 8.5,
+        "comment": "Cảnh đẹp, không khí trong lành. Tuy nhiên thời gian ở một số địa điểm hơi ngắn."
+      },
+      {
+        "id": 4,
+        "user_id": 5,
+        "user_name": "Phạm Thu Hà",
+        "user_avatar": "https://i.pravatar.cc/150?img=44",
+        "rating": 9.8,
+        "comment": "Một chuyến đi đáng nhớ! Mọi thứ được tổ chức chu đáo, mình chắc chắn sẽ quay lại."
+      },
+      {
+        "id": 5,
+        "user_id": 6,
+        "user_name": "Đỗ Minh Quân",
+        "user_avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 9.2,
+        "comment": "Dịch vụ tốt, nhân viên thân thiện và hỗ trợ rất nhiệt tình. Rất đáng trải nghiệm."
+      }
+    ],
+    "description": "Hành trình châu Âu qua ba quốc gia Pháp, Thụy Sĩ và Ý, khám phá kiến trúc cổ kính, cảnh quan thiên nhiên và những thành phố nổi tiếng.",
+    "schedule": [
+      {
+        "day": 1,
+        "title": "Khởi hành đến Paris",
+        "activities": [
+          "Bay từ TP. Hồ Chí Minh đến Paris",
+          "Nghỉ ngơi sau chuyến bay"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Khám phá Paris",
+        "activities": [
+          "Tham quan tháp Eiffel",
+          "Dạo quanh đại lộ Champs-Élysées",
+          "Ngắm cảnh thành phố Paris"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Khám phá Paris",
+        "activities": [
+          "Tham quan bảo tàng Louvre",
+          "Tham quan nhà thờ Đức Bà Paris",
+          "Tự do mua sắm"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Di chuyển đến Thụy Sĩ",
+        "activities": [
+          "Di chuyển đến Lucerne",
+          "Tham quan cầu Chapel",
+          "Khám phá phố cổ Lucerne"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Trải nghiệm cảnh đẹp Thụy Sĩ",
+        "activities": [
+          "Ngắm cảnh hồ Lucerne",
+          "Khám phá vùng núi Alps",
+          "Thưởng thức ẩm thực địa phương"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Di chuyển đến Ý",
+        "activities": [
+          "Di chuyển đến Milan",
+          "Tham quan nhà thờ chính tòa Milan",
+          "Khám phá trung tâm thành phố"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Khám phá Milan",
+        "activities": [
+          "Tham quan phòng trưng bày Galleria Vittorio Emanuele II",
+          "Khám phá quảng trường Piazza del Duomo",
+          "Tự do mua sắm"
+        ]
+      },
+      {
+        "day": 8,
+        "title": "Tạm biệt châu Âu",
+        "activities": [
+          "Tự do tham quan theo thời gian cho phép",
+          "Di chuyển ra sân bay",
+          "Bay về Việt Nam"
+        ]
+      },
+      {
+        "day": 9,
+        "title": "Về đến Việt Nam",
+        "activities": [
+          "Kết thúc hành trình",
+          "Chia tay đoàn"
+        ]
+      }
+    ],
+    "included": [
+      "Vé máy bay khứ hồi",
+      "Khách sạn",
+      "Xe du lịch liên tuyến",
+      "Hướng dẫn viên",
+      "Vé tham quan theo chương trình",
+      "Các bữa ăn theo chương trình"
+    ],
+    "excluded": [
+      "Chi phí cá nhân",
+      "Chi phí làm visa Schengen",
+      "Tiền tip và các khoản chi ngoài chương trình"
     ],
     "max_guests": 20,
     "status": "active"
