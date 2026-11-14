@@ -52,6 +52,7 @@ export function register(email: string, password: string, confirm: string) {
   return true;
 }
 export function registerInfo(username: string, number: string, address: string, avatar: string) {
+  
 }
 export function logout() {
   sessionStorage.removeItem("token");
