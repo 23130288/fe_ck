@@ -42,14 +42,13 @@
 .user-menu #dropdown-menu {
     position: absolute;
     inset: unset;
-    position-area: bottom center;
+    position-area: bottom span-left;
     z-index: 1000;
-    width: 280px;
     margin: 10px 0 0;
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7edf5;
-    border-radius: 14px;
+    border-radius: 10px;
     background-color: var(--color-white);
     box-shadow: 0 12px 32px rgba(0, 31, 77, 0.2);
     color: var(--color-dark);
@@ -57,9 +56,10 @@
 
 .user-menu-heading {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 12px;
-    padding: 17px 16px;
+    padding: 10px 15px;
     background: linear-gradient(135deg, #f3f8ff, #fff);
 }
 
@@ -77,6 +77,9 @@
     min-width: 0;
     flex-direction: column;
     gap: 4px;
+}
+.user-menu-identity > strong, span {
+    text-align: right;
 }
 
 .user-menu-identity strong {

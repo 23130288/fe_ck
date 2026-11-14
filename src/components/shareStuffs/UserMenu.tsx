@@ -12,11 +12,9 @@ export default function UserMenu() {
             <button
                 id="dropdown-button"
                 className="user-menu-trigger"
-                type="button"
                 popoverTarget="dropdown-menu"
-                aria-label={user ? `Tài khoản ${user.username}` : "Mở menu tài khoản"}
-            >
-                <span>{user?.username || 'Guest'}</span>
+            >                
+            <span>{user?.username || 'Guest'}</span>
                 <img src={user?.avatar || placeholder} className="avatar" alt="" />
             </button>
 
@@ -24,8 +22,8 @@ export default function UserMenu() {
                 <div className="user-menu-heading">
                     <img src={user?.avatar || placeholder} className="user-menu-avatar" alt="" />
                     <div className="user-menu-identity">
-                        <strong>{user?.username || 'Xin chào!'}</strong>
-                        <span>{user ? 'Quản lý tài khoản của bạn' : 'Đăng nhập để tiếp tục'}</span>
+                        <strong>Xin chào! {user?.username || ''}</strong>
+                        <span>{user?.email || 'Đăng nhập để tiếp tục'}</span>
                     </div>
                 </div>
 
