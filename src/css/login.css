@@ -41,14 +41,16 @@
 
 .login-card input {
     width: 100%;
-    min-height: 42px;
+    min-height: 40px;
     box-sizing: border-box;
-    margin-bottom: 16px;
-    padding: 0 12px;
+    margin-bottom: 13px;
+    padding: 0 11px;
     border: 1px solid #d5deea;
     border-radius: 8px;
+    background: #fff;
     color: #1d2d40;
     font: inherit;
+    font-size: 13px;
 }
 
 .login-card input:focus {
