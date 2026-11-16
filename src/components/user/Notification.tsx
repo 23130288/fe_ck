@@ -4,7 +4,6 @@ export default function Notification() {
     const [searchParams] = useSearchParams();
     const subType = searchParams.get("subtype") || "all_notification";
 
-    // ===== DỮ LIỆU THÔNG BÁO =====
     const notifications = [
         {
             id: 1,
@@ -29,7 +28,6 @@ export default function Notification() {
         }
     ];
 
-    // ===== LỌC THÔNG BÁO =====
     const filteredNotifications = notifications.filter(item => {
         if (subType === "unread_notification") {
             return item.status === "unread";

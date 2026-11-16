@@ -28,12 +28,12 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="list-filters">
-                    <Link to="/search?type=tour" className={type === "tour" ? "selected" : ""}>Tour</Link>
-                    <Link to="/search?type=flight" className={type === "flight" ? "selected" : ""}>Vé máy bay</Link>
-                    <Link to="/search?type=hotel" className={type === "hotel" ? "selected" : ""}>Khách sạn</Link>
-                    <Link to="/search?type=attraction" className={type === "attraction" ? "selected" : ""}>Khu vui
+                    <Link to="/search?type=tour" className={type === "tour" ? "selected" : "item"}>Tour</Link>
+                    <Link to="/search?type=flight" className={type === "flight" ? "selected" : "item"}>Vé máy bay</Link>
+                    <Link to="/search?type=hotel" className={type === "hotel" ? "selected" : "item"}>Khách sạn</Link>
+                    <Link to="/search?type=attraction" className={type === "attraction" ? "selected" : "item"}>Khu vui
                         chơi</Link>
-                    <Link to="/search?type=a-day-tour" className={type === "a-day-tour" ? "selected" : ""}>Tour trong
+                    <Link to="/search?type=a-day-tour" className={type === "a-day-tour" ? "selected" : "item"}>Tour trong
                         ngày</Link>
                 </div>
             </div>

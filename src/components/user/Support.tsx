@@ -4,7 +4,6 @@ export default function Support() {
     const [searchParams] = useSearchParams();
     const type = searchParams.get("subtype") || "all_support";
 
-    // Dữ liệu mẫu
     const supports = [
         {
             id: 1,
