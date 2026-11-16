@@ -12,18 +12,25 @@ import Register from "../pages/register.tsx";
 import Layout from "./Layout.tsx";
 import ErrorPage from "./ErrorPage.tsx";
 
+import {store} from "../store/store.ts";
+
 import tours from "../json/product/tour.json";
 import hotels from "../json/product/hotel.json";
 import flights from "../json/product/flight.json";
 import type {Tour, Hotel, Flight} from "../store/slice/ProductSlice.ts";
 
-import {store} from "../store/store.ts";
 import {loadTours,
     loadFlights,
     loadHotels,
     loadAttractions,
     loadADayTours}
     from "../store/slice/ProductSlice.ts";
+
+import orders from "../json/Order/order.json";
+import type Order from "../type/Order";
+import {
+    loadOrders
+} from "../store/slice/OrderSlice";
 
 const productLoader = async () => {
     store.dispatch(loadTours(tours as Tour[]));
@@ -33,6 +40,11 @@ const productLoader = async () => {
     store.dispatch(loadADayTours(tours as Tour[]));
     return true;
 }
+
+const orderLoader = async () => {
+    store.dispatch(loadOrders(orders as Order[]));
+    return true;
+};
 
 export const router = createBrowserRouter([
     {
@@ -60,7 +72,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: "user",
-                element: <User/>
+                element: <User/>,
+                loader: orderLoader
             },
             {
                 path: 'login',
