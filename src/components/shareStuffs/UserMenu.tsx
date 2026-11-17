@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../../css/shareStuffs/UserMenu.css'
 import { logout } from '../../api/Auth.tsx'
+import placeholder from "../../images/placeholder.png";
 
-const placeholder = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmZrR7J3V2oTFiaOOa6LDTn-Y_mu4lNOsyzQe5wflwCA&s=10'
 
 export default function UserMenu() {
     const user = JSON.parse(sessionStorage.getItem("userInfo") || "null");
