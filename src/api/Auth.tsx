@@ -1,6 +1,5 @@
 import users from "../json/usersAccount.json";
 import usersInfo from "../json/usersInfo.json";
-import defaultAvatar from "../images/placeholder.png";
 
 interface UserAccount {
   id: number;
@@ -21,17 +20,6 @@ interface UserInfo {
   avatar: string;
 }
 
-interface RegisteredAccount {
-  account: UserAccount;
-  info: UserInfo;
-}
-
-const REGISTERED_USERS_KEY = "registeredUsers";
-
-function getRegisteredUsers(): RegisteredAccount[] {
-  const savedUsers = sessionStorage.getItem(REGISTERED_USERS_KEY);
-  return savedUsers ? JSON.parse(savedUsers) as RegisteredAccount[] : [];
-}
 
 export function login(email: string, password: string) {
   if (email.trim() === '') {
@@ -42,11 +30,7 @@ export function login(email: string, password: string) {
   }
 
   const normalizedEmail = email.trim().toLowerCase();
-  const registeredUsers = getRegisteredUsers();
-  const registeredUser = registeredUsers.find(
-    ({ account }) => account.email === normalizedEmail && account.password === password
-  );
-  const user = registeredUser?.account ?? (users as UserAccount[]).find(
+  const user =(users as UserAccount[]).find(
     u => u.email.toLowerCase() === normalizedEmail && u.password === password
   );
 
@@ -54,7 +38,7 @@ export function login(email: string, password: string) {
     throw new Error("Tài khoản hoặc mật khẩu không đúng");
   }
 
-  const info = registeredUser?.info ?? usersInfo.find(u => u.id === user.id);
+  const info = usersInfo.find(u => u.id === user.id);
   return {
     success: true,
     UserInfo: info,
@@ -90,38 +74,14 @@ export function register(
     throw new Error("Mật khẩu xác nhận không khớp");
   }
   const normalizedEmail = email.trim().toLowerCase();
-  const registeredUsers = getRegisteredUsers();
   const emailExists = (users as UserAccount[]).some(
     user => user.email.toLowerCase() === normalizedEmail
-  ) || registeredUsers.some(
-    ({ account }) => account.email === normalizedEmail
-  );
+  ) 
   if (emailExists) {
     throw new Error("Tài khoản đã tồn tại");
   }
 
-  const id = Math.max(
-    0,
-    ...(users as UserAccount[]).map(user => user.id),
-    ...registeredUsers.map(({ account }) => account.id)
-  ) + 1;
-  const account = { id, email: normalizedEmail, password };
-  const info: UserInfo = {
-    id,
-    username: profile.username.trim(),
-    fullName: profile.username.trim(),
-    displayName: profile.username.trim(),
-    email: normalizedEmail,
-    birthDate: profile.birthDate,
-    gender: profile.gender,
-    phone: "",
-    address: "",
-    avatar: defaultAvatar
-  };
-  sessionStorage.setItem(
-    REGISTERED_USERS_KEY,
-    JSON.stringify([...registeredUsers, { account, info }])
-  );
+    const info = usersInfo.find(u => u.id === 3);
 
   return {
     success: true,
@@ -133,5 +93,7 @@ export function register(
 export function logout() {
   sessionStorage.removeItem("token");
   sessionStorage.removeItem("userInfo");
+  localStorage.removeItem("token");
+  localStorage.removeItem("userInfo");
   window.location.href = "/";
 }
