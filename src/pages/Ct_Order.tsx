@@ -1,5 +1,4 @@
-import "../css/ct_Order.css"
-import OrderItem from "../components/OrderItem";
+import "../css/ct_Order.css";
 
 type Order = {
     id: number;
@@ -9,116 +8,244 @@ type Order = {
     quantity: number;
     total: string;
 };
+
 export default function Ct_OrderPage({orders}: { orders: Order[] | null }) {
-    orders = [
+    const rooms = [
+        {
+            id: 1,
+            name: "Phòng Superior có giường cỡ king nhìn ra biển",
+            breakfast: "Giá bao gồm bữa sáng",
+            rating: "8.2 Rất tốt · 22 đánh giá",
+            cancellation: "Không hoàn tiền",
+            guests: "1 người lớn",
+            guestName: "Thanh Hải",
+            cleanliness: "Phòng cực kỳ sạch - 8.5",
+            smoking: "Không hút thuốc"
+        },
         {
             id: 2,
-            image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b",
-            name: "Tour Phú Quốc - Thiên đường biển đảo",
-            price: "4200000đ",
-            quantity: 2,
-            total: "8400000đ"
-        },
-        {
-            id: 3,
-            image: "https://images.unsplash.com/photo-1555921015-5532091f6026",
-            name: "Tour Đà Nẵng - Hội An - Bà Nà Hills",
-            price: "3800000đ",
-            quantity: 1,
-            total: "3800000đ"
-        },
-        {
-            id: 4,
-            image: "https://images.unsplash.com/photo-1528127269322-539801943592",
-            name: "Tour Vịnh Hạ Long khám phá kỳ quan",
-            price: "2900000đ",
-            quantity: 2,
-            total: "5800000đ"
-        },
-        {
-            id: 5,
-            image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-            name: "Tour Sapa - Chinh phục Fansipan",
-            price: "3100000đ",
-            quantity: 1,
-            total: "3100000đ"
-        },
-        {
-            id: 6,
-            image: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86",
-            name: "Tour Nha Trang - Khám phá đảo",
-            price: "3000000đ",
-            quantity: 1,
-            total: "3000000đ"
-        },
-        {
-            id: 7,
-            image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-            name: "Tour Quy Nhơn - Biển xanh cát trắng",
-            price: "2700000đ",
-            quantity: 2,
-            total: "5400000đ"
-        },
-        {
-            id: 8,
-            image: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
-            name: "Tour Hà Giang - Khám phá cao nguyên đá",
-            price: "3500000đ",
-            quantity: 1,
-            total: "3500000đ"
-        },
-        {
-            id: 9,
-            image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-            name: "Tour Mộc Châu - Mùa hoa Tây Bắc",
-            price: "1800000đ",
-            quantity: 1,
-            total: "1800000đ"
-        },
-        {
-            id: 10,
-            image: "https://images.unsplash.com/photo-1530789253388-582c481c54b0",
-            name: "Tour Côn Đảo - Hành trình khám phá",
-            price: "4500000đ",
-            quantity: 2,
-            total: "9000000đ"
+            name: "Standard Room with Two Single Bed",
+            breakfast: "Không bao gồm bữa sáng",
+            rating: "8.5 Rất tốt · 35 đánh giá",
+            cancellation: "Miễn phí hủy trước ngày nhận phòng",
+            guests: "2 người lớn",
+            guestName: "Thanh Hải",
+            cleanliness: "Phòng sạch sẽ - 8.7",
+            smoking: "Không hút thuốc"
         }
     ];
-    return (<>
+
+
+    return (
         <div className="container">
-            <h2 className="thanks-message">Cảm ơn bạn đã thanh toán</h2>
-            <h3 className="title">Đơn hàng 1111</h3>
-            <p className="date">20/12/2004</p>
-            <div className="customer-info">
-                <p className="customer-name">Nguyễn Văn A</p>
-            </div>
-            <div className="product-info">
-                <div className="product-header">
-                    <div className="product-header-content" id="product-header-title">Sản phẩm</div>
-                    <div className="product-header-content" id="product-header-price">Đơn giá</div>
-                    <div className="product-header-content" id="product-header-quantity">Số lượng</div>
-                    <div className="product-header-content" id="product-header-total">Tổng</div>
-                </div>
-                <div className="list-Orders">
-                    {orders.slice(0, 4).map((order) => (
-                        <OrderItem key={order.id} order={order}/>
-                    ))}
+            <div className="steps">
+                <div className="step completed">
+                    <span className="step_num">✓</span>
+                    <span>Bạn chọn</span>
                 </div>
 
-                <div className="container-product-price">
-                    <div className="container-price">
-                        <label>Tổng tiền:</label>
-                        <label>100000 đ</label>
+                <div className="line"></div>
+
+                <div className="step active">
+                    <span className="step_num">2</span>
+                    <span>Chi tiết về bạn</span>
+                </div>
+
+                <div className="line"></div>
+
+                <div className="step">
+                    <span className="step_num">3</span>
+                    <span>Hoàn tất đặt phòng</span>
+                </div>
+            </div>
+            <div className="ct_order_container">
+
+                <div className="left_sec">
+                    <div className="left_block">
+                        <img
+                            className="hotel_img"
+                            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900"
+                            alt="Khách sạn ibis Styles Vung Tau"/>
+
+                        <div className="left_block_conten">
+                            <h1>ibis Styles Vung Tau</h1>
+
+                            <p className="hotel_address">
+                                117 Thuy Van Street, Vung Tau Ward,
+                                790000 Vũng Tàu, Việt Nam
+                            </p>
+
+                            <p className="hotel_location">
+                                Vị trí xuất sắc — 9,2
+                            </p>
+
+                            <div className="hotel_rating">
+                                <p className="rating_number">8,3</p>
+                                <span>Rất tốt · 878 đánh giá</span>
+                            </div>
+
+                            <div className="hotel_amenities">
+                                <span>Giáp biển</span>
+                                <span>Hồ bơi</span>
+                                <span>Chỗ đỗ xe</span>
+                                <span>Trung tâm thể dục</span>
+                                <span>Điều hòa nhiệt độ</span>
+                                <span>Dọn phòng hàng ngày</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className="container-price" id="final-price">
-                        <label className="title">Tổng thanh toán:</label>
-                        <label className="price">10000000 đ</label>
+
+                    <div className="left_block">
+                        <div className="left_block_conten">
+                            <h1>Chi tiết đặt phòng của bạn</h1>
+                            <div className="booking_dates">
+                                <div className="booking_date_item">
+                                    <span>Nhận phòng</span>
+                                    <h3>T6, 27 tháng 11</h3>
+                                    <p>Từ 14:00</p>
+                                </div>
+
+                                <div className="booking_date_item">
+                                    <span>Trả phòng</span>
+                                    <h3>CN, 29 tháng 11</h3>
+                                    <p>Trước 12:00</p>
+                                </div>
+                            </div>
+
+                            <div className="all_room">
+                                <h3>Bạn đã chọn</h3>
+                                <h2>2 đêm, 4 phòng cho 6 người lớn</h2>
+
+                                <p>2 x Phòng Superior có giường cỡ king nhìn ra biển</p>
+                                <p>2 x Standard Room with Two Single Bed</p>
+
+                                <button type="button" className="text_button">
+                                    Đổi lựa chọn của bạn
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div className="container-status">
-                        <label className="title">Trạng thái đơn hàng: đã thanh toán</label>
+                </div>
+                <div className="right_sec">
+                    <div className="right_block">
+                        <div className="logged_in_card">
+                            <img
+                                src="https:i.pravatar.cc/100?img=12"
+                                alt="Ảnh đại diện"
+                            />
+
+                            <div className="logged_in_info">
+                                <h2>Bạn đã được đăng nhập</h2>
+                                <p>Thanh hải</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="right_block">
+                        <h2>Nhập thông tin chi tiết của bạn</h2>
+
+                        <div className="guest_form">
+                            <div className="form_row">
+                                <div className="form_group">
+                                    <label>
+                                        Họ (tiếng Anh) <span className="required">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        placeholder="Ví dụ: Nguyễn"
+                                        required
+                                    />
+                                </div>
+
+                                <div className="form_group">
+                                    <label>
+                                        Tên (tiếng Anh) <span className="required">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        defaultValue="Thanh hải"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="form_group form_half">
+                                <label>
+                                    Địa chỉ email <span className="required">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    defaultValue="nguyenthai221204@gmail.com"
+                                    required
+                                />
+                                <p className="form_description">
+                                    Email xác nhận đặt phòng sẽ được gửi đến địa chỉ này
+                                </p>
+                            </div>
+
+                            <div className="form_group form_half">
+                                <label>
+                                    Địa chỉ <span className="required">*</span>
+                                </label>
+                                <input type="text" required/>
+                            </div>
+
+                            <div className="form_group form_half">
+                                <label>
+                                    Thành phố <span className="required">*</span>
+                                </label>
+                                <input type="text" required/>
+                            </div>
+
+                            <div className="form_group form_half">
+                                <label>
+                                    Quốc gia / Khu vực <span className="required">*</span>
+                                </label>
+                                <select defaultValue="Vietnam" required>
+                                    <option value="Vietnam">Việt Nam</option>
+                                    <option value="Thailand">Thái Lan</option>
+                                    <option value="Japan">Nhật Bản</option>
+                                    <option value="Korea">Hàn Quốc</option>
+                                    <option value="USA">Hoa Kỳ</option>
+                                </select>
+                            </div>
+
+                            <div className="form_group form_half">
+                                <label>
+                                    Số điện thoại <span className="required">*</span>
+                                </label>
+                                <input
+                                    type="tel"
+                                    placeholder="Ví dụ: 0912345678"
+                                    required
+                                />
+                            </div>
+
+                            <div className="form_group">
+                                <label>
+                                    Yêu cầu đặc biệt (không bắt buộc)
+                                </label>
+                                <textarea
+                                    rows={4}
+                                    placeholder="Nhập yêu cầu của bạn tại đây..."
+                                />
+                            </div>
+
+                            <div className="booking_submit">
+                                <div className="booking_submit_info">
+                                    <span>Tổng thanh toán</span>
+                                    <p>2.450.000 ₫</p>
+                                </div>
+
+                                <button type="submit">
+                                    Tiếp tục
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </>);
+    );
 }

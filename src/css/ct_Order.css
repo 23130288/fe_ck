@@ -1,162 +1,352 @@
+/*.ct_order_page {*/
+/*    width: 100%;*/
+/*    min-height: 100vh;*/
+/*    background: var(--color-white);*/
+/*    color: var(--color-dark);*/
+/*    font-family: var(--font);*/
+/*    padding: 30px 20px 60px;*/
+/*    box-sizing: border-box;*/
+/*}*/
 
+/*.ct_order_page * {*/
+/*    box-sizing: border-box;*/
+/*}*/
 
-.container .product-info {
-    margin: 20px 50px;
-}
+/*.ct_order_page input,*/
+/*.ct_order_page select,*/
+/*.ct_order_page textarea,*/
+/*.ct_order_page button {*/
+/*    font: inherit;*/
+/*}*/
 
-/* ========================= product header ========================== */
-/* =================================================================== */
-main .product-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 1px solid grey;
-}
-
-main .product-header .product-header-content {
-    flex: 1;
-    text-align: center;
-}
-
-main .product-header #product-header-title {
-    flex: 2;
-    text-align: left;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-/* =========================== product item =========================== */
-/* ==================================================================== */
-main .product-item img {
-    width: 100px;
-    height: 100%;
-    border-radius: 4px;
-}
-
-main .product-item {
+.steps {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 14px;
-}
-
-main .product-item .product-item-more,
-main .product-item .product-item-quantity {
-    text-align: center;
-    padding: 5px;
-    flex: 1;
-}
-
-
-main .product-item .product-item-title {
-    display: flex;
-    flex: 2;
+    width: 100%;
+    margin-bottom: 30px;
     gap: 10px;
+}
+
+.step {
+    display: flex;
     align-items: center;
-    text-align: left;
+    gap: 10px;
+    white-space: nowrap;
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    color: var(--color-dark);
 }
 
-main .product-item .product-item-title .product-item-info .product-item-variant {
-    font-size: 14px;
-    color: #444;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .product-item-variant p {
-    margin: 2px 0;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-color {
-    width: 15px;
-    height: 15px;
-    border: 1px solid lightgrey;
+.step_num {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #555;
     border-radius: 50%;
-}
-
-/* colors for buttons */
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-color.black {
-    background: black;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-color.grey {
-    background: grey;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-color.red {
-    background: red;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-color.blue {
-    background: blue;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-color.pink {
-    background: pink;
-}
-
-main .product-item .product-item-title .product-item-info .product-item-variant .variant-size {
-    font-weight: bold;
-}
-
-main .product-item .product-item-quantity {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--font-size-s);
+    flex-shrink: 0;
 }
 
-main .product-item .product-item-quantity {
+.step.completed .step_num,
+.step.active .step_num {
+    background: var(--color-blue);
+    color: var(--color-white);
+    border-color: var(--color-blue);
+}
+
+.step.completed,
+.step.active {
+    color: var(--color-dark);
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background: #555;
+    min-width: 20px;
+}
+
+.ct_order_container {
+    display: flex;
+}
+
+.left_sec {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.left_block {
+    border: 1px solid #555;
+    border-radius: 11px;
+    overflow: hidden;
+    background: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.hotel_img {
+    display: block;
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+.left_block_conten {
+    padding: 20px;
+}
+
+.left_block_conten h1 {
+    font-size: var(--font-size-xl);
+    margin: 0 0 14px;
+    font-weight: 700;
+}
+
+.hotel_address {
+    font-size: var(--font-size-m);
+    line-height: 1.6;
+    margin: 0 0 4px;
+}
+
+.hotel_location {
+    font-size: var(--font-size-s);
+    color: var(--color-blue);
+    margin: 0 0 12px;
+}
+
+.hotel_rating {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    font-size: var(--font-size-s);
+    color: var(--color-dark);
+    margin-bottom: 15px;
 }
 
-.quantity {
-    padding: 0 20px;
+.rating_number {
+    background: var(--color-blue-dark);
+    color: var(--color-white);
+    padding: 6px 7px;
+    border-radius: 3px;
+    margin: 0;
+}
+
+.hotel_amenities {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
-.quantity:hover {
-    cursor: default;
+.hotel_amenities span {
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-size: var(--font-size-s);
 }
 
-.container-product-price {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid grey;
+.booking_dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.booking_date_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 15px;
+    min-width: 0;
+}
+
+.booking_date_item:last-child {
+    border-left: 1px solid #555;
+    padding-left: 20px;
+}
+
+.booking_date_item span {
+    font-size: var(--font-size-m);
     text-align: left;
+}
+
+.booking_date_item h3 {
+    font-size: var(--font-size-m);
+    margin: 0;
+}
+
+.booking_date_item p {
+    color: var(--color-dark);
+    font-size: var(--font-size-s);
+    margin: 0;
+}
+
+.booking_detail_item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+    font-size: var(--font-size-s);
+}
+
+.booking_detail_item p {
+    margin: 0;
+    text-align: right;
+}
+
+.right_sec {
+    width: 70%;
+}
+
+.right_block {
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 11px;
+    padding: 22px 20px;
+}
+
+.right_block h2 {
+    font-size: var(--font-size-xl);
+    margin: 0 0 22px;
+}
+
+.logged_in_card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logged_in_card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--color-yellow);
+    object-fit: cover;
+}
+
+.logged_in_info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
 }
 
-/* =========================== back button =========================== */
-/* =================================================================== */
-#form-input-info {
-    margin-top: 50px;
+.logged_in_info h2 {
+    font-size: var(--font-size-m);
+    margin: 0;
 }
 
-#form-input-info button {
-    background: white;
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 50px;
-    border: black 1px solid;
-    transition: 0.3s;
+.logged_in_info p {
+    color: var(--color-dark);
+    font-size: var(--font-size-m);
+    margin: 0;
 }
 
-#form-input-info button:hover {
+.guest_form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.form_half {
+    width: calc(50% - 10px);
+}
+
+.form_group label {
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}
+
+.required {
+    color: var(--color-red);
+}
+
+.form_group input,
+.form_group select,
+.form_group textarea {
+    height: 45px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--color-white);
+    font-size: var(--font-size-m);
+    color: var(--color-dark);
+}
+
+.form_group textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.form_group input:focus,
+.form_group select:focus,
+.form_group textarea:focus {
+    border-color: var(--color-blue);
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+    color: #555;
+}
+
+.form_description {
+    color: var(--color-dark);
+    font-size: var(--font-size-s);
+    margin: 0;
+}
+
+.booking_submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.booking_submit_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.booking_submit_info span {
+    color: var(--color-dark);
+    font-size: var(--font-size-m);
+}
+
+.booking_submit_info p {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-blue);
+    margin: 0;
+}
+
+.booking_submit button {
+    background: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 6px;
+    padding: 14px 28px;
+    font-size: var(--font-size-m);
+    font-weight: 600;
     cursor: pointer;
-    background: #F2B035;
+    transition: background 0.2s;
 }
-.list-Orders{
-    display: flex;
-    flex-direction: column;
+
+.booking_submit button:hover {
+    background: var(--color-blue-bluer);
 }
