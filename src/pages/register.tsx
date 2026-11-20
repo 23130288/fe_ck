@@ -1,6 +1,6 @@
 import "../css/register.css"
 import { Link } from 'react-router-dom'
-import { useState } from "react";
+import {useState, type FormEvent} from "react";
 import { register } from "../api/Auth.tsx";
 
 export default function Register() {
@@ -13,19 +13,19 @@ export default function Register() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
-    const handleRegister = (e: React.SubmitEvent) => {
+    const handleRegister = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setError("");
         setLoading(true);
 
         try {
-            const response = register(email, password, confirmPassword, {
+            const response = await register(email, password, confirmPassword, {
+                id: Date.now(),
                 username,
                 birthDate,
-                gender
+                gender,
             });
-            sessionStorage.setItem("token", response.token);
-            sessionStorage.setItem("userInfo", JSON.stringify(response.UserInfo));
+            sessionStorage.setItem("userInfo", JSON.stringify(response.userInfo));
             window.location.href = "/";
         } catch (err) {
             setError(err instanceof Error ? err.message : "Xảy ra lỗi trong quá trình đăng ký");

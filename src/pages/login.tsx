@@ -1,6 +1,6 @@
 import "../css/login.css"
 import { Link } from 'react-router-dom'
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { login } from "../api/Auth.tsx";
 
 export default function Login() {
@@ -9,15 +9,14 @@ export default function Login() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
-    const handleLogin = async (e: React.SubmitEvent) => {
+    const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setError("");
         setLoading(true);
 
         try {
             const response = await login(email, password);
-            sessionStorage.setItem("token", response.token);
-            sessionStorage.setItem("userInfo", JSON.stringify(response.UserInfo));
+            sessionStorage.setItem("userInfo", JSON.stringify(response.userInfo));
             window.location.href = "/";
         } catch (err) {
             setError(err instanceof Error ? err.message : "Xảy ra lỗi trong quá trình đăng nhập");

@@ -78,7 +78,7 @@
     flex-direction: column;
     gap: 4px;
 }
-.user-menu-identity > strong, span {
+.user-menu-identity > strong, .user-menu-identity > span {
     text-align: right;
 }
 

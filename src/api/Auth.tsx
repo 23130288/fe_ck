@@ -1,52 +1,54 @@
-import users from "../json/usersAccount.json";
-import usersInfo from "../json/usersInfo.json";
-
-interface UserAccount {
-  id: number;
-  email: string;
-  password: string;
-}
+import {signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut} from "firebase/auth";
+import {doc, getDoc, setDoc} from "firebase/firestore";
+import {auth, db} from "../firebase.ts";
 
 interface UserInfo {
   id: number;
   username: string;
-  fullName: string;
-  displayName: string;
-  email: string;
-  birthDate: string;
-  gender: string;
-  phone: string;
-  address: string;
-  avatar: string;
+  fullName?: string;
+  displayName?: string;
+  email?: string;
+  emailVerified?: boolean;
+  birthDate?: string;
+  gender?: string;
+  phone?: string;
+  phoneNumber?: string;
+  nationality?: string;
+  address?: string;
+  avatar?: string;
+  passport?: {
+    passportNumber: string;
+    issuingCountry: string;
+    issueDate: string;
+    expiryDate: string;
+  };
 }
 
-
-export function login(email: string, password: string) {
+export async function login(email: string, password: string) {
   if (email.trim() === '') {
     throw new Error("Vui lòng nhập email");
   }
   if (password === '') {
     throw new Error("Vui lòng nhập mật khẩu");
   }
-
-  const normalizedEmail = email.trim().toLowerCase();
-  const user =(users as UserAccount[]).find(
-    u => u.email.toLowerCase() === normalizedEmail && u.password === password
-  );
-
-  if (!user) {
+  let credential;
+  try {
+    credential = await signInWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
+  } catch {
     throw new Error("Tài khoản hoặc mật khẩu không đúng");
   }
-
-  const info = usersInfo.find(u => u.id === user.id);
-  return {
-    success: true,
-    UserInfo: info,
-    token: "fake-jwt-token"
-  };
+    const user = credential.user;
+    const userRef = doc(db, "users", user.uid);
+    const userSnap = await getDoc(userRef);
+  if (!userSnap.exists()) {
+    await signOut(auth);
+    throw new Error("Không có hồ sơ người dùng");
+  }
+  return {success: true, userInfo: userSnap.data() as UserInfo, uid: user.uid,};
 }
 
-export function register(
+
+export async function register(
   email: string,
   password: string,
   confirm: string,
@@ -73,27 +75,23 @@ export function register(
   if (password !== confirm) {
     throw new Error("Mật khẩu xác nhận không khớp");
   }
-  const normalizedEmail = email.trim().toLowerCase();
-  const emailExists = (users as UserAccount[]).some(
-    user => user.email.toLowerCase() === normalizedEmail
-  ) 
-  if (emailExists) {
-    throw new Error("Tài khoản đã tồn tại");
+  try {
+    const credential = await createUserWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
+    const user = credential.user;
+    const userInfo: UserInfo = {...profile, email: user.email ?? email.trim().toLowerCase(),};
+    await setDoc(doc(db, "users", user.uid), userInfo);
+    return {success: true, userInfo, uid: user.uid,};
+  } catch (error) {
+    const firebaseError = error as {code?: string};
+    if (firebaseError.code === "auth/email-already-in-use") {
+      throw new Error("Tài khoản đã tồn tại");
+    }
+    throw new Error(error instanceof Error ? error.message : "Không thể đăng ký tài khoản");
   }
-
-    const info = usersInfo.find(u => u.id === 3);
-
-  return {
-    success: true,
-    UserInfo: info,
-    token: "fake-jwt-token"
-  };
 }
 
-export function logout() {
-  sessionStorage.removeItem("token");
+export async function logout() {
+  await signOut(auth);
   sessionStorage.removeItem("userInfo");
-  localStorage.removeItem("token");
-  localStorage.removeItem("userInfo");
   window.location.href = "/";
 }

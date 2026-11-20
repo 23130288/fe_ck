@@ -161,9 +161,7 @@ export default function ProductDetail() {
                 {product.reviews && product.reviews.length > 0 && (<>
                     <ListProductReviews reviews={product.reviews}/>
                     <button className="read-all-reviews">Tất cả đánh giá</button>
-                </>)} : {(
-                <p>Chưa có đánh giá nào.</p>
-            )}
+                </>)}
             </section>
         </div>
     </div>);
