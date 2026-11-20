@@ -31,6 +31,7 @@ export default function UserMenu() {
                     {user == null ? <>
                         <Link to="login" className="dropdown-content dropdown-content-primary">Đăng nhập</Link>
                         <Link to="register" className="dropdown-content">Tạo tài khoản</Link>
+                        <Link to="ct_orderPage" className="dropdown-content">Test</Link>
                     </> : <>
                         <Link to="/user?type=info" className="dropdown-content">Thông tin cá nhân</Link>
                         <Link to="ct_orderPage" className="dropdown-content">Đơn hàng của tôi</Link>
