@@ -6,16 +6,32 @@ interface UserAccount {
   email: string;
   password: string;
 }
+
+interface UserInfo {
+  id: number;
+  username: string;
+  fullName: string;
+  displayName: string;
+  email: string;
+  birthDate: string;
+  gender: string;
+  phone: string;
+  address: string;
+  avatar: string;
+}
+
+
 export function login(email: string, password: string) {
-  if (email == '') {
+  if (email.trim() === '') {
     throw new Error("Vui lòng nhập email");
   }
-  if (password == '') {
+  if (password === '') {
     throw new Error("Vui lòng nhập mật khẩu");
   }
 
-  const user = (users as UserAccount[]).find(
-    u => u.email === email && u.password === password
+  const normalizedEmail = email.trim().toLowerCase();
+  const user =(users as UserAccount[]).find(
+    u => u.email.toLowerCase() === normalizedEmail && u.password === password
   );
 
   if (!user) {
@@ -30,31 +46,54 @@ export function login(email: string, password: string) {
   };
 }
 
-export function register(email: string, password: string, confirm: string) {
-  if (email == '') {
+export function register(
+  email: string,
+  password: string,
+  confirm: string,
+  profile: UserInfo
+) {
+  if (email.trim() === '') {
     throw new Error("Vui lòng nhập email");
   }
-  if (password == '') {
+  if (password === '') {
     throw new Error("Vui lòng nhập mật khẩu");
   }
-  if (confirm == '') {
-    throw new Error('Vui lòng xác nhận mật khẩu')
+  if (confirm === '') {
+    throw new Error("Vui lòng xác nhận mật khẩu");
+  }
+  if (profile.username.trim() === '') {
+    throw new Error("Vui lòng nhập tên tài khoản");
+  }
+  if (!profile.birthDate) {
+    throw new Error("Vui lòng chọn ngày sinh");
+  }
+  if (!profile.gender) {
+    throw new Error("Vui lòng chọn giới tính");
   }
   if (password !== confirm) {
-    throw new Error('Mật khẩu xác nhận không khớp')
+    throw new Error("Mật khẩu xác nhận không khớp");
   }
-  let user = (users as UserAccount[]).find(
-    u => u.email === email
-  );
-  if (user) {
+  const normalizedEmail = email.trim().toLowerCase();
+  const emailExists = (users as UserAccount[]).some(
+    user => user.email.toLowerCase() === normalizedEmail
+  ) 
+  if (emailExists) {
     throw new Error("Tài khoản đã tồn tại");
   }
-  return true;
+
+    const info = usersInfo.find(u => u.id === 3);
+
+  return {
+    success: true,
+    UserInfo: info,
+    token: "fake-jwt-token"
+  };
 }
-export function registerInfo(username: string, number: string, address: string, avatar: string) {
-}
+
 export function logout() {
   sessionStorage.removeItem("token");
   sessionStorage.removeItem("userInfo");
+  localStorage.removeItem("token");
+  localStorage.removeItem("userInfo");
   window.location.href = "/";
 }

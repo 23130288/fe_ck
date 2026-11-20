@@ -1,111 +1,64 @@
-export default function Order() {
-    return (<>
-            {/* =============================== ORDER =============================== */}
-            <div className="information-container" id="order">
-                <h2>Đơn hàng</h2>
-                <div className="container" id="Order">
+import {Link, useSearchParams} from "react-router-dom";
+import {useSelector} from "react-redux";
+import type {RootState} from "../../store/store.ts";
 
-                    <div className="tab-nav-menu">
-                        <a href="#all-orders" className="tab-menu active">Tất cả</a>
-                        <a href="#delivered-orders" className="tab-menu">Đã giao</a>
-                        <a href="#shipping-orders" className="tab-menu">Đang giao</a>
-                        <a href="#cancelled-orders" className="tab-menu">Đã hủy</a>
-                    </div>
+export function Order() {
+    const [searchParams] = useSearchParams();
 
-                    {/* Tất cả đơn hàng */}
-                    <div className="product-content all active" id="all-orders">
-                        <div className="product-header">
-                            <div className="product-header-title">Sản phẩm</div>
-                            <div className="product-header-price">Đơn giá</div>
-                            <div className="product-header-status">Tình trạng</div>
-                            <div className="product-header-date">Ngày tạo</div>
-                        </div>
+    const subType1 = searchParams.get("subType1") || "all";
+    const subType2 = searchParams.get("subType2") || "all_order";
 
-                        <div className="products">
-                            <div className="product">
-                                <div className="product-title">
-                                    <a href="show-order?oid=1001"><label>Đơn hàng 1001</label></a>
-                                </div>
-                                <div className="product-price">2.500.000 đ</div>
-                                <div className="product-status-delivered">Đã giao</div>
-                                <div className="product-date">01/11/2026</div>
-                            </div>
-
-                            <div className="product">
-                                <div className="product-title">
-                                    <a href="show-order?oid=1002"><label>Đơn hàng 1002</label></a>
-                                </div>
-                                <div className="product-price">1.800.000 đ</div>
-                                <div className="product-status-shipping">Đang giao</div>
-                                <div className="product-date">03/11/2026</div>
-                            </div>
-
-                            <div className="product">
-                                <div className="product-title">
-                                    <a href="show-order?oid=1003"><label>Đơn hàng 1003</label></a>
-                                </div>
-                                <div className="product-price">3.200.000 đ</div>
-                                <div className="product-status-cancelled">Đã hủy</div>
-                                <div className="product-date">25/10/2026</div>
-                            </div>
+    const orders = useSelector(
+        (state: RootState) => state.orders.orders
+    );
+    const filteredOrders = orders.filter(item => {
+        const matchType =
+            subType1 === "all" || item.type === subType1;
+        const matchStatus =
+            subType2 === "all_order" || item.status === subType2;
+        return matchType && matchStatus;
+    });
+    return (
+        <>
+            <div className="sub_header">
+                <div>
+                    <h2>Order của tôi</h2>
+                    <div className="sub_menu">
+                        <div className="sub_menu_item">
+                            <Link to="/user?type=order&subType1=all&subType2=all_order"
+                                  className={subType1 === "all" ? "selected" : "item"}>Tất cả dịch vụ</Link>
+                            <Link to="/user?type=order&subType1=flight&subType2=all_order"
+                                  className={subType1 === "flight" ? "selected" : "item"}>Vé máy bay</Link>
+                            <Link to="/user?type=order&subType1=hotel&subType2=all_order"
+                                  className={subType1 === "hotel" ? "selected" : "item"}>Khách sạn</Link>
+                            <Link to="/user?type=order&subType1=tour&subType2=all_order"
+                                  className={subType1 === "tour" ? "selected" : "item"}>Tour</Link>
                         </div>
                     </div>
 
-                    {/* Đơn hàng đã giao */}
-                    <div className="product-content delivered" id="delivered-orders">
-                        <div className="product-header">
-                            <div className="product-header-title">Sản phẩm</div>
-                            <div className="product-header-price">Đơn giá</div>
-                            <div className="product-header-date">Ngày tạo</div>
-                        </div>
-                        <div className="products">
-                            <div className="product">
-                                <div className="product-title">
-                                    <a href="show-order?oid=1001"><label>Đơn hàng 1001</label></a>
-                                </div>
-                                <div className="product-price">2.500.000 đ</div>
-                                <div className="product-date">01/11/2026</div>
-                            </div>
+                    <div className="sub_menu">
+                        <div className="sub_menu_item">
+                            <Link to={`/user?type=order&subType1=${subType1}&subType2=all_order`}
+                                  className={subType2 === "all_order" ? "selected" : "item"}>Tất cả</Link>
+                            <Link to={`/user?type=order&subType1=${subType1}&subType2=processing`}
+                                  className={subType2 === "processing" ? "selected" : "item"}>Đang đặt</Link>
+                            <Link to={`/user?type=order&subType1=${subType1}&subType2=cancelled`}
+                                  className={subType2 === "cancelled" ? "selected" : "item"}>Đã hủy</Link>
                         </div>
                     </div>
-
-                    {/* Đơn hàng đang giao */}
-                    <div className="product-content shipping" id="shipping-orders">
-                        <div className="product-header">
-                            <div className="product-header-title">Sản phẩm</div>
-                            <div className="product-header-price">Đơn giá</div>
-                            <div className="product-header-date">Ngày tạo</div>
-                        </div>
-                        <div className="products">
-                            <div className="product">
-                                <div className="product-title">
-                                    <a href="show-order?oid=1002"><label>Đơn hàng 1002</label></a>
-                                </div>
-                                <div className="product-price">1.800.000 đ</div>
-                                <div className="product-date">03/11/2026</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Đơn hàng đã hủy */}
-                    <div className="product-content cancelled" id="cancelled-orders">
-                        <div className="product-header">
-                            <div className="product-header-title">Sản phẩm</div>
-                            <div className="product-header-price">Đơn giá</div>
-                            <div className="product-header-date">Ngày tạo</div>
-                        </div>
-                        <div className="products">
-                            <div className="product">
-                                <div className="product-title">
-                                    <a href="show-order?oid=1003"><label>Đơn hàng 1003</label></a>
-                                </div>
-                                <div className="product-price">3.200.000 đ</div>
-                                <div className="product-date">25/10/2026</div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+            </div>
+
+            <div className="info_list">
+                {filteredOrders.map(item => (
+                    <div className="info_row" data-nid={item.id} key={item.id}>
+                        <div className="info">
+                            <h3>{item.code}</h3>
+                            <div className="info_value">{item.description}</div>
+                            <span>Hạn sử dụng: {item.date}</span>
+                        </div>
+                    </div>
+                ))}
             </div>
         </>
     );

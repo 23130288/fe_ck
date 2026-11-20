@@ -4,7 +4,6 @@ export default function Voucher() {
     const [searchParams] = useSearchParams();
     const subType = searchParams.get("subtype") || "all_voucher";
 
-    // ===== DỮ LIỆU VOUCHER =====
     const vouchers = [
         {
             id: 1,
@@ -50,7 +49,6 @@ export default function Voucher() {
         }
     ];
 
-    // ===== LỌC VOUCHER =====
     const filteredVouchers = vouchers.filter(item => {
         if (subType === "available_voucher") {
             return item.status === "available";
@@ -69,7 +67,6 @@ export default function Voucher() {
 
     return (
         <>
-            {/* ===== HEADER ===== */}
             <div className="sub_header">
                 <div>
                     <h2>Voucher của tôi</h2>
@@ -92,7 +89,7 @@ export default function Voucher() {
             <div className="info_list">
                 {filteredVouchers.map(item => (
                     <div className="info_row" data-nid={item.id} key={item.id}>
-                        <div className={`info ${item.status === "available" ? "unread" : ""}`}>
+                        <div className="info">
                             <h3>{item.code}</h3>
                             <div className="info_value">{item.description}</div>
                             <span>Hạn sử dụng: {item.expiry}</span>

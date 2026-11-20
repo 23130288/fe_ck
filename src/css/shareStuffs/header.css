@@ -84,7 +84,7 @@
     border-radius: 30px;
 }
 
-.header .list-filters .selected {
+.header .list-filters .selected, .header .list-filters .item:hover  {
     background: var(--color-blue-bluer);
     border: 1px solid white;
 }
