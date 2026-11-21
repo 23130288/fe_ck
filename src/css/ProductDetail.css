@@ -4,7 +4,7 @@
     gap: 20px;
 }
 
-section {
+.product-detail-main section {
     gap: 16px;
     border-bottom: 1px solid lightgrey;
     padding: 30px 0;
@@ -192,9 +192,64 @@ section {
 }
 
 /* ==================================================================================== */
-/* ================================= section-schedule ================================= */
+/* ================================ section-date-pick ================================= */
 /* ==================================================================================== */
-.product-detail-main .section-schedule .search-filters-box {
+.product-detail-main .section-schedule {
+    gap: 20px;
+}
+
+.product-detail-main .section-schedule .schedule-list {
+    gap: 12px;
+}
+
+.product-detail-main .section-schedule .schedule-day {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+
+.product-detail-main .section-schedule .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.product-detail-main .section-schedule .schedule-header:hover {
+    background: var(--color-grayish);
+}
+
+.product-detail-main .section-schedule .schedule-header i {
+    color: gray;
+    font-size: var(--font-size-s);
+}
+
+.product-detail-main .section-schedule .schedule-content {
+    padding: 10px 10px;
+    border-top: 1px solid lightgrey;
+}
+
+.product-detail-main .section-schedule .schedule-activity {
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.product-detail-main .section-schedule .schedule-activity:not(:last-child) {
+    border-bottom: 1px dashed lightgrey;
+}
+
+.product-detail-main .section-schedule .schedule-activity p {
+    margin: 0;
+    font-size: var(--font-size-m);
+    color: var(--color-gray);
+}
+
+/* ==================================================================================== */
+/* ================================ section-date-pick ================================= */
+/* ==================================================================================== */
+.product-detail-main .section-date-pick .search-filters-box {
     width: 100%;
     padding: 4px;
     background: var(--color-yellow);
@@ -202,7 +257,7 @@ section {
     gap: 4px;
 }
 
-.product-detail-main .section-schedule .search-filters-box button {
+.product-detail-main .section-date-pick .search-filters-box > button {
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -245,7 +300,8 @@ section {
     transition: all 0.2s;
 }
 
-.product-detail-main .list-tour-date .tour-date:hover {
+.product-detail-main .list-tour-date .tour-date:hover,
+.product-detail-main .list-tour-date .tour-date.selected {
     background: var(--color-extra-light-blue);
     border-color: var(--color-light-blue);
 }
@@ -267,6 +323,27 @@ section {
     font-size: var(--font-size-l);
 }
 
+.product-detail-main .section-date-pick .booking-action {
+    gap: 20px;
+    padding: 10px;
+    width: fit-content;
+    border-top: 1px solid lightgrey;
+}
+
+.product-detail-main .section-date-pick .booking-action .passenger-number-wrapper {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+
+.product-detail-main .section-date-pick .booking-action .booking-button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    background: var(--color-blue);
+    color: white;
+    cursor: pointer;
+    font-size: var(--font-size-s);
+}
 
 /* ==================================================================================== */
 /* ================================== section-review ================================== */
