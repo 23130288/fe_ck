@@ -1,18 +1,31 @@
 import {useState} from "react";
 
-import "../css/components/search/PassangerNumber.css"
+import "../css/components/PassangerNumber.css"
 
-export default function PassangerNumber() {
+interface PassangerNumberProps {
+    onChange?: (passengers: {
+        adults: number;
+        teens: number;
+        kids: number;
+    }) => void;
+}
+
+export default function PassangerNumber({ onChange }: PassangerNumberProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [adults, setAdults] = useState(1);
-    const [children, setChildren] = useState(0);
+    const [teens, setTeens] = useState(0);
+    const [kids, setKids] = useState(0);
 
-    return (<div className="passenger-wrapper">
+    const updatePassengers = (newAdults: number, newTeens: number, newKids: number) => {
+        onChange?.({adults: newAdults, teens: newTeens, kids: newKids});
+    };
+
+    return (<div className="passenger-number-wrapper">
         <div className="search-field" onClick={() => setIsOpen(!isOpen)}>
             <i className="fa-regular fa-user"></i>
             <div className="input-field">
                 <label>Số người</label>
-                <span>{adults + children} người</span>
+                <span>{adults + teens + kids} người</span>
             </div>
             <i className="fa-solid fa-angle-down"></i>
         </div>
@@ -21,14 +34,43 @@ export default function PassangerNumber() {
                 <div className="passenger-item">
                     <div>
                         <label>Người lớn</label>
-                        <p>Từ 12 tuổi trở lên</p>
+                        <p>Từ 18 tuổi trở lên</p>
                     </div>
                     <div className="counter">
-                        <button type="button" disabled={adults <= 1}
-                                onClick={() => setAdults(p => Math.max(1, p - 1))}>−
+                        <button type="button" disabled={adults <= 1} onClick={() => {
+                            const value = Math.max(1, adults - 1);
+                            setAdults(value);
+                            updatePassengers(value, teens, kids);
+                        }}>−
                         </button>
                         <span>{adults}</span>
-                        <button type="button" onClick={() => setAdults(p => p + 1)}>+</button>
+                        <button type="button" onClick={() => {
+                            const value = adults + 1;
+                            setAdults(value);
+                            updatePassengers(value, teens, kids);
+                        }}>+
+                        </button>
+                    </div>
+                </div>
+                <div className="passenger-item">
+                    <div>
+                        <label>Trẻ em</label>
+                        <p>Từ 13 - 17 tuổi</p>
+                    </div>
+                    <div className="counter">
+                        <button type="button" disabled={teens <= 0} onClick={() => {
+                            const value = Math.max(0, teens - 1);
+                            setTeens(value);
+                            updatePassengers(adults, value, kids);
+                        }}>−
+                        </button>
+                        <span>{teens}</span>
+                        <button type="button" disabled={teens + kids >= adults * 2} onClick={() => {
+                            const value = teens + 1;
+                            setTeens(value);
+                            updatePassengers(adults, value, kids);
+                        }}>+
+                        </button>
                     </div>
                 </div>
                 <div className="passenger-item">
@@ -37,11 +79,19 @@ export default function PassangerNumber() {
                         <p>Dưới 12 tuổi</p>
                     </div>
                     <div className="counter">
-                        <button type="button" disabled={children <= 0}
-                                onClick={() => setChildren(p => Math.max(0, p - 1))}>−
+                        <button type="button" disabled={kids <= 0} onClick={() => {
+                            const value = Math.max(0, kids - 1);
+                            setKids(value);
+                            updatePassengers(adults, teens, value);
+                        }}>−
                         </button>
-                        <span>{children}</span>
-                        <button type="button" onClick={() => setChildren(p => p + 1)}>+</button>
+                        <span>{kids}</span>
+                        <button type="button" disabled={teens + kids >= adults * 2} onClick={() => {
+                            const value = kids + 1;
+                            setKids(value);
+                            updatePassengers(adults, teens, value);
+                        }}>+
+                        </button>
                     </div>
                 </div>
                 <button type="button" className="passenger-done" onClick={() => setIsOpen(false)}>Xong</button>
