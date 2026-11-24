@@ -1,7 +1,7 @@
 import "../css/register.css"
 import { Link } from 'react-router-dom'
 import {useState, type FormEvent} from "react";
-import { register } from "../api/Auth.tsx";
+import { register } from "../api/Auth.ts";
 
 export default function Register() {
     const [username, setUsername] = useState("");

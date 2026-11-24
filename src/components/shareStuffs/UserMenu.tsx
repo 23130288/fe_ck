@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../../css/shareStuffs/UserMenu.css'
-import { logout } from '../../api/Auth.tsx'
+import { logout } from '../../api/Auth.ts'
 import placeholder from "../../images/placeholder.png";
 
 
@@ -35,6 +35,7 @@ export default function UserMenu() {
                     </> : <>
                         <Link to="/user?type=info" className="dropdown-content">Thông tin cá nhân</Link>
                         <Link to="ct_orderPage" className="dropdown-content">Đơn hàng của tôi</Link>
+                        <Link to="/user?type=wishlist" className="dropdown-content">Trang đã thích</Link>
                         <div className="user-menu-divider" />
                         <Link to="" className="dropdown-content dropdown-content-logout" onClick={logout}>Đăng xuất</Link>
                     </>}
