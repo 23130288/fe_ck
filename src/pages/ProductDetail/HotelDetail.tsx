@@ -73,12 +73,14 @@ export default function HotelDetail({product}: HotelDetailProps) {
                 roomList.push({
                     id: room.id,
                     name: room.name,
+                    image: room.image,
                     price: room.price,
                     quantity: quantity,
                     total: total
                 });
             }
         }
+
         let totalRooms = 0;
         for (const room of roomList) {
             totalRooms = totalRooms + room.quantity;
@@ -87,8 +89,9 @@ export default function HotelDetail({product}: HotelDetailProps) {
         for (const room of roomList) {
             totalPrice = totalPrice + room.total;
         }
-        navigate("/checkout", {
+        navigate("/ct_orderPage", {
             state: {
+                type: "hotel",
                 product: product,
                 roomList: roomList,
                 totalRooms: totalRooms,

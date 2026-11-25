@@ -1,24 +1,3 @@
-/*.ct_order_page {*/
-/*    width: 100%;*/
-/*    min-height: 100vh;*/
-/*    background: var(--color-white);*/
-/*    color: var(--color-dark);*/
-/*    font-family: var(--font);*/
-/*    padding: 30px 20px 60px;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.ct_order_page * {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.ct_order_page input,*/
-/*.ct_order_page select,*/
-/*.ct_order_page textarea,*/
-/*.ct_order_page button {*/
-/*    font: inherit;*/
-/*}*/
-
 .steps {
     display: flex;
     align-items: center;
@@ -349,4 +328,41 @@
 
 .booking_submit button:hover {
     background: var(--color-blue-bluer);
+}
+
+.room_item {
+    margin-top: 15px;
+    flex: 1;
+    min-width: 0;
+}
+
+.room_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.room_total span {
+    color: #666;
+    font-size: 14px;
+}
+
+.room_total h2 {
+    margin: 0;
+    color: #e53935;
+}
+
+.amenities-box {
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+.amenities-box .amenity {
+    padding: 1px 2px;
+    font-size: var(--font-size-extra-s);
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
 }
