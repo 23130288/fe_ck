@@ -1,7 +1,7 @@
 import "../css/login.css"
 import { Link } from 'react-router-dom'
 import { useState, type FormEvent } from "react";
-import { login } from "../api/Auth.tsx";
+import { login } from "../api/Auth.ts";
 
 export default function Login() {
     const [email, setEmail] = useState("");

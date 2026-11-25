@@ -5,6 +5,7 @@ import PassangerNumber from "../../components/PassangerNumber.tsx";
 import DatePicker from "../../components/DatePicker.tsx";
 import ProductReview from "../../components/ProductReview.tsx";
 import ListProductReviews from "../../components/ListProductReviews.tsx";
+import {useWishlist} from "../../api/Wishlist.ts";
 
 import type Review from "../../type/Review.tsx";
 import type Schedule from "../../type/Schedule.tsx";
@@ -41,6 +42,8 @@ export default function TourDetail({product}: TourDetailProps) {
     const [selectedDate, setSelectedDate] = useState("");
     const [passengers, setPassengers] = useState({adults: 1, teens: 0, kids: 0});
     const [showAllReviews, setShowAllReviews] = useState(false);
+    const {entries, toggleWishlist} = useWishlist();
+    const isInWishlist = entries.some(item => item.type === "tour" && item.id === product.id);
 
     const formatPrice = (price: number) => {
         return price.toLocaleString("vi-VN") + "đ";
@@ -52,7 +55,22 @@ export default function TourDetail({product}: TourDetailProps) {
                 <span>{product.place}</span>
             </div>
             <div className="right-box">
-                <button className="wishlist-button"><i className="fa-solid fa-heart"></i></button>
+                <button
+                    className={`wishlist-button${isInWishlist ? " is-active" : ""}`}
+                    type="button"
+                    aria-label={isInWishlist ? "Xóa khỏi danh sách yêu thích" : "Thêm vào danh sách yêu thích"}
+                    aria-pressed={isInWishlist}
+                    onClick={() => toggleWishlist({
+                        id: product.id,
+                        type: "tour",
+                        name: product.name,
+                        image: product.image,
+                        place: product.place,
+                        price: product.price
+                    })}
+                >
+                    <i className="fa-solid fa-heart"></i>
+                </button>
             </div>
         </section>
         <section className="section-overview flex">

@@ -6,6 +6,7 @@ import "../../css/ProductDetail/HotelDetail.css";
 import ListProductReviews from "../../components/ListProductReviews.tsx";
 import ProductReview from "../../components/ProductReview.tsx";
 import type Review from "../../type/Review.tsx";
+import {useWishlist} from "../../api/Wishlist.ts";
 
 interface HotelDetailProps {
     product: {
@@ -43,6 +44,8 @@ interface HotelDetailProps {
 export default function HotelDetail({product}: HotelDetailProps) {
     const navigate = useNavigate();
     const [showAllReviews, setShowAllReviews] = useState(false);
+    const {entries, toggleWishlist} = useWishlist();
+    const isInWishlist = entries.some(item => item.type === "hotel" && item.id === product.id);
     const [selectedRooms, setSelectedRooms] = useState<Record<number, number>>({});
 
     let totalPrice = 0;
@@ -103,7 +106,20 @@ export default function HotelDetail({product}: HotelDetailProps) {
             </div>
 
             <div className="right-box">
-                <button className="wishlist-button">
+                <button
+                    className={`wishlist-button${isInWishlist ? " is-active" : ""}`}
+                    type="button"
+                    aria-label={isInWishlist ? "Xóa khỏi danh sách yêu thích" : "Thêm vào danh sách yêu thích"}
+                    aria-pressed={isInWishlist}
+                    onClick={() => toggleWishlist({
+                        id: product.id,
+                        type: "hotel",
+                        name: product.name,
+                        image: product.image,
+                        place: `${product.place}, ${product.city}, ${product.country}`,
+                        price: product.price
+                    })}
+                >
                     <i className="fa-solid fa-heart"></i>
                 </button>
             </div>

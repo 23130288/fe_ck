@@ -8,6 +8,7 @@ import Notification from "../components/user/Notification.tsx";
 import {Order} from "../components/user/Order.tsx";
 import Voucher from "../components/user/Voucher.tsx";
 import Support from "../components/user/Support.tsx";
+import Wishlist from "../components/user/Wishlist.tsx";
 
 export function User() {
     const [searchParams] = useSearchParams()
@@ -37,6 +38,8 @@ export function User() {
                             <Link to="/user?type=notification"
                                   className={type === "notification" ? "selected" : "item"}>Thông
                                 báo</Link>
+                            <Link to="/user?type=wishlist"
+                                  className={type === "wishlist" ? "selected" : "item"}>Trang đã thích</Link>
                             <Link to="/user?type=support" className={type === "support" ? "selected" : "item"}>Hỗ
                                 trợ</Link>
                         </div>
@@ -49,6 +52,7 @@ export function User() {
                             {type === "order" && <Order/>}
                             {type === "voucher" && <Voucher/>}
                             {type === "support" && <Support/>}
+                            {type === "wishlist" && <Wishlist/>}
                         </div>
                     </div>
                 </div>
