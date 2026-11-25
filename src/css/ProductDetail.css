@@ -154,6 +154,7 @@
 /* ===================================================================================== */
 .product-detail-main .section-information {
     color: var(--color-dark);
+    gap: 16px;
 }
 
 .product-detail-main .section-information .features-box {
