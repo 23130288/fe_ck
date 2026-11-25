@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useNavigate} from "react-router";
 
 import "../../css/ProductDetail/HotelDetail.css";
 
@@ -40,12 +41,58 @@ interface HotelDetailProps {
 }
 
 export default function HotelDetail({product}: HotelDetailProps) {
+    const navigate = useNavigate();
     const [showAllReviews, setShowAllReviews] = useState(false);
+    const [selectedRooms, setSelectedRooms] = useState<Record<number, number>>({});
+
+    let totalPrice = 0;
+    for (const room of product.room_types) {
+        const quantity = selectedRooms[room.id] || 0;
+        const roomTotal = room.price * quantity;
+        totalPrice += roomTotal;
+    }
+    let totalRooms = 0;
+    for (const quantity of Object.values(selectedRooms)) {
+        totalRooms += quantity;
+    }
 
     const starRate = [];
     for (let i = 0; i < product.star_rating; i++) {
         starRate.push(<i key={i} className="fa-solid fa-star"></i>);
     }
+
+    const handleBooking = () => {
+        const roomList = [];
+        for (const room of product.room_types) {
+            const quantity = selectedRooms[room.id] || 0;
+            if (quantity > 0) {
+                const total = room.price * quantity;
+                roomList.push({
+                    id: room.id,
+                    name: room.name,
+                    price: room.price,
+                    quantity: quantity,
+                    total: total
+                });
+            }
+        }
+        let totalRooms = 0;
+        for (const room of roomList) {
+            totalRooms = totalRooms + room.quantity;
+        }
+        let totalPrice = 0;
+        for (const room of roomList) {
+            totalPrice = totalPrice + room.total;
+        }
+        navigate("/checkout", {
+            state: {
+                product: product,
+                roomList: roomList,
+                totalRooms: totalRooms,
+                totalPrice: totalPrice
+            }
+        });
+    };
 
     return (<div className="product-detail-main hotel-main">
         <section className="section-header flex space-between">
@@ -98,24 +145,58 @@ export default function HotelDetail({product}: HotelDetailProps) {
             </div>
         </section>
         <section className="section-room-types flex vertical">
-            <h1>Danh sách loại phòng</h1>
+            <h1>Danh sách phòng</h1>
+            <div className="section-header">
+                <div><span>Loại phòng</span></div>
+                <div><span>Giá cả</span></div>
+                <div><span>Chọn số lượng</span></div>
+                <div></div>
+            </div>
             <div className="split-box flex horizontal">
                 <div className="room-list flex vertical">
                     {product.room_types.map((room) => (
                         <div className="room-item" key={room.id}>
-                            <img src={room.image} alt={room.name}/>
-                            <div className="room-info">
-                                <h2>{room.name}</h2>
-                                <p>{room.description}</p>
-                                <p>Sức chứa: {room.capacity} khách</p>
-                                <p>Số lượng phòng: {room.quantity}</p>
-                                <p className="hotel-price">{room.price.toLocaleString("vi-VN")}đ / đêm</p>
+                            <div className="room-info flex horizontal">
+                                <img src={room.image} alt={room.name}/>
+                                <div className="more-info flex vertical">
+                                    <h2>{room.name}</h2>
+                                    <p>{room.description}</p>
+                                    <p>Sức chứa: {room.capacity} khách</p>
+                                    <div className="amenities-box flex horizontal">
+                                        {product.amenities.map((amenity, index) => (
+                                            <div className="amenity" key={index}>
+                                                <span>{amenity}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="room-price">
+                                <span>{room.price.toLocaleString("vi-VN")} VNĐ</span>
+                            </div>
+                            <div className="room-amount">
+                                <select name="roomAmount" value={selectedRooms[room.id] || 0} onChange={(e) => {
+                                    const quantity = Number(e.target.value);
+                                    setSelectedRooms({...selectedRooms, [room.id]: quantity});
+                                }}>
+                                    <option value="0">0</option>
+                                    {Array.from({length: room.quantity}, (_, index) => index + 1).map(index => (
+                                        <option key={index} value={index}>
+                                            {index} - {(room.price * index).toLocaleString("vi-VN")} VNĐ
+                                        </option>
+                                    ))}
+                                </select>
                             </div>
                         </div>
                     ))}
                 </div>
-                <div className="pricing-box">
-
+                <div className="pricing-box flex vertical">
+                    <div className="total-price-box">
+                        <span className="bold">{totalRooms} </span><span>phòng - </span>
+                        <span className="bold">{totalPrice.toLocaleString("vi-VN")} VNĐ</span>
+                    </div>
+                    <button className="reserve-button" onClick={handleBooking} disabled={totalRooms === 0}>Đặt phòng</button>
+                    <span>Bạn chưa phải trả tiền</span>
                 </div>
             </div>
         </section>
