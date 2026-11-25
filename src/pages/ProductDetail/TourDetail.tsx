@@ -170,8 +170,8 @@ export default function TourDetail({product}: TourDetailProps) {
             {selectedDate && (
                 <div className="booking-action flex horizontal">
                     <PassangerNumber onChange={setPassengers}/>
-                    <button className="booking-button" onClick={() => navigate("/checkout", {
-                        state: {product, departureDate: selectedDate, passengers}
+                    <button className="booking-button" onClick={() => navigate("/ct_orderPage", {
+                        state: {type: "tour", product, departureDate: selectedDate, passengers}
                     })}>
                         Đặt tour
                     </button>
@@ -181,7 +181,8 @@ export default function TourDetail({product}: TourDetailProps) {
         <section className="section-review flex vertical">
             <h1>Đánh giá</h1>
             {product.reviews && (<>
-                <ListProductReviews reviews={product.reviews} start={0} end={showAllReviews ? product.reviews.length : 3}/>
+                <ListProductReviews reviews={product.reviews} start={0}
+                                    end={showAllReviews ? product.reviews.length : 3}/>
                 {product.reviews.length > 3 && (
                     <button className="read-all-reviews" onClick={() => setShowAllReviews(!showAllReviews)}>
                         {showAllReviews ? "Thu gọn đánh giá" : "Tất cả đánh giá"}
