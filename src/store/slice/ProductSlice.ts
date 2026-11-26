@@ -48,6 +48,7 @@ export interface Hotel {
 export interface Flight {
     id: number;
     product_type: "flight";
+    trip_type: "one_way" | "round_trip";
     flight_type: "domestic" | "international";
     airline: string;
     airline_logo: string;
@@ -70,6 +71,24 @@ export interface Flight {
     };
     duration: string;
     stops: number;
+    return_departure?: {
+        airport: string;
+        airport_code: string;
+        city: string;
+        country: string;
+        date: string;
+        time: string;
+    };
+    return_arrival?: {
+        airport: string;
+        airport_code: string;
+        city: string;
+        country: string;
+        date: string;
+        time: string;
+    };
+    return_duration?: string;
+    return_stops?: number;
     cabin_class: string[];
     price: number;
     seats_available: number;

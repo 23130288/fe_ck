@@ -1,0 +1,168 @@
+.flight-item {
+    padding: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-size: var(--font-size-s);
+}
+
+.flight-item .split-box {
+    grid-template-columns: 1.2fr 0.8fr;
+}
+
+/* =================================================================== */
+/* ========================== item-info-box ========================== */
+/* =================================================================== */
+.flight-item .split-box .list-item-info-box {
+    border-right: 1px solid lightgrey;
+    margin: -15px 0;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.flight-item .split-box .list-item-info-box .airline-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flight-item .split-box .item-info-box .grid {
+    grid-template-columns: 0.1fr 1fr 0.9fr 1fr;
+    gap: 10px;
+}
+
+/* =================== img =================== */
+.flight-item .split-box .item-info-box .grid img {
+    height: 36px;
+    width: 36px;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+}
+
+/* ============== departure-box ============== */
+/* =============== arrival-box =============== */
+.flight-item .split-box .item-info-box .grid .departure-box,
+.flight-item .split-box .item-info-box .grid .arrival-box {
+    gap: 4px;
+}
+
+.flight-item .split-box .item-info-box .grid .arrival-box {
+    align-items: flex-end;
+    padding-right: 15px;
+}
+
+.flight-item .split-box .item-info-box .grid .departure-box .time,
+.flight-item .split-box .item-info-box .grid .arrival-box .time {
+    font-weight: bold;
+    font-size: var(--font-size-m);
+}
+
+.flight-item .split-box .item-info-box .grid .departure-box .code-and-date,
+.flight-item .split-box .item-info-box .grid .arrival-box .code-and-date {
+    color: var(--color-gray);
+}
+
+/* ============= travel-stop-box ============= */
+.flight-item .split-box .item-info-box .grid .travel-stop-box {
+    font-size: var(--font-size-extra-s);
+    gap: 5px;
+}
+
+.flight-item .split-box .item-info-box .grid .travel-stop-box .route-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.flight-item .split-box .item-info-box .grid .travel-stop-box .route-box .route-dot {
+    width: 4px;
+    height: 4px;
+    border: 1px solid var(--color-dark);
+    border-radius: 50%;
+}
+
+.flight-item .split-box .item-info-box .grid .travel-stop-box .route-box .route-line {
+    flex: 1;
+    height: 1px;
+    background: var(--color-dark);
+}
+
+.flight-item .split-box .item-info-box .grid .travel-stop-box .route-box .stop-label {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+.flight-item .split-box .item-info-box .grid .travel-stop-box .route-box .direct-text {
+    color: white;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background: var(--color-green);
+}
+
+.flight-item .split-box .item-info-box .grid .travel-stop-box > span {
+    text-align: center;
+}
+
+/* =================================================================== */
+/* =========================== pricing-box =========================== */
+/* =================================================================== */
+.flight-item .split-box .pricing-box {
+    grid-template-rows: 1fr 1fr;
+    padding-left: 15px;
+    gap: 10px;
+}
+
+/* ============== more-info-box ============== */
+.flight-item .split-box .pricing-box .more-info-box {
+    grid-template-columns: 1fr 1fr;
+}
+
+.flight-item .split-box .pricing-box .more-info-box .left-box {
+    justify-content: center;
+    gap: 5px;
+    color: var(--color-gray);
+}
+
+.flight-item .split-box .pricing-box .more-info-box .left-box > span {
+    font-size: var(--font-size-extra-s);
+}
+
+.flight-item .split-box .pricing-box .more-info-box .left-box .list-packages {
+    font-size: var(--font-size-m);
+    gap: 5px;
+}
+
+.flight-item .split-box .pricing-box .more-info-box .right-box {
+    text-align: right;
+    align-content: center;
+}
+
+.flight-item .split-box .pricing-box .more-info-box .right-box span {
+    font-weight: bold;
+}
+
+/* =============== buttons-box =============== */
+.flight-item .split-box .pricing-box .button-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.flight-item .split-box .pricing-box .button-box button {
+    padding: 6px 12px;
+    color: var(--color-light-blue);
+    background: none;
+    border: 1px solid var(--color-light-blue);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    height: 35px;
+}
+
+.flight-item .split-box .pricing-box .button-box button:hover {
+    background: var(--color-extra-light-blue);
+}
+
+.flight-item .split-box .pricing-box .button-box .fare-options-button {
+    border: none;
+}

@@ -1,6 +1,8 @@
 import ProductItem from "./ProductItem.tsx";
+import Pagination from "./Pagination.tsx";
 
 import "../css/components/ListProducts.css";
+import {useState} from "react";
 import {useSelector} from "react-redux";
 import type {RootState} from "../store/store.ts";
 
@@ -9,9 +11,10 @@ interface ListProductsProps {
     start?: number;
     end?: number;
     tourType?: string;
+    pagination?: boolean;
 }
 
-export default function ListProducts({type, start, end, tourType}: ListProductsProps) {
+export default function ListProducts({type, start, end, tourType, pagination}: ListProductsProps) {
     const tours = useSelector((state: RootState) => state.products.tours);
     let products = useSelector((state: RootState) => {
         switch (type) {
@@ -32,6 +35,16 @@ export default function ListProducts({type, start, end, tourType}: ListProductsP
     if (type === "tour" && tourType) {
         products = tours.filter(product => product.tour_type === tourType);
     }
+
+    // paging thingy
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 12;
+    const totalPages = Math.ceil(products.length / itemsPerPage);
+    if (start == null && end == null) {
+        start = (currentPage - 1) * itemsPerPage;
+        end = start + itemsPerPage;
+    }
+
     return (<>
         <div className="list-products">
             {products.slice(start, end).map((product: any) => (
@@ -41,5 +54,8 @@ export default function ListProducts({type, start, end, tourType}: ListProductsP
                 <p>Hiện chưa có sản phẩm nào.</p>
             )}
         </div>
+        {pagination && (
+            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage}/>
+        )}
     </>);
 }
