@@ -6,6 +6,7 @@ import DatePicker from "../../components/DatePicker.tsx";
 import ProductReview from "../../components/ProductReview.tsx";
 import ListProductReviews from "../../components/ListProductReviews.tsx";
 import {useWishlist} from "../../api/Wishlist.ts";
+import LoginPopup from "../../components/LoginPopup.tsx";
 
 import type Review from "../../type/Review.tsx";
 import type Schedule from "../../type/Schedule.tsx";
@@ -42,8 +43,24 @@ export default function TourDetail({product}: TourDetailProps) {
     const [selectedDate, setSelectedDate] = useState("");
     const [passengers, setPassengers] = useState({adults: 1, teens: 0, kids: 0});
     const [showAllReviews, setShowAllReviews] = useState(false);
-    const {entries, toggleWishlist} = useWishlist();
+    const [showLoginModal, setShowLoginModal] = useState(false);
+    const {entries, toggleWishlist, loading, error, isPending, isAuthenticated} = useWishlist();
     const isInWishlist = entries.some(item => item.type === "tour" && item.id === product.id);
+
+    const handleWishlistToggle = () => {
+        if (!isAuthenticated) {
+            setShowLoginModal(true);
+            return;
+        }
+        void toggleWishlist({
+            id: product.id,
+            type: "tour",
+            name: product.name,
+            image: product.image,
+            place: product.place,
+            price: product.price
+        });
+    };
 
     const formatPrice = (price: number) => {
         return price.toLocaleString("vi-VN") + "đ";
@@ -60,17 +77,12 @@ export default function TourDetail({product}: TourDetailProps) {
                     type="button"
                     aria-label={isInWishlist ? "Xóa khỏi danh sách yêu thích" : "Thêm vào danh sách yêu thích"}
                     aria-pressed={isInWishlist}
-                    onClick={() => toggleWishlist({
-                        id: product.id,
-                        type: "tour",
-                        name: product.name,
-                        image: product.image,
-                        place: product.place,
-                        price: product.price
-                    })}
+                    disabled={loading || isPending("tour", product.id)}
+                    onClick={handleWishlistToggle}
                 >
                     <i className="fa-solid fa-heart"></i>
                 </button>
+                {error && <p role="alert">{error}</p>}
             </div>
         </section>
         <section className="section-overview flex">
@@ -190,5 +202,6 @@ export default function TourDetail({product}: TourDetailProps) {
                 )}
             </>)}
         </section>
+        {showLoginModal && <LoginPopup onClose={() => setShowLoginModal(false)}/>}
     </div>);
 }
