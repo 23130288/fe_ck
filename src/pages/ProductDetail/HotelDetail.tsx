@@ -7,6 +7,7 @@ import ListProductReviews from "../../components/ListProductReviews.tsx";
 import ProductReview from "../../components/ProductReview.tsx";
 import type Review from "../../type/Review.tsx";
 import {useWishlist} from "../../api/Wishlist.ts";
+import LoginPopup from "../../components/LoginPopup.tsx";
 
 interface HotelDetailProps {
     product: {
@@ -44,9 +45,25 @@ interface HotelDetailProps {
 export default function HotelDetail({product}: HotelDetailProps) {
     const navigate = useNavigate();
     const [showAllReviews, setShowAllReviews] = useState(false);
-    const {entries, toggleWishlist} = useWishlist();
+    const [showLoginModal, setShowLoginModal] = useState(false);
+    const {entries, toggleWishlist, loading, error, isPending, isAuthenticated} = useWishlist();
     const isInWishlist = entries.some(item => item.type === "hotel" && item.id === product.id);
     const [selectedRooms, setSelectedRooms] = useState<Record<number, number>>({});
+
+    const handleWishlistToggle = () => {
+        if (!isAuthenticated) {
+            setShowLoginModal(true);
+            return;
+        }
+        void toggleWishlist({
+            id: product.id,
+            type: "hotel",
+            name: product.name,
+            image: product.image,
+            place: `${product.place}, ${product.city}, ${product.country}`,
+            price: product.price
+        });
+    };
 
     let totalPrice = 0;
     for (const room of product.room_types) {
@@ -114,17 +131,12 @@ export default function HotelDetail({product}: HotelDetailProps) {
                     type="button"
                     aria-label={isInWishlist ? "Xóa khỏi danh sách yêu thích" : "Thêm vào danh sách yêu thích"}
                     aria-pressed={isInWishlist}
-                    onClick={() => toggleWishlist({
-                        id: product.id,
-                        type: "hotel",
-                        name: product.name,
-                        image: product.image,
-                        place: `${product.place}, ${product.city}, ${product.country}`,
-                        price: product.price
-                    })}
+                    disabled={loading || isPending("hotel", product.id)}
+                    onClick={handleWishlistToggle}
                 >
                     <i className="fa-solid fa-heart"></i>
                 </button>
+                {error && <p role="alert">{error}</p>}
             </div>
         </section>
         <section className="section-overview flex">
@@ -231,5 +243,6 @@ export default function HotelDetail({product}: HotelDetailProps) {
                 )}
             </>)}
         </section>
+        {showLoginModal && <LoginPopup onClose={() => setShowLoginModal(false)}/>}
     </div>);
 }

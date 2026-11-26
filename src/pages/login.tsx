@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 import { useState, type FormEvent } from "react";
 import { login } from "../api/Auth.ts";
 
-export default function Login() {
+interface LoginProps {
+    onSuccess?: () => void;
+}
+
+export default function Login({onSuccess}: LoginProps) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -17,7 +21,12 @@ export default function Login() {
         try {
             const response = await login(email, password);
             sessionStorage.setItem("userInfo", JSON.stringify(response.userInfo));
-            window.location.href = "/";
+            if (onSuccess) {
+                onSuccess();
+                window.location.reload();
+            } else {
+                window.location.href = "/";
+            }
         } catch (err) {
             setError(err instanceof Error ? err.message : "Xảy ra lỗi trong quá trình đăng nhập");
         } finally {
@@ -27,7 +36,7 @@ export default function Login() {
     return (
         <div className="login-popover">
             <form onSubmit={handleLogin} className="login-card">
-                <h1>Đăng nhập</h1>
+                <h1 id="login-modal-title">Đăng nhập</h1>
                 <p className="login-card-intro">Đăng nhập để tiếp tục</p>
 
                 <label htmlFor="login-email">Email</label>

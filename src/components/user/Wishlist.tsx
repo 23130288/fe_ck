@@ -2,14 +2,17 @@ import {Link} from "react-router-dom";
 import {useWishlist} from "../../api/Wishlist.ts";
 
 export default function Wishlist() {
-    const {entries, removeFromWishlist} = useWishlist();
+    const {entries, removeFromWishlist, loading, error, isPending} = useWishlist();
 
     return (
         <div className="wishlist-page">
             <div className="sub_header">
                 <h2>Danh sách yêu thích</h2>
             </div>
-            {entries.length === 0 ? (
+            {error && <p role="alert">{error}</p>}
+            {loading ? (
+                <p>Đang tải danh sách yêu thích...</p>
+            ) : entries.length === 0 ? (
                 <p className="wishlist-empty">Bạn chưa có tour hoặc khách sạn yêu thích.</p>
             ) : (
                 <div className="wishlist-list">
@@ -26,6 +29,7 @@ export default function Wishlist() {
                             <button
                                 type="button"
                                 onClick={() => removeFromWishlist(item.type, item.id)}
+                                disabled={isPending(item.type, item.id)}
                                 aria-label={`Xóa ${item.name} khỏi danh sách yêu thích`}
                             >
                                 <i className="fa-solid fa-heart"></i>
