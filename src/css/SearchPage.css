@@ -1,3 +1,7 @@
 .search-main {
     margin: 20px 0;
 }
+
+.split-box-search {
+    grid-template-columns: 0.3fr 1fr;
+}
