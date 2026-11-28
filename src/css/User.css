@@ -258,3 +258,143 @@
     font-size: 18px;
     cursor: pointer;
 }
+
+.payment-page {
+    padding: 0 20px 24px;
+}
+
+.payment-page .sub_header {
+    margin-left: 0;
+}
+
+.payment-header {
+    flex-direction: row;
+    align-items: center;
+}
+
+.payment-add-button,
+.payment-save-button {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 16px;
+    background: var(--color-blue);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.payment-add-button i {
+    margin-right: 8px;
+}
+
+.payment-form {
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.payment-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.payment-form label {
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.payment-form select {
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+.payment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+}
+
+.payment-item {
+    display: grid;
+    grid-template-columns: 96px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.payment-item:hover {
+    border-color: var(--color-blue);
+}
+
+.payment-brand {
+    display: grid;
+    place-items: center;
+    width: 82px;
+    height: 52px;
+    border-radius: 8px;
+    background: #153e75;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.payment-brand.momo {
+    background: #a50064;
+}
+
+.payment-details h3,
+.payment-details p,
+.payment-details small {
+    margin: 0 0 6px;
+}
+
+.payment-details small {
+    display: block;
+}
+
+.payment-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.payment-name span {
+    border-radius: 20px;
+    padding: 3px 8px;
+    background: #e8f1ff;
+    color: var(--color-blue);
+    font-size: 12px;
+}
+
+.payment-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.payment-actions button {
+    border: 0;
+    background: transparent;
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+.payment-actions .payment-remove {
+    color: var(--color-red);
+}
+
+.payment-empty {
+    padding: 20px 15px;
+    color: #555;
+}

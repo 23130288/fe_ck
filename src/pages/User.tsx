@@ -9,6 +9,7 @@ import {Order} from "../components/user/Order.tsx";
 import Voucher from "../components/user/Voucher.tsx";
 import Support from "../components/user/Support.tsx";
 import Wishlist from "../components/user/Wishlist.tsx";
+import PaymentMethod from "../components/user/PaymentMethod.tsx";
 
 export function User() {
     const [searchParams] = useSearchParams()
@@ -40,6 +41,8 @@ export function User() {
                                 báo</Link>
                             <Link to="/user?type=wishlist"
                                   className={type === "wishlist" ? "selected" : "item"}>Trang đã thích</Link>
+                            <Link to="/user?type=payment"
+                                  className={type === "payment" ? "selected" : "item"}>Phương thức thanh toán</Link>
                             <Link to="/user?type=support" className={type === "support" ? "selected" : "item"}>Hỗ
                                 trợ</Link>
                         </div>
@@ -53,6 +56,7 @@ export function User() {
                             {type === "voucher" && <Voucher/>}
                             {type === "support" && <Support/>}
                             {type === "wishlist" && <Wishlist/>}
+                            {type === "payment" && <PaymentMethod/>}
                         </div>
                     </div>
                 </div>

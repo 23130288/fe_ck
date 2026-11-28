@@ -13,7 +13,7 @@ export default function Wishlist() {
             {loading ? (
                 <p>Đang tải danh sách yêu thích...</p>
             ) : entries.length === 0 ? (
-                <p className="wishlist-empty">Bạn chưa có tour hoặc khách sạn yêu thích.</p>
+                <p className="wishlist-empty">Danh sách yêu thích đang trống.</p>
             ) : (
                 <div className="wishlist-list">
                     {entries.map(item => (

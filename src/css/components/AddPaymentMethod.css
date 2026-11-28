@@ -1,0 +1,110 @@
+.payment-popup-backdrop {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    background: rgba(15, 30, 48, 0.58);
+}
+
+.payment-popup {
+    position: relative;
+    width: min(440px, 100%);
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 24px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+}
+
+.payment-popup h2 {
+    margin: 0 36px 20px 0;
+    color: var(--color-dark);
+}
+
+.payment-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #536273;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.payment-popup-close:hover {
+    background: #eef2f6;
+}
+
+.payment-popup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-popup-error {
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #fdecec;
+    color: #b42318;
+    font-size: var(--font-size-s);
+}
+
+.payment-popup-form label {
+    margin: 12px 0 7px;
+    color: var(--color-blue);
+    font-size: var(--font-size-s);
+    font-weight: bold;
+}
+
+.payment-popup-form input,
+.payment-popup-form select {
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #d5deea;
+    border-radius: 8px;
+    padding: 0 11px;
+    color: var(--color-dark);
+    font: inherit;
+}
+
+.payment-popup-form input:focus,
+.payment-popup-form select:focus {
+    border-color: var(--color-blue);
+    outline: 3px solid rgba(0, 108, 228, 0.12);
+}
+
+.payment-popup-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.payment-popup-actions button {
+    min-height: 42px;
+    border-radius: 8px;
+    padding: 0 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.payment-popup-cancel {
+    border: 1px solid #d5deea;
+    background: #fff;
+    color: #536273;
+}
+
+.payment-popup-save {
+    border: 0;
+    background: var(--color-blue);
+    color: var(--color-white);
+}
