@@ -8,6 +8,7 @@ import SearchBarFlight from "../components/search/SearchBarFlight.tsx";
 import SearchBarHotel from "../components/search/SearchBarHotel.tsx";
 import SearchBarAttractions from "../components/search/SearchBarAttractions.tsx";
 import SearchBarADay from "../components/search/SearchBarADay.tsx";
+import Filters from "../components/Filters.tsx";
 
 import ListProducts from "../components/ListProducts.tsx";
 import ListFlights from "../components/flight/ListFlight.tsx";
@@ -29,7 +30,9 @@ export default function SearchPage() {
             </div>
             <div className="split-box-search grid">
                 <div className="filter-box">
-
+                    <Filters type={type}/>
+                    {type === "attraction" && (<Filters type="tour"/>)}
+                    {type === "a-day-tour" && (<Filters type="tour"/>)}
                 </div>
                 <div className="search-main">
                     {type === "tour" && (<ListProducts type="tour" pagination={true}/>)}

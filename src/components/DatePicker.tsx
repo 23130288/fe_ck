@@ -8,9 +8,10 @@ interface DatePicker {
     type: "range" | "single";
     label: string;
     placeholder: string;
+    onChange: (date: string) => void;
 }
 
-export default function DatePicker({type, label, placeholder}: DatePicker) {
+export default function DatePicker({type, label, placeholder, onChange}: DatePicker) {
     const dateRef = useRef<HTMLInputElement>(null);
     useEffect(() => {
         if (!dateRef.current) return;
@@ -18,7 +19,10 @@ export default function DatePicker({type, label, placeholder}: DatePicker) {
             mode: type,
             dateFormat: "d/m/Y",
             minDate: "today",
-            locale: {rangeSeparator: " – "}
+            locale: {rangeSeparator: " – "},
+            onChange: (selectedDates, dateStr) => {
+                onChange(dateStr);
+            }
         });
         return () => fp.destroy();
     }, [type]);

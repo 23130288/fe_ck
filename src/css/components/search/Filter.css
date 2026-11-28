@@ -1,0 +1,31 @@
+.filter-tour {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    background: none;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.filter-tour .filter-group {
+    gap: 5px;
+}
+
+.filter-tour .filter-group h1 {
+    font-size: var(--font-size-m);
+    font-weight: bold;
+}
+
+.filter-tour .filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--font-size-s);
+    cursor: pointer;
+}
+
+.filter-tour .filter-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
