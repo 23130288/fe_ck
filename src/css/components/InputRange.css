@@ -1,0 +1,11 @@
+.input-range {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-range input {
+    width: 100%;
+    cursor: pointer;
+    accent-color: var(--color-blue);
+}

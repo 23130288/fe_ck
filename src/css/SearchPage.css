@@ -3,5 +3,6 @@
 }
 
 .split-box-search {
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 15px;
 }
