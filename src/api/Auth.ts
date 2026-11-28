@@ -44,7 +44,9 @@ export async function login(email: string, password: string) {
     await signOut(auth);
     throw new Error("Không có hồ sơ người dùng");
   }
-  return {success: true, userInfo: userSnap.data() as UserInfo, uid: user.uid,};
+  const userInfo = {...userSnap.data(), email: user.email ?? ""};
+  sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
+  return {success: true, userInfo: userInfo as UserInfo, uid: user.uid};
 }
 
 
